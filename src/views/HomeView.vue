@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="container">
-      <h1 >Hello Serhii</h1>
+      <h1 style="padding-top: 240px">Hello Serhii</h1>
       <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
       <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
       <br>
@@ -21,7 +21,7 @@ import ContactsList from '@/components/ContactsList.vue';
 export default {
   name: 'HomeView',
   components: {
-    ContactsList
-}
+    ContactsList,
+  }
 }
 </script>

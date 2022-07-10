@@ -9,21 +9,17 @@
 
     // <<===========================HEADER===========================>>
 
-    // <<===========================/HEADER===========================>>
 
 
     // <<===========================SECTION #contacts & map===========================>>
 
-    // <<===========================/SECTION #contacts & map===========================>>
 
 
     // <<===========================SECTION #contact_form===========================>>
     
-    // <<===========================/SECTION #contact_form===========================>>
 
     // <<===========================Footer===========================>>
 
-    // <<===========================/Footer===========================>>
 
 }
 
@@ -54,7 +50,6 @@
         }
     }
 
-    // <<===========================/HEADER===========================>>
 
 
     // <<===========================SECTION #contacts & map===========================>>
@@ -89,7 +84,6 @@
 
     }
 
-    // <<===========================/SECTION #contacts & map===========================>>
 
 
     // <<===========================SECTION #contact_form===========================>>
@@ -102,11 +96,9 @@
 
     }
     
-    // <<===========================/SECTION #contact_form===========================>>
 
     // <<===========================Footer===========================>>
 
-    // <<===========================/Footer===========================>>
 
 }
 
@@ -129,7 +121,36 @@
             }
     }
 
-    // <<===========================/SECTION #contact_form===========================>>
+    // <<===========================SECTION #for_psychologists===========================>>
+    section#for_psychologists .psychologists_content_wrap {
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    // section#for_psychologists .wrap_content::after {
+        // display: none;
+    // }
+    
+    .wrap_img {
+        border-top-right-radius: 65% 65%;
+    }
+
+    section#for_psychologists h1 {
+        font-size: 3.5rem;
+    }
+
+    section#for_psychologists_form h2 {
+        font-size: 3.5rem;
+    }
+
+    section#for_psychologists p {
+        font-size: 1.15rem;
+    }
+
+    section#for_psychologists .wrap_content {
+        max-width: 550px;
+    }
+
 }
 
 
@@ -137,26 +158,46 @@
 
 // <<===========================SECTION #contacts & map===========================>>
 
-section#contacts {    
-    h1 {
-        font-size: 3.2rem;
-        line-height: 3.2rem;
-    }
-    .contacts_wrap {
-        flex-direction: row;
-        justify-content: center;
-        max-width: 1440px;
-        width: 100%;
-        height: 400px;
-    }
-    .cont_left_wrap,
-    .cont_right_wrap {
-        flex-direction: column;
-    }
+    section#contacts {    
+        h1 {
+            font-size: 3.2rem;
+            line-height: 3.2rem;
+        }
+        .contacts_wrap {
+            flex-direction: row;
+            justify-content: center;
+            max-width: 1440px;
+            width: 100%;
+            height: 400px;
+        }
+        .cont_left_wrap,
+        .cont_right_wrap {
+            flex-direction: column;
+        }
 
-}
+    }
+        // <<===========================SECTION #for_psychologists===========================>>
+        section#for_psychologists .psychologists_content_wrap {
+            justify-content: space-around;
+            gap: 20px;
+        }
+    
+        section#for_psychologists h1 {
+            font-size: 3.2rem;
+        }
 
-// <<===========================/SECTION #contacts & map===========================>>
+        section#for_psychologists_form h2 {
+            font-size: 3.2rem;
+        }
+    
+        section#for_psychologists p {
+            font-size: 1.15rem;
+        }
+    
+        section#for_psychologists .wrap_content {
+            max-width: 500px;
+        }
+
 
 }
 
@@ -186,7 +227,6 @@ section#contacts {
         }
      }
 
-    // <<===========================/Footer===========================>>
 
 }
 
@@ -219,21 +259,17 @@ section#contacts {
         }
     }
 
-    // <<===========================/HEADER===========================>>
 
 
     // <<===========================SECTION #contacts & map===========================>>
 
-    // <<===========================/SECTION #contacts & map===========================>>
 
 
     // <<===========================SECTION #contact_form===========================>>
     
-    // <<===========================/SECTION #contact_form===========================>>
 
     // <<===========================Footer===========================>>
 
-    // <<===========================/Footer===========================>>
 
 }
 
@@ -250,17 +286,44 @@ section#contacts {
         }
     }
 
-    // <<===========================/HEADER===========================>>
 
 
     // <<===========================SECTION #contacts & map===========================>>
 
-    // <<===========================/SECTION #contacts & map===========================>>
 
 
     // <<===========================SECTION #contact_form===========================>>
+
+    // <<===========================SECTION #for_psychologists===========================>>
+    section#for_psychologists {
+        padding-top: 200px;
+        margin-bottom: 80px;
+    }
+  
+    section#for_psychologists .psychologists_content_wrap {
+        // justify-content: space-around;
+        // gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    section#for_psychologists h1 {
+        // font-size: 3.2rem;
+        margin-bottom: 20px;
+    }
+
+    section#for_psychologists p {
+        // font-size: 1.15rem;
+        margin-bottom: 20px;
+    }
+
+    section#for_psychologists .wrap_content {
+        max-width: 1200px;
+        order: -1;
+    }
     
-    // <<===========================/SECTION #contact_form===========================>>
 
     // <<===========================Footer===========================>>
 
@@ -316,7 +379,6 @@ section#contacts {
         }
      }
 
-    // <<===========================/Footer===========================>>
 }
 
 @media screen and (max-width: 1000px) {
@@ -367,9 +429,60 @@ section#contacts {
         
     }
 
-    // <<===========================/Footer===========================>>
+}
+
+
+
+@media screen and (max-width: 860px) {
+
+// <<===========================SECTION #for_psychologists===========================>>
+
+    section#for_psychologists .psychologists_content_wrap {
+        // justify-content: space-around;
+        // gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section#for_psychologists h1 {
+        // font-size: 3.2rem;
+        margin-bottom: 20px;
+    }
+
+    section#for_psychologists_form h2 {
+        font-size: 3rem;
+        margin-bottom: 40px;
+    }
+
+    section#for_psychologists_form form {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    section#for_psychologists_form {
+        padding-bottom: 60px;
+    }
 
 }
+
+@media screen and (max-width: 790px) {
+    // <<===========================SECTION #for_psychologists===========================>>
+
+    section#for_psychologists .wrap_content::after {
+        content: '';
+            top: -390px;
+            left: -50px;
+            max-width: 600px;
+            width: 100%;
+            // height: 300%;
+    }
+}
+
+
+
+
 
 
 @media screen and (max-width: 760px) {
@@ -381,7 +494,6 @@ section#contacts {
         }
     }
 
-    // <<===========================/HEADER===========================>>
 
 
     // <<===========================SECTION #contacts & map===========================>>
@@ -411,8 +523,32 @@ section#contacts {
         }
     
     }
-    // <<===========================/SECTION #contacts & map===========================>>
+
+        // <<===========================SECTION #for_psychologists===========================>>
+
+        section#for_psychologists .wrap_img {
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+        }
 }
+
+@media screen and (max-width: 670px) {
+    // <<===========================SECTION #for_psychologists===========================>>
+
+    section#for_psychologists h1 {
+        font-size: 2.8rem;
+    }
+
+    section#for_psychologists_form h2 {
+        font-size: 2.5rem;
+    }
+
+    section#for_psychologists {
+        padding-top: 200px;
+    }
+}
+
 
 
 @media screen and (max-width: 660px) {
@@ -428,7 +564,12 @@ section#contacts {
 
     }
 
-    // <<===========================/SECTION #contacts & map===========================>>
+    // <<===========================SECTION #for_psychologists===========================>>
+
+    section#for_psychologists {
+        margin-bottom: 40px;    
+    }
+
 
 }
 
@@ -449,7 +590,6 @@ section#contacts {
         }
     } 
 
-    // <<===========================/SECTION #contacts & map===========================>>
 
 
 
@@ -471,7 +611,22 @@ section#contacts {
         }
     }
     
-    // <<===========================/SECTION #contact_form===========================>>
+}
+
+@media screen and (max-width: 560px) {
+    // <<===========================SECTION #for_psychologists===========================>>
+
+    section#for_psychologists h1 {
+        font-size: 2.5rem;
+    }
+
+    section#for_psychologists p {
+        font-size: 1rem;
+    }
+
+    section#for_psychologists_form h2 {
+        font-size: 2.1rem;
+    }
 
 }
 
@@ -489,7 +644,6 @@ section#contacts {
     //     }
     // } 
 
-    // <<===========================SECTION #contacts & map===========================>>
 
     section#contacts {    
         .cont_left_wrap div:last-child {
@@ -509,10 +663,6 @@ section#contacts {
     }
 
 
-        
-    // <<===========================/SECTION #contacts & map===========================>>
-
-
     // <<===========================SECTION #contact_form===========================>>
 
     section#contact_form {
@@ -530,8 +680,16 @@ section#contacts {
         margin-bottom: 10px;
     }
 
+    // <<===========================SECTION #for_psychologists===========================>>
 
-    // <<===========================/SECTION #contact_form===========================>>
+    section#for_psychologists h1 {
+        font-size: 2.2rem;
+    }
+
+    section#for_psychologists_form h2 {
+        font-size: 2rem;
+    }
+
 
     // <<===========================Footer===========================>>
 
@@ -544,9 +702,21 @@ section#contacts {
         }
     }
         
-    // <<===========================/Footer===========================>>
-
 }
+
+
+@media screen and (max-width: 450px) {
+    // <<===========================SECTION #for_psychologists===========================>>
+
+    section#for_psychologists h1 {
+        font-size: 2rem;
+    }
+
+    section#for_psychologists_form h2 {
+        font-size: 1.8rem;
+    }
+
+ }
 
 @media screen and (max-width: 410px) {
 
@@ -560,7 +730,6 @@ section#contacts {
             }
  
 
-    // <<===========================/HEADER===========================>>
 
 
 
@@ -588,7 +757,6 @@ section#contacts {
         margin-bottom: 90px;
     }
 
-    // <<===========================/SECTION #contacts & map===========================>>
 
 
 
@@ -632,8 +800,11 @@ section#contacts {
         }
     }
 
-
-    // <<===========================/SECTION #contact_form===========================>>
+    // <<===========================SECTION #for_psychologists===========================>>
+  
+    section#for_psychologists {
+        padding-top: 160px;
+    }
 
 
 
@@ -718,7 +889,19 @@ section#contacts {
         padding-bottom: 35px;
     }
         
-    // <<===========================/Footer===========================>>
+}
+
+@media screen and (max-width: 405px) {
+    // <<===========================SECTION #for_psychologists===========================>>
+
+    section#for_psychologists h1 {
+        font-size: 1.8rem;
+    }
+
+    section#for_psychologists_form h2 {
+        font-size: 1.6rem;
+    }
+
 }
 
 
@@ -748,7 +931,31 @@ section#contacts {
             }
         }
 
+   
+        // <<===========================SECTION #for_psychologists===========================>>
+    
+        section#for_psychologists .wrap_content::after {
+            content: '';
+                // top: -390px;
+                // left: -50px;
+                max-width: 300px;
+                // width: 100%;
+                // height: 300%;
+        }
 
-    // <<===========================/SECTION #contacts & map===========================>>
+
+
+}
+
+@media screen and (max-width: 360px) {
+    // <<===========================SECTION #for_psychologists===========================>>
+
+    section#for_psychologists h1 {
+        font-size: 1.7rem;
+    }
+
+    section#for_psychologists_form h2 {
+        font-size: 1.43rem;
+    }
 
 }

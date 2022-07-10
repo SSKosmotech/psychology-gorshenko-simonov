@@ -112,7 +112,7 @@
                     <input type="text" id="worries" name="worries" placeholder="Що вас турбує?" required>
                     <label for="worries"></label>
 
-                    <button type="submit" class="btn">Зателефонуйте мені</button>
+                    <button type="submit" class="btn btn_m">Зателефонуйте мені</button>
                 </form>
 
 

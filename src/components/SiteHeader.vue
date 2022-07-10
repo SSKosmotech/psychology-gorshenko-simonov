@@ -1,5 +1,5 @@
 <template>
-     <header id="header">
+     <header id="header" :class="{'fixed': isFixed}">
         <div class="container">
             <div class="wrap_menu">
 
@@ -49,7 +49,7 @@
                             <li><a itemprop="url" href="#">Про нас</a></li>
                             <li><a itemprop="url" href="#">Послуги</a></li>
                             <li><a itemprop="url" href="#">Ціни</a></li>
-                            <li><a itemprop="url" href="#">Психологам</a></li>
+                            <li><router-link to="/for-psychologists">Психологам</router-link></li>
                             <li><a itemprop="url" href="#">Семінари</a></li>
                             <li><a itemprop="url" href="#">Відгуки</a></li>
                             <li><router-link to="/contacts">Контакти</router-link></li>
@@ -75,22 +75,23 @@
 <script>
 export default {
     name: 'SiteHeader',
-    // data () {
-    //     return {
-    //         isFixed: false,
-    //         isOpenMobileMenu: false
-    //     }
-    // },
-    // created() {
-    //     window.addEventListener('scroll', this.toggleFixedScroll)
-    // },
-    // methods: {
-    //     toggleFixedScroll(){
-    //         this.isFixed = window.scrollY > 50
-    //     },
-    //     toggleMobileMenu() {
-    //         this.isOpenMobileMenu = !this.isOpenMobileMenu
-    //     }
-    // }
+    data () {
+        return {
+            isFixed: false,
+            isOpenMobileMenu: false
+        }
+    },
+    created() {
+        window.addEventListener('scroll', this.toggleFixedScroll)
+    },
+    methods: {
+        toggleFixedScroll(){
+            // this.isFixed = window.scrollY > 148
+            this.isFixed = window.scrollY > 80
+        },
+        toggleMobileMenu() {
+            this.isOpenMobileMenu = !this.isOpenMobileMenu
+        }
+    }
 }
 </script>

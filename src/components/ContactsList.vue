@@ -2,20 +2,20 @@
     <section id="contacts">
             <div class="container">
 
-                <h1 class="cor">Контакти</h1>
+                <h1>Контакти</h1>
 
                 <div class="contacts_section_wrap">
 
                     <div class="contacts_wrap">
                         <div class="cont_left_wrap">
-                            <div>
+                            <div class="phone">
                                 <p>Телефон</p>
                                 <a class="contacts_icons" href="tel:+380974070110">
                                     <svg class="icon_contacts" width="40" height="40" viewbox="0 0 40 40" fill="#D3DDE6" xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="5"/>
                                         <path d="M23.7333 22.1427C22.6667 23.3232 22.6667 24.5037 21.6 24.5037C20.5333 24.5037 19.4667 23.3232 18.4 22.1427C17.3333 20.9622 16.2667 19.7817 16.2667 18.6012C16.2667 17.4207 17.3333 17.4207 18.4 16.2402C19.4667 15.0597 16.2667 11.5182 15.2 11.5182C14.1333 11.5182 12 15.0597 12 15.0597C12 17.4207 14.192 22.2076 16.2667 24.5037C18.3413 26.7998 22.6667 29.2257 24.8 29.2257C24.8 29.2257 28 26.8647 28 25.6842C28 24.5037 24.8 20.9622 23.7333 22.1427Z" fill="white"/>
                                     </svg>
-                                    +38 (097) <b>&nbsp;407-01-10</b>
+                                    <span>+38 (097) <b>&nbsp;407-01-10</b></span>
                                 </a>
                             </div>
                             <div class="mail">
@@ -81,9 +81,9 @@
                         <div class="wrap_map">
 
                             <div id="map">
-                                <a href="javascript:void(0)" id="load_map_link">
-                                    <img class="opacity shift" src="@/assets/plugins/leaflet/images/map_img.jpg" alt="Gorshenko — наша адреса на карті" >
-                                </a>
+                                <!-- <a href="javascript:void(0)" id="load_map_link">
+                                    <img class="opacity" src="@/assets/plugins/leaflet/images/map_img.jpg" alt="Gorshenko — наша адреса на карті" >
+                                </a> -->
                             </div>
 
                         </div>
@@ -118,10 +118,81 @@
 
             </div>
         </section>
+
+
+        <!-- <div id="mapContainer"></div> -->
+
+
 </template>
 
+
+
 <script>
+import L from 'leaflet'
+import '@/assets/plugins/leaflet/leaflet.css'
+
 export default {
-    name: 'ContactsList'
+    name: 'ContactsList',
+    mounted(){
+        const map = L.map('map').setView([49.81984911958817, 24.028876433560518], 12);
+        
+        // Google Streets:
+        L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+            // maxZoom: 13,
+            subdomains:['mt0','mt1','mt2','mt3']
+        }).addTo(map);
+        const pinIcon = L.icon({
+            iconUrl: 'images/pin.png',
+            iconSize: [50, 65],
+            iconAnchor: [25, 65],
+            popupAnchor: [0, -65],
+
+        });
+        L.marker([49.83084911958817, 24.041876433560518], {icon: pinIcon}).addTo(map)
+        .bindPopup(`
+        <div class="popup">
+            <img class="popup_img" src="images/logo-bird-gorshenko.svg">
+            <h2>Графік роботи:</h2>
+            <p>ПН-ПТ: 09:00-18:00</p>
+            <p>СБ-НД: 11:00-16:00</p>
+            <span></span>
+        </div>
+        `)
+    }
+//     data() {
+//         return {
+//         map: null,
+//         };
+//     },
+//     mounted() {
+//     this.map = L.map("mapContainer").setView([46.05, 11.05], 5);
+//     L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
+//       attribution:
+//         '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+//     }).addTo(this.map);
+//     //use a mix of renderers
+//     var customPane = this.map.createPane("customPane");
+//     customPane.style.zIndex = 399; // put just behind the standard overlay pane which is at 400
+//     L.marker([50, 14]).addTo(this.map);
+
+//     L.marker([53, 20]).addTo(this.map);
+//     L.marker([49.5, 19.5]).addTo(this.map);
+//     L.marker([49, 25]).addTo(this.map);
+//     L.marker([-10, 25]).addTo(this.map);
+//     L.marker([10, -25]).addTo(this.map);
+//     L.marker([0, 0]).addTo(this.map);
+//   },
+//    onBeforeUnmount() {
+//     if (this.map) {
+//       this.map.remove();
+//     }
+//   },
 }
 </script>
+
+<style scoped>
+/* #mapContainer {
+  width: 100vw;
+  height: 100vh;
+} */
+</style>

@@ -893,6 +893,13 @@ footer#footer {
 
 // <<===========================/Footer===========================>>
 
+// <<===========================/404===========================>>
+    .not_found {
+        padding-top: calc(150px + 240px);
+        margin-bottom: 150px;
+        text-align: center;
+    }
+
 
 // h1 {
 //     @include fz(48);

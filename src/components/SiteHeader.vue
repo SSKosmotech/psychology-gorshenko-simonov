@@ -46,12 +46,12 @@
                     <nav class="main_menu">
                         <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
                             <li> <router-link to="/">Головна</router-link></li>
-                            <li><a itemprop="url" href="#">Про нас</a></li>
-                            <li><a itemprop="url" href="#">Послуги</a></li>
-                            <li><a itemprop="url" href="#">Ціни</a></li>
+                            <li><router-link to="/about-us">Про нас</router-link></li>
+                            <li><router-link to="/services">Послуги</router-link></li>
+                            <li><router-link to="/prices">Ціни</router-link></li>
                             <li><router-link to="/for-psychologists">Психологам</router-link></li>
-                            <li><a itemprop="url" href="#">Семінари</a></li>
-                            <li><a itemprop="url" href="#">Відгуки</a></li>
+                            <li><router-link to="/seminars">Семінари</router-link></li>
+                            <li><router-link to="/successes">Успіхи</router-link></li>
                             <li><router-link to="/contacts">Контакти</router-link></li>
                             <li>
                                 <router-link to="/payment" class="header_wallet_text">

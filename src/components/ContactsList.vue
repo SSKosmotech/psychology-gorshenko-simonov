@@ -10,36 +10,46 @@
 
                 <div class="contacts_wrap">
                     <div class="cont_left_wrap">
-                        <div>
-                            <p>Телефон</p>
-                            <a class="contacts_icons" href="tel:+380974070110">
-                                <svg class="icon_contacts" width="40" height="40" viewbox="0 0 40 40" fill="#D3DDE6" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="40" height="40" rx="5"/>
-                                    <path d="M23.7333 22.1427C22.6667 23.3232 22.6667 24.5037 21.6 24.5037C20.5333 24.5037 19.4667 23.3232 18.4 22.1427C17.3333 20.9622 16.2667 19.7817 16.2667 18.6012C16.2667 17.4207 17.3333 17.4207 18.4 16.2402C19.4667 15.0597 16.2667 11.5182 15.2 11.5182C14.1333 11.5182 12 15.0597 12 15.0597C12 17.4207 14.192 22.2076 16.2667 24.5037C18.3413 26.7998 22.6667 29.2257 24.8 29.2257C24.8 29.2257 28 26.8647 28 25.6842C28 24.5037 24.8 20.9622 23.7333 22.1427Z" fill="white"/>
-                                </svg>
-                                <span>+38 (097) <b>&nbsp;407-01-10</b></span>
+
+                         <div v-for="(contacts, index) in contactsListInfoData.contacts" :key="index">
+                            <p>{{ contacts.contact_type }}</p>
+                            <a class="contacts_icons" :href="contacts.href" rel="nofollow, noreferrer" target="_blank" :title="contact_type">
+                               <img class="icon_contacts" :class="contacts.width" :src="require(`@/assets/images/`+contacts.svg)" :alt="contacts.contact_type">
+                               <!-- <div v-html="contacts.test_svg"></div> -->
+                               <span>{{ contacts.contact_data }}<b>{{ contacts.contact_data_b }}</b></span>
                             </a>
-                        </div>
-                        <div>
-                            <p>Email</p>
-                            <a class="contacts_icons" href="mailto:hello@mgoroshenko.com.ua" rel="nofollow, noreferrer" target="_blank">
-                                <svg class="icon_contacts" width="40" height="40" viewbox="0 0 40 40" fill="#D3DDE6" xmlns="http://www.w3.org/2000/svg">
-                                    <rect y="0.00012207" width="40" height="40" rx="5"/>
-                                    <path d="M27.7778 12.0001H12.2222C10.9949 12.0001 10 13.0235 10 14.2858V25.7144C10 26.9768 10.9949 28.0001 12.2222 28.0001H27.7778C29.0051 28.0001 30 26.9768 30 25.7144V14.2858C30 13.0235 29.0051 12.0001 27.7778 12.0001Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M10 15.0001L20 21.0001L30 15.0001" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <span>hello@mgoroshenko.com.ua</span>
-                            </a>
-                        </div>
-                        <div>
-                            <p>Адреса</p>
-                            <a class="contacts_icons" href="https://goo.gl/maps/p1smwKevMyWX4RhLA" rel="nofollow, noreferrer" target="_blank">
-                                <svg class="icon_contacts" width="30" height="40" viewbox="0 0 30 40" fill="#D3DDE6" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M30 15.4545C30 6.89394 23.3088 0 15 0C6.69118 0 0 6.89394 0 15.4545C0 24.0152 15 40 15 40C15 40 30 24.0152 30 15.4545ZM8.0147 15.1515C8.0147 11.2121 11.1765 7.95455 15 7.95455C18.8235 7.95455 21.9853 11.1364 21.9853 15.1515C21.9853 19.0909 18.8971 22.3485 15 22.3485C11.1765 22.3485 8.0147 19.0909 8.0147 15.1515Z"/>
-                                </svg>
-                                <span>Львів, вул. Зелена 44</span>
-                            </a>
-                        </div>
+                         </div>
+
+                                    <!-- <div>
+                                        <p>Телефон</p>
+                                        <a class="contacts_icons" href="tel:+380974070110" rel="nofollow, noreferrer" target="_blank" title="">
+                                            <svg class="icon_contacts" width="40" height="40" viewbox="0 0 40 40" fill="#D3DDE6" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="40" height="40" rx="5"/>
+                                                <path d="M23.7333 22.1427C22.6667 23.3232 22.6667 24.5037 21.6 24.5037C20.5333 24.5037 19.4667 23.3232 18.4 22.1427C17.3333 20.9622 16.2667 19.7817 16.2667 18.6012C16.2667 17.4207 17.3333 17.4207 18.4 16.2402C19.4667 15.0597 16.2667 11.5182 15.2 11.5182C14.1333 11.5182 12 15.0597 12 15.0597C12 17.4207 14.192 22.2076 16.2667 24.5037C18.3413 26.7998 22.6667 29.2257 24.8 29.2257C24.8 29.2257 28 26.8647 28 25.6842C28 24.5037 24.8 20.9622 23.7333 22.1427Z" fill="white"/>
+                                            </svg>
+                                            <span>+38 (097) <b>&nbsp;407-01-10</b></span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <p>Email</p>
+                                        <a class="contacts_icons" href="mailto:hello@mgoroshenko.com.ua" rel="nofollow, noreferrer" target="_blank" title="">
+                                            <svg class="icon_contacts" width="40" height="40" viewbox="0 0 40 40" fill="#D3DDE6" xmlns="http://www.w3.org/2000/svg">
+                                                <rect y="0.00012207" width="40" height="40" rx="5"/>
+                                                <path d="M27.7778 12.0001H12.2222C10.9949 12.0001 10 13.0235 10 14.2858V25.7144C10 26.9768 10.9949 28.0001 12.2222 28.0001H27.7778C29.0051 28.0001 30 26.9768 30 25.7144V14.2858C30 13.0235 29.0051 12.0001 27.7778 12.0001Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M10 15.0001L20 21.0001L30 15.0001" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <span>hello@mgoroshenko.com.ua</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <p>Адреса</p>
+                                        <a class="contacts_icons" href="https://goo.gl/maps/p1smwKevMyWX4RhLA" rel="nofollow, noreferrer" target="_blank" title="">
+                                            <svg class="icon_contacts" width="30" height="40" viewbox="0 0 30 40" fill="#D3DDE6" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M30 15.4545C30 6.89394 23.3088 0 15 0C6.69118 0 0 6.89394 0 15.4545C0 24.0152 15 40 15 40C15 40 30 24.0152 30 15.4545ZM8.0147 15.1515C8.0147 11.2121 11.1765 7.95455 15 7.95455C18.8235 7.95455 21.9853 11.1364 21.9853 15.1515C21.9853 19.0909 18.8971 22.3485 15 22.3485C11.1765 22.3485 8.0147 19.0909 8.0147 15.1515Z"/>
+                                            </svg>
+                                            <span>Львів, вул. Зелена 44</span>
+                                        </a>
+                                    </div> -->
                     </div>
                     <div class="cont_right_wrap">
                         <div>
@@ -83,11 +93,19 @@
                     <p class="map_arrow">{{contactsListInfoData.where_we}}</p>
                     <div class="wrap_map">
 
-                        <div id="map">
-                            <!-- <a href="javascript:void(0)" id="load_map_link">
-                                <img class="opacity" src="@/assets/plugins/leaflet/images/map_img.jpg" alt="Gorshenko — наша адреса на карті" >
-                            </a> -->
-                        </div>
+                        <template v-if="hideMap">
+                            <div class="map">
+                                <a href="javascript:void(0)" @click="showMapLeaflet()">
+                                    <img class="opacity" src="@/assets/plugins/leaflet/images/map_img.jpg" alt="Gorshenko — наша адреса на карті" >
+                                </a>
+                            </div>
+                        </template>
+                        <template v-else>
+                            <div id="map">
+                                
+                            </div>
+                        </template>
+                        
 
                     </div>
                 </div>
@@ -107,7 +125,8 @@
             </div>
 
             <form action="#">
-                <input type="text" id="name" name="name" placeholder="Марія" required>
+                <!-- <input type="text" id="name" name="name" :placeholder="Марія" required> -->
+                <input type="text" id="name" name="name" :placeholder="contactsListInfoData?.placeholders?.name" required>
                 <label for="name"></label>
                 
                 <input type="tel" id="tel" name="tel" placeholder="+ 38 (000) 000-00-00" required>
@@ -138,31 +157,16 @@ import axios from 'axios'
 
 export default {
     name: 'ContactsList',
+    data() {
+        return {
+            contactsListInfoData: [],
+            contactsListData: [],
+            hideMap: false
+        }
+    },
     mounted(){
-        const map = L.map('map').setView([49.81984911958817, 24.028876433560518], 12);
         
-        // Google Streets:
-        L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
-            // maxZoom: 13,
-            subdomains:['mt0','mt1','mt2','mt3']
-        }).addTo(map);
-        const pinIcon = L.icon({
-            iconUrl: 'images/pin.png',
-            iconSize: [50, 65],
-            iconAnchor: [25, 65],
-            popupAnchor: [0, -65],
-
-        });
-        L.marker([49.83084911958817, 24.041876433560518], {icon: pinIcon}).addTo(map)
-        .bindPopup(`
-        <div class="popup">
-            <img class="popup_img" src="images/logo-bird-gorshenko.svg">
-            <h2>Графік роботи:</h2>
-            <p>ПН-ПТ: 09:00-18:00</p>
-            <p>СБ-НД: 11:00-16:00</p>
-            <span></span>
-        </div>
-        `)
+        
     },
 
 //     data() {
@@ -193,11 +197,7 @@ export default {
 //       this.map.remove();
 //     }
 //   },
-    data() {
-        return {
-            contactsListInfoData: []
-        }
-    },
+    
     created() {
         axios
             .get('/data/contactsInfo.json')
@@ -207,6 +207,53 @@ export default {
             .catch(err=>{
                 this.$toast.error(err);
             })
+        
+        axios
+            .get('/data/contacts.json')
+            .then(respList=>{
+                this.contactsListData = respList.data
+            })
+            .catch(err=>{
+                this.$toast.error(err);
+            })
+
+    },
+    methods: {
+        showMapLeaflet() {
+            console.log('Clicked on map')
+            this.hideMap = false
+        }
+    },
+    watch: {
+        hideMap(isHide){
+            if(isHide === false){
+                const map = L.map('map').setView([49.81984911958817, 24.028876433560518], 12);
+                    
+                    // Google Streets:
+                    L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+                        // maxZoom: 13,
+                        subdomains:['mt0','mt1','mt2','mt3']
+                    }).addTo(map);
+                    const pinIcon = L.icon({
+                        iconUrl: 'images/pin.png',
+                        iconSize: [50, 65],
+                        iconAnchor: [25, 65],
+                        popupAnchor: [0, -65],
+
+                    });
+                    L.marker([49.83084911958817, 24.041876433560518], {icon: pinIcon}).addTo(map)
+                    .bindPopup(`
+                    <div class="popup">
+                        <img class="popup_img" src="images/logo-bird-gorshenko.svg">
+                        <h2>Графік роботи:</h2>
+                        <p>ПН-ПТ: 09:00-18:00</p>
+                        <p>СБ-НД: 11:00-16:00</p>
+                        <span></span>
+                    </div>
+                    `)
+            }
+        }
+        
     }
 }
 </script>

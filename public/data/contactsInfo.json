@@ -1,5 +1,37 @@
     {
         "title": "Контакти",
         "where_we": "Тут знаходимось ми",
-        "question": "Залишились питання? Заповніть форму і ми вам зателефонуємо через 5 хвилин"
+        "question": "Залишились питання? Заповніть форму і ми вам зателефонуємо через 5 хвилин",
+        "contacts": [
+            {
+                "contact_type": "Телефон",
+                "contact_data": "+38 (097)",
+                "contact_data_b": " 407-01-10",
+                "href": "tel:+380974070110",
+                "svg": "tel.svg",
+                "test_svg": "<svg class='icon_contacts' width='40' height='40' viewbox='0 0 40 40' fill='#D3DDE6' xmlns='http://www.w3.org/2000/svg'><rect width='40' height='40' rx='5'/><path d='M23.7333 22.1427C22.6667 23.3232 22.6667 24.5037 21.6 24.5037C20.5333 24.5037 19.4667 23.3232 18.4 22.1427C17.3333 20.9622 16.2667 19.7817 16.2667 18.6012C16.2667 17.4207 17.3333 17.4207 18.4 16.2402C19.4667 15.0597 16.2667 11.5182 15.2 11.5182C14.1333 11.5182 12 15.0597 12 15.0597C12 17.4207 14.192 22.2076 16.2667 24.5037C18.3413 26.7998 22.6667 29.2257 24.8 29.2257C24.8 29.2257 28 26.8647 28 25.6842C28 24.5037 24.8 20.9622 23.7333 22.1427Z' fill='white'/></svg>",
+                "width": ""
+            },
+            {
+                "contact_type": "Email",
+                "contact_data": "hello@mgoroshenko.com.ua",
+                "contact_data_b": "",
+                "href": "mailto:hello@mgoroshenko.com.ua",
+                "svg": "mail.svg",
+                "width": ""
+            },
+            {
+                "contact_type": "Адреса",
+                "contact_data": "Львів, вул. Зелена 44",
+                "contact_data_b": "",
+                "href": "https://goo.gl/maps/p1smwKevMyWX4RhLA",
+                "svg": "address.svg",
+                "width": "icon_width"
+            }
+        ],
+        "placeholders": {
+            "name": "Марія2",
+            "email": "Марія"
+        }
+
     }

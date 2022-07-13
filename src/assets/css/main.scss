@@ -249,7 +249,8 @@ input[type=tel] {
 
 .btn_red {
     // color: #F79781;
-    width: 354px;
+    max-width: 354px;
+    width: 100%;
     background-color: #F79781;
     @include fz(30);
     height: 98px;
@@ -266,9 +267,9 @@ input[type=tel] {
     }
 }
 
-.flex_row_reverse {
-    flex-direction: row-reverse;
-}
+// .flex_row_reverse {
+//     flex-direction: row-reverse;
+// }
 
 
 // <<===========================HEADER===========================>>
@@ -346,7 +347,7 @@ header#header {
                     bottom: -4px;
                     width: 100%;
                     height: 6px;
-                    background-color: transparent;
+                    // background-color: transparent;
                     border-radius: 150px;
                     text-decoration: underline;
                 }
@@ -368,6 +369,9 @@ header#header {
                     font-family: $font_family;
                     font-size: $font_size;
                     line-height: 3rem;
+                    &.active {
+                        background-color: #F79781;  
+                    }
                     &.header_wallet {
                         color: #536779;
                     }
@@ -451,6 +455,14 @@ section#contacts {
             svg {
                 margin-right: 16px;
             }
+            img {
+                margin-right: 16px;
+                width: 40px;
+                height: 100%;
+            }
+            .icon_width {
+                width: 30px;
+            }
             .phone_icon_bold {
                 font-weight: 700;
             }
@@ -531,7 +543,8 @@ section#contacts {
             z-index: 26;
         }
     }
-    #map {
+    #map,
+    map {
         height: 393px;
         z-index: 25;
         position: relative;
@@ -675,7 +688,11 @@ section#payment {
         background-color: #F9FAFB;
         border-radius: 0 400px 0 0;
         &_reverse {
-            border-radius: 400px 0 0 0;
+            flex-direction: row-reverse;
+            // border-radius: 400px 0 0 0;
+            .wrap_img {
+                border-radius: 400px 0 0 0;
+            }
         }
         
         .wrap_img {
@@ -686,10 +703,10 @@ section#payment {
             overflow: hidden;
             // border: 1px solid red;
             border-radius: 0 400px 0 0;
-            &_reverse {
-                border-radius: 400px 0 0 0;
+            // &_reverse {
+            //     border-radius: 400px 0 0 0;
 
-            }
+            // }
         }
         
 
@@ -757,8 +774,61 @@ section#payment {
 section#seminars {
     padding-top: calc(150px + 240px);
     margin-bottom: 150px;
-}
 
+    .seminars {
+        display: flex;
+        &_reverse {
+            flex-direction: row-reverse;
+            .wrap_img {
+                border-radius: 400px 0 0 0;
+            }
+        }
+    }
+
+    .wrap_img {
+        border-radius: 0px 400px 0 0;
+        border: 1px solid red;
+        overflow: hidden;
+    }
+
+    .wrap_content {
+        max-width: 826px;
+        width: 100%;
+        border: 1px solid red;
+        padding: 49px 172px 49px 80px;
+        & p:nth-of-type(1) {
+            @include fz(22);
+            line-height: 3.4375rem;
+        }
+        h2 {
+            @include fz(30);    
+            line-height: 2.25rem;
+            color: #264158;
+            font-family: 'Cormorant', sans-serif;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+        }
+        & p:nth-of-type(2) {
+            @include fz(22);
+            line-height: 2.375rem;
+            position: relative;
+            margin-left: 64px;
+            margin-bottom: 25px;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 20px;
+                left: -63px;
+                width: 48px;
+                height: 2px;
+                background-color: #536779;
+                // background-color: red;
+            }
+        }
+    }
+
+}
 
 
 // <<===========================SECTION #services===========================>>

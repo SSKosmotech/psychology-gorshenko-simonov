@@ -1,0 +1,5 @@
+<svg class="icon_contacts" width="40" height="40" viewbox="0 0 40 40" fill="#D3DDE6" xmlns="http://www.w3.org/2000/svg">
+    <rect y="0.00012207" width="40" height="40" rx="5"/>
+    <path d="M27.7778 12.0001H12.2222C10.9949 12.0001 10 13.0235 10 14.2858V25.7144C10 26.9768 10.9949 28.0001 12.2222 28.0001H27.7778C29.0051 28.0001 30 26.9768 30 25.7144V14.2858C30 13.0235 29.0051 12.0001 27.7778 12.0001Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M10 15.0001L20 21.0001L30 15.0001" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

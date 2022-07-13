@@ -20,7 +20,8 @@
                         <!-- <img src="@/assets/images/payment-card.jpg" alt="Оплата на картку"> -->
                     </div>
                 </div>
-                <div class="payment_method flex_row_reverse payment_method_reverse">
+                <!-- <div class="payment_method flex_row_reverse payment_method_reverse"> -->
+                <div class="payment_method" :class="{payment_method_reverse: index%2 === 0}">
                     <div class="wrap_content">
                         <div class="title_wrap">
                             <p>02</p>

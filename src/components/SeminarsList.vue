@@ -8,27 +8,27 @@
                         <h2>Як виростити сина, аби він став крутим, як Ілон Маск</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <p>Ціна: <span>200 ₴</span></p>
-                        <button type="button" class="btn">придбати</button>
+                        <button type="button" class="btn btn_red">придбати</button>
                     </div>
     
                     <div class="wrap_img">
-                        <img src="" alt="">
+                        <img src="@/assets/images/seminars-son.jpg" alt="Семінари, як виростити сина">
                     </div>
                     
                 </div>
 
-                <div class="seminars">
+                <div class="seminars seminars_reverse">
                     <div class="wrap_content">
                         
                         <p>Лекція</p>
-                        <h2>як позбутися синдрому фантомної сирени</h2>
+                        <h2>Як позбутися синдрому фантомної сирени</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <p>Ціна: <span>200 ₴</span></p>
                         <button type="button" class="btn">придбати</button>
                     </div>
     
                     <div class="wrap_img">
-                        <img src="" alt="">
+                        <img src="@/assets/images/seminars-sirens.jpg" alt="Семінари, як позбутися синдрому фантомної сирени">
                     </div>
                     
                 </div>
@@ -44,12 +44,12 @@
                     </div>
     
                     <div class="wrap_img">
-                        <img src="" alt="">
+                        <img src="@/assets/images/seminars-son.jpg" alt="Семінари, як виростити сина">
                     </div>
                     
                 </div>
 
-                <div class="seminars">
+                <div class="seminars seminars_reverse">
                     <div class="wrap_content">
                         
                         <p>Лекція</p>
@@ -60,7 +60,7 @@
                     </div>
     
                     <div class="wrap_img">
-                        <img src="" alt="">
+                        <img src="@/assets/images/seminars-sirens.jpg" alt="Семінари, як позбутися синдрому фантомної сирени">
                     </div>
                     
                 </div>
@@ -76,7 +76,7 @@
                     </div>
     
                     <div class="wrap_img">
-                        <img src="" alt="">
+                        <img src="@/assets/images/seminars-son.jpg" alt="Семінари, як виростити сина">
                     </div>
                     
                 </div>

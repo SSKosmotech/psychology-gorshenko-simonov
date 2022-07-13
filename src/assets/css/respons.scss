@@ -1043,7 +1043,8 @@
     // <<===========================SECTION #contacts & map===========================>>
 
         section#contacts {
-            #map {
+            #map,
+            .map {
                 img {
                     object-position: 39.5% 50%;
                 }

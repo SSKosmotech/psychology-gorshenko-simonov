@@ -7,7 +7,10 @@
                         <p>Лекція/Діти</p>
                         <h2>Як виростити сина, аби він став крутим, як Ілон Маск</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Ціна: <span>200 ₴</span></p>
+                        <div class="price_seminars_wrap">
+                            <p>Ціна:</p>
+                            <p>200 ₴</p>
+                        </div>                        
                         <button type="button" class="btn btn_red">придбати</button>
                     </div>
     
@@ -23,8 +26,11 @@
                         <p>Лекція</p>
                         <h2>Як позбутися синдрому фантомної сирени</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Ціна: <span>200 ₴</span></p>
-                        <button type="button" class="btn">придбати</button>
+                        <div class="price_seminars_wrap">
+                            <p>Ціна:</p>
+                            <p>200 ₴</p>
+                        </div>
+                        <button type="button" class="btn btn_red">придбати</button>
                     </div>
     
                     <div class="wrap_img">
@@ -39,8 +45,11 @@
                         <p>Лекція/Діти</p>
                         <h2>Як виростити сина, аби він став крутим, як Ілон Маск</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Ціна: <span>200 ₴</span></p>
-                        <button type="button" class="btn">придбати</button>
+                        <div class="price_seminars_wrap">
+                            <p>Ціна:</p>
+                            <p>200 ₴</p>
+                        </div>                        
+                        <button type="button" class="btn btn_red">придбати</button>
                     </div>
     
                     <div class="wrap_img">
@@ -55,8 +64,11 @@
                         <p>Лекція</p>
                         <h2>як позбутися синдрому фантомної сирени</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Ціна: <span>200 ₴</span></p>
-                        <button type="button" class="btn">придбати</button>
+                        <div class="price_seminars_wrap">
+                            <p>Ціна:</p>
+                            <p>200 ₴</p>
+                        </div>
+                        <button type="button" class="btn btn_red">придбати</button>
                     </div>
     
                     <div class="wrap_img">
@@ -71,8 +83,11 @@
                         <p>Лекція/Діти</p>
                         <h2>Як виростити сина, аби він став крутим, як Ілон Маск</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <p>Ціна: <span>200 ₴</span></p>
-                        <button type="button" class="btn">придбати</button>
+                        <div class="price_seminars_wrap">
+                            <p>Ціна:</p>
+                            <p>200 ₴</p>
+                        </div>
+                        <button type="button" class="btn btn_red">придбати</button>
                     </div>
     
                     <div class="wrap_img">

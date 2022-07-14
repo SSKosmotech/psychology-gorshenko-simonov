@@ -1,0 +1,30 @@
+{
+    "title": "Оплата",
+    "payments": [
+        {
+            "counts": "01",
+            "payments_title": "На картку",
+            "payments_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "button_text": "Сплатити",
+            "img": "payment-card.jpg",
+            "img_mobile": "payment-card-1350.jpg"
+        },
+        {
+            "counts": "02",
+            "payments_title": "Готівка",
+            "payments_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "button_text": "Сплатити",
+            "img": "payment-cash.jpg",
+            "img_mobile": "payment-cash-1350.jpg"
+
+        },
+        {
+            "counts": "03",
+            "payments_title": "На рахунок",
+            "payments_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "button_text": "Сплатити",
+            "img": "payment-check.jpg",
+            "img_mobile": "payment-check-1350.jpg"
+        }
+    ]
+}

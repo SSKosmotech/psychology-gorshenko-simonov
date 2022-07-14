@@ -160,6 +160,9 @@
 
     section#for_psychologists .wrap_content {
         max-width: 550px;
+        &::after {
+            height: 1200px;
+        }
     }
 
 }
@@ -625,6 +628,9 @@
         .cont_left_wrap,
         .cont_right_wrap {
             flex-direction: column;
+            .contacts_icons {
+                margin-bottom: 20px;
+            }
         }
         .cont_left_wrap {
             // margin-bottom: 60px;
@@ -813,9 +819,23 @@
             .contacts_wrap {
                 // padding-left: 29px;
                 // padding-right: 25px;
-                padding: 27px 25px 26px 29px;
+                padding: 15px;
             }
         }
+        .cont_left_wrap div,
+        .cont_right_wrap div {
+            & div {
+                margin-bottom: 0px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .cont_left_wrap .contacts_icons, 
+        .cont_right_wrap .contacts_icons {
+            margin-bottom: 10px;
+        }
+
     }
 
     section#contacts .cont_left_wrap div, section#contacts .cont_right_wrap div {
@@ -1012,12 +1032,12 @@
                     width: 23px;
                     // transform-origin: 0px 0px;
                     overflow: visible;
-                    transform: scale(0.8);
+                    transform: scale(1.4);
                     // top: 40%;
                     // left: 33%;
                     top: 10%;
                     left: 15%;
-                    margin-right: 20px;
+                    margin-right: 15px;
                     // margin-bottom: 10px;
                 }
             }
@@ -1033,8 +1053,14 @@
   
     section#for_psychologists {
         padding-top: 160px;
+        .wrap_content {
+            max-width: 550px;
+            &::after {
+                top: -180px;
+                height: 1300px;
+            }
+        }
     }
-
 
 
 
@@ -1191,6 +1217,14 @@
     // <<===========================SECTION #payment===========================>>
     section#payment .title_wrap h2 {
         font-size: 1.125rem;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+    // <<===========================SECTION #contacts & map===========================>>
+    section#contacts .contacts_map_wrap p {
+        font-size: 1rem;
     }
 
 }

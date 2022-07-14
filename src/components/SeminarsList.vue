@@ -1,7 +1,31 @@
 <template>
     <section id="seminars">
             <div class="container">
-                <div class="seminars">
+
+
+                <div v-for="(seminars, index) in seminarsListInfoData.seminars" :key="index" class="seminars" :class="{seminars_reverse: index%2 !== 0}">
+
+                    <div class="wrap_content">
+                        
+                        <p>{{ seminars.seminars_theme }}</p>
+                        <h2>{{ seminars.seminars_title }}</h2>
+                        <p>{{ seminars.seminars_text }}</p>
+                        <div class="price_seminars_wrap">
+                            <p>{{ seminars.seminars_text_price }}</p>
+                            <p>{{ seminars.seminars_price }}</p>
+                        </div>                        
+                        <button type="button" class="btn btn_red">{{ seminars.button }}</button>
+                    </div>
+    
+                    <div class="wrap_img">
+                        <!-- <img src="@/assets/images/seminars-son.jpg" alt="Семінари, як виростити сина"> -->
+                        <img :src="require(`@/assets/images/`+seminars.img)" :alt="`Семінари — `+seminars.seminars_title">
+                    </div>
+                    
+                </div>
+
+
+                <!-- <div class="seminars">
                     <div class="wrap_content">
                         
                         <p>Лекція/Діти</p>
@@ -11,7 +35,7 @@
                             <p>Ціна:</p>
                             <p>200 ₴</p>
                         </div>                        
-                        <button type="button" class="btn btn_red">придбати</button>
+                        <button type="button" class="btn btn_red">Придбати</button>
                     </div>
     
                     <div class="wrap_img">
@@ -30,7 +54,7 @@
                             <p>Ціна:</p>
                             <p>200 ₴</p>
                         </div>
-                        <button type="button" class="btn btn_red">придбати</button>
+                        <button type="button" class="btn btn_red">Придбати</button>
                     </div>
     
                     <div class="wrap_img">
@@ -49,7 +73,7 @@
                             <p>Ціна:</p>
                             <p>200 ₴</p>
                         </div>                        
-                        <button type="button" class="btn btn_red">придбати</button>
+                        <button type="button" class="btn btn_red">Придбати</button>
                     </div>
     
                     <div class="wrap_img">
@@ -68,7 +92,7 @@
                             <p>Ціна:</p>
                             <p>200 ₴</p>
                         </div>
-                        <button type="button" class="btn btn_red">придбати</button>
+                        <button type="button" class="btn btn_red">Придбати</button>
                     </div>
     
                     <div class="wrap_img">
@@ -87,20 +111,39 @@
                             <p>Ціна:</p>
                             <p>200 ₴</p>
                         </div>
-                        <button type="button" class="btn btn_red">придбати</button>
+                        <button type="button" class="btn btn_red">Придбати</button>
                     </div>
     
                     <div class="wrap_img">
                         <img src="@/assets/images/seminars-son.jpg" alt="Семінари, як виростити сина">
                     </div>
                     
-                </div>
+                </div> -->
+
+
             </div>
         </section>
 </template>
 
 <script>
+import axios from 'axios'
 export default {
-    name: 'SeminarsList'
+    name: 'SeminarsList',
+    data () {
+        return {
+            seminarsListInfoData: [],
+        }
+    },
+    created() {
+        axios
+            .get('/data/seminarsInfo.json')
+            .then(resp=>{
+                this.seminarsListInfoData = resp.data
+            })
+            .catch(err=>{
+                this.$toast.error(err)
+            })
+    }
+
 }
 </script>

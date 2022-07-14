@@ -14,8 +14,8 @@
                          <div v-for="(contacts, index) in contactsListInfoData.contacts" :key="index">
                             <p>{{ contacts.contact_type }}</p>
                             <a class="contacts_icons" :href="contacts.href" rel="nofollow, noreferrer" target="_blank" :title="contact_type">
-                               <img class="icon_contacts" :class="contacts.width" :src="require(`@/assets/images/`+contacts.svg)" :alt="contacts.contact_type">
-                               <!-- <div v-html="contacts.test_svg"></div> -->
+                               <!-- <img class="icon_contacts" :class="contacts.width" :src="require(`@/assets/images/`+contacts.svg)" :alt="contacts.contact_type"> -->
+                               <div v-html="contacts.svg"></div>
                                <span>{{ contacts.contact_data }}<b>{{ contacts.contact_data_b }}</b></span>
                             </a>
                          </div>
@@ -52,7 +52,16 @@
                                     </div> -->
                     </div>
                     <div class="cont_right_wrap">
-                        <div>
+                        <div v-for="(socials, index) in contactsListInfoData.socials" :key="index">
+                            <p>{{ socials.social_type }}</p>
+                            <a class="contacts_icons" itemprop="url" :href="socials.href" rel="nofollow, noreferrer" target="_blank" title="{{ socials.social_type }}">
+                                <div v-html="socials.svg"></div>
+                                <span>{{ socials.social_data }}</span>
+                            </a>
+                        </div>
+                        
+                        
+                        <!-- <div>
                             <p>Viber</p>
                             <a class="contacts_icons" itemprop="url" href="https://www.viber.com/" rel="nofollow, noreferrer" target="_blank" title="Viber">
                                 <svg class="icon_contacts" width="41" height="40" viewbox="0 0 41 40" fill="#D3DDE6" xmlns="http://www.w3.org/2000/svg">
@@ -70,7 +79,7 @@
                                     <path d="M20 11.8072C22.6506 11.8072 23.0121 11.8072 24.0964 11.8072C25.0602 11.8072 25.5422 12.0482 25.9036 12.1687C26.3855 12.4096 26.747 12.5301 27.1084 12.8916C27.4699 13.253 27.7108 13.6145 27.8313 14.0964C27.9518 14.4578 28.0723 14.9398 28.1928 15.9036C28.1928 16.988 28.1928 17.2289 28.1928 20C28.1928 22.7711 28.1928 23.0121 28.1928 24.0964C28.1928 25.0602 27.9518 25.5422 27.8313 25.9036C27.5904 26.3855 27.4699 26.747 27.1084 27.1084C26.747 27.4699 26.3855 27.7108 25.9036 27.8313C25.5422 27.9518 25.0602 28.0723 24.0964 28.1928C23.0121 28.1928 22.7711 28.1928 20 28.1928C17.2289 28.1928 16.988 28.1928 15.9036 28.1928C14.9398 28.1928 14.4578 27.9518 14.0964 27.8313C13.6145 27.5904 13.253 27.4699 12.8916 27.1084C12.5301 26.747 12.2892 26.3855 12.1687 25.9036C12.0482 25.5422 11.9277 25.0602 11.8072 24.0964C11.8072 23.0121 11.8072 22.7711 11.8072 20C11.8072 17.2289 11.8072 16.988 11.8072 15.9036C11.8072 14.9398 12.0482 14.4578 12.1687 14.0964C12.4096 13.6145 12.5301 13.253 12.8916 12.8916C13.253 12.5301 13.6145 12.2892 14.0964 12.1687C14.4578 12.0482 14.9398 11.9277 15.9036 11.8072C16.988 11.8072 17.3494 11.8072 20 11.8072ZM20 10C17.2289 10 16.988 10 15.9036 10C14.8193 10 14.0964 10.241 13.494 10.4819C12.8916 10.7229 12.2892 11.0843 11.6867 11.6867C11.0843 12.2892 10.8434 12.7711 10.4819 13.494C10.241 14.0964 10.1205 14.8193 10 15.9036C10 16.988 10 17.3494 10 20C10 22.7711 10 23.0121 10 24.0964C10 25.1807 10.241 25.9036 10.4819 26.506C10.7229 27.1084 11.0843 27.7108 11.6867 28.3133C12.2892 28.9157 12.7711 29.1566 13.494 29.5181C14.0964 29.759 14.8193 29.8795 15.9036 30C16.988 30 17.3494 30 20 30C22.6506 30 23.0121 30 24.0964 30C25.1807 30 25.9036 29.759 26.506 29.5181C27.1084 29.2771 27.7108 28.9157 28.3133 28.3133C28.9157 27.7108 29.1566 27.2289 29.5181 26.506C29.759 25.9036 29.8795 25.1807 30 24.0964C30 23.0121 30 22.6506 30 20C30 17.3494 30 16.988 30 15.9036C30 14.8193 29.759 14.0964 29.5181 13.494C29.2771 12.8916 28.9157 12.2892 28.3133 11.6867C27.7108 11.0843 27.2289 10.8434 26.506 10.4819C25.9036 10.241 25.1807 10.1205 24.0964 10C23.0121 10 22.7711 10 20 10Z" fill="white"/>
                                     <path d="M20 14.8193C17.1084 14.8193 14.8193 17.1084 14.8193 20C14.8193 22.8916 17.1084 25.1807 20 25.1807C22.8916 25.1807 25.1807 22.8916 25.1807 20C25.1807 17.1084 22.8916 14.8193 20 14.8193ZM20 23.3735C18.1928 23.3735 16.6265 21.9277 16.6265 20C16.6265 18.1928 18.0723 16.6265 20 16.6265C21.8072 16.6265 23.3735 18.0723 23.3735 20C23.3735 21.8072 21.8072 23.3735 20 23.3735Z" fill="white"/>
                                     <path d="M25.3012 15.9036C25.9666 15.9036 26.506 15.3642 26.506 14.6988C26.506 14.0334 25.9666 13.494 25.3012 13.494C24.6358 13.494 24.0964 14.0334 24.0964 14.6988C24.0964 15.3642 24.6358 15.9036 25.3012 15.9036Z" fill="white"/>
-                                    </svg>
+                                </svg>
                                 <span>Написати</span>
                                 </a>
                         </div>
@@ -83,7 +92,10 @@
                                 </svg>
                                 <span>Написати</span>
                                 </a>
-                        </div>
+                        </div> -->
+
+
+                        
                     </div>
 
                 </div>
@@ -93,19 +105,7 @@
                     <p class="map_arrow">{{contactsListInfoData.where_we}}</p>
                     <div class="wrap_map">
 
-                        <template v-if="hideMap">
-                            <div class="map">
-                                <a href="javascript:void(0)" @click="showMapLeaflet()">
-                                    <img class="opacity" src="@/assets/plugins/leaflet/images/map_img.jpg" alt="Gorshenko — наша адреса на карті" >
-                                </a>
-                            </div>
-                        </template>
-                        <template v-else>
-                            <div id="map">
-                                
-                            </div>
-                        </template>
-                        
+                        <div id="map"></div>
 
                     </div>
                 </div>
@@ -129,13 +129,13 @@
                 <input type="text" id="name" name="name" :placeholder="contactsListInfoData?.placeholders?.name" required>
                 <label for="name"></label>
                 
-                <input type="tel" id="tel" name="tel" placeholder="+ 38 (000) 000-00-00" required>
+                <input type="tel" id="tel" name="tel" :placeholder="contactsListInfoData?.placeholders?.phone" required>
                 <label for="tel"></label>
                 
-                <input type="text" id="worries" name="worries" placeholder="Що вас турбує?" required>
+                <input type="text" id="worries" name="worries" :placeholder="contactsListInfoData?.placeholders?.worries" required>
                 <label for="worries"></label>
 
-                <button type="submit" class="btn btn_m">Зателефонуйте мені</button>
+                <button type="submit" class="btn btn_m">{{ contactsListInfoData.button }}</button>
             </form>
 
 
@@ -160,44 +160,34 @@ export default {
     data() {
         return {
             contactsListInfoData: [],
-            contactsListData: [],
-            hideMap: false
         }
     },
     mounted(){
-        
-        
+        const map = L.map('map').setView([49.81984911958817, 24.028876433560518], 12);
+                    
+            // Google Streets:
+            L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+                // maxZoom: 13,
+                subdomains:['mt0','mt1','mt2','mt3']
+            }).addTo(map);
+            const pinIcon = L.icon({
+                iconUrl: 'images/pin.png',
+                iconSize: [50, 65],
+                iconAnchor: [25, 65],
+                popupAnchor: [0, -65],
+
+            });
+            L.marker([49.83084911958817, 24.041876433560518], {icon: pinIcon}).addTo(map)
+            .bindPopup(`
+            <div class="popup">
+                <img class="popup_img" src="images/logo-bird-gorshenko.svg">
+                <h2>Графік роботи:</h2>
+                <p>ПН-ПТ: 09:00-18:00</p>
+                <p>СБ-НД: 11:00-16:00</p>
+                <span></span>
+            </div>
+            `)
     },
-
-//     data() {
-//         return {
-//         map: null,
-//         };
-//     },
-//     mounted() {
-//     this.map = L.map("mapContainer").setView([46.05, 11.05], 5);
-//     L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
-//       attribution:
-//         '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-//     }).addTo(this.map);
-//     //use a mix of renderers
-//     var customPane = this.map.createPane("customPane");
-//     customPane.style.zIndex = 399; // put just behind the standard overlay pane which is at 400
-//     L.marker([50, 14]).addTo(this.map);
-
-//     L.marker([53, 20]).addTo(this.map);
-//     L.marker([49.5, 19.5]).addTo(this.map);
-//     L.marker([49, 25]).addTo(this.map);
-//     L.marker([-10, 25]).addTo(this.map);
-//     L.marker([10, -25]).addTo(this.map);
-//     L.marker([0, 0]).addTo(this.map);
-//   },
-//    onBeforeUnmount() {
-//     if (this.map) {
-//       this.map.remove();
-//     }
-//   },
-    
     created() {
         axios
             .get('/data/contactsInfo.json')
@@ -207,54 +197,7 @@ export default {
             .catch(err=>{
                 this.$toast.error(err);
             })
-        
-        axios
-            .get('/data/contacts.json')
-            .then(respList=>{
-                this.contactsListData = respList.data
-            })
-            .catch(err=>{
-                this.$toast.error(err);
-            })
-
     },
-    methods: {
-        showMapLeaflet() {
-            console.log('Clicked on map')
-            this.hideMap = false
-        }
-    },
-    watch: {
-        hideMap(isHide){
-            if(isHide === false){
-                const map = L.map('map').setView([49.81984911958817, 24.028876433560518], 12);
-                    
-                    // Google Streets:
-                    L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
-                        // maxZoom: 13,
-                        subdomains:['mt0','mt1','mt2','mt3']
-                    }).addTo(map);
-                    const pinIcon = L.icon({
-                        iconUrl: 'images/pin.png',
-                        iconSize: [50, 65],
-                        iconAnchor: [25, 65],
-                        popupAnchor: [0, -65],
-
-                    });
-                    L.marker([49.83084911958817, 24.041876433560518], {icon: pinIcon}).addTo(map)
-                    .bindPopup(`
-                    <div class="popup">
-                        <img class="popup_img" src="images/logo-bird-gorshenko.svg">
-                        <h2>Графік роботи:</h2>
-                        <p>ПН-ПТ: 09:00-18:00</p>
-                        <p>СБ-НД: 11:00-16:00</p>
-                        <span></span>
-                    </div>
-                    `)
-            }
-        }
-        
-    }
 }
 </script>
 

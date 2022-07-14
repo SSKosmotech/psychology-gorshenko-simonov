@@ -1,0 +1,49 @@
+{
+    "seminars": [
+        {
+            "seminars_theme": "Лекція/Діти",
+            "seminars_title": "Як виростити сина, аби він став крутим, як Ілон Маск",
+            "seminars_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "seminars_text_price": "Ціна:",
+            "seminars_price": "200 ₴",
+            "button": "Придбати",
+            "img": "seminars-son.jpg"
+        },
+        {
+            "seminars_theme": "Лекція",
+            "seminars_title": "Як позбутися синдрому фантомної сирени",
+            "seminars_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "seminars_text_price": "Ціна:",
+            "seminars_price": "200 ₴",
+            "button": "Придбати",
+            "img": "seminars-sirens.jpg"
+        },
+        {
+            "seminars_theme": "Лекція/Діти",
+            "seminars_title": "Як виростити сина, аби він став крутим, як Ілон Маск",
+            "seminars_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "seminars_text_price": "Ціна:",
+            "seminars_price": "200 ₴",
+            "button": "Придбати",
+            "img": "seminars-son.jpg"
+        },
+        {
+            "seminars_theme": "Лекція",
+            "seminars_title": "Як позбутися синдрому фантомної сирени",
+            "seminars_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "seminars_text_price": "Ціна:",
+            "seminars_price": "200 ₴",
+            "button": "Придбати",
+            "img": "seminars-sirens.jpg"
+        },
+        {
+            "seminars_theme": "Лекція/Діти",
+            "seminars_title": "Як виростити сина, аби він став крутим, як Ілон Маск",
+            "seminars_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "seminars_text_price": "Ціна:",
+            "seminars_price": "200 ₴",
+            "button": "Придбати",
+            "img": "seminars-son.jpg"
+        }
+    ]
+}

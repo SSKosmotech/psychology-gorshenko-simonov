@@ -351,7 +351,8 @@ header#header {
             list-style: none;
             display: flex;
             flex-direction: row;
-            justify-content: flex-end;
+            justify-content: space-between;
+            // justify-content: flex-end;
             & li {
                 position: relative;
                 // justify-content: space-between; //for mobile when delete margin-right
@@ -904,6 +905,154 @@ section#seminars {
 section#services {
     padding-top: calc(150px + 240px);
     margin-bottom: 150px;
+
+    .services_list {
+        display: flex;
+        justify-content: space-between;
+        gap: 180px;
+        margin-bottom: 80px;
+        &_reverse {
+            flex-direction: row-reverse;
+        }
+
+        .wrap_content {
+            display: flex;
+            flex-direction: column;
+            // padding: 60px 66px 60px 40px;
+            // border: 1px solid pink;
+            max-width: 880px;
+            width: 100%;
+            // padding-right: 180px;
+            padding-top: 60px;
+            position: relative;
+            >p {
+                position: relative;
+                display: block;
+                line-height: 2.375rem;
+                @include fz(20);
+                margin-left: 195px;
+                margin-bottom: 40px;
+                &.services_about::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 18px;
+                    left: -40px;
+                    width: 34px;
+                    height: 3px;
+                    background-color: #D3DDE6;
+                    // background-color: red;
+                }
+            }
+            .services_price {
+                align-self: flex-end;
+                display: flex;
+                // border: 1px solid green;
+                // align-items: center;
+                @include fz(20);
+                line-height: 1.5rem;
+                & p {
+                    margin-left: 15px;
+                }
+                & span {
+                    font-family: 'Arsenal', sans-serif;
+                    color: #536779;
+                    font-weight: 700;
+                    @include fz(60);
+                    // line-height: 4.6875rem;
+                    margin-bottom: 60px;
+                }
+            }
+    
+            .title_wrap {
+                display: flex;
+                margin-bottom: 70px;
+                // border: 1px solid green;
+                p {
+                    color: #536779;
+                    @include fz(110);
+                    line-height: 3.4375rem;
+                    font-weight: 700;
+                    margin-right: 30px;
+                    color: #D3DDE6;
+                    text-shadow: 4px 3px 5px rgba(83, 103, 121, 0.37);
+                    position: relative;
+                }
+                h2 {
+                    color: #264158;
+                    padding-top: 10px;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: -22px;
+                        left: 22px;
+                        width: 500px;
+                        height: 100px;
+                        background-color: #F9FAFB;
+                        // background-color: red;
+                        z-index: -1;
+                    }
+                }
+        
+            }    
+
+            button {
+                // margin-left: 150px;
+                align-self: center;
+            }
+    
+        }
+        
+        .wrap_img {
+            max-width: 560px;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+    
+    }
+  
+    h1 {
+        margin-bottom: 50px;
+        position: relative;
+        &+p {
+            @include fz(20);
+            line-height: 2.375rem;
+            position: relative;
+            // border: 1px solid red;
+            max-width: 735px;
+            width: 100%;
+            padding-left: 58px;
+            margin-bottom: 150px;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 22px;
+                left: 0;
+                width: 45px;
+                height: 3px;
+                background-color: #D3DDE6;
+                // background-color: red;
+            }
+        }
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            max-width: 1020px;
+            width: 100%;
+            height: 700px;
+            background-color: #F9FAFB;
+            top: -390px;
+            left: 0;
+            z-index: -1;
+        }
+    }
+
+    
 }
 
 // <<===========================SECTION #about-us===========================>>

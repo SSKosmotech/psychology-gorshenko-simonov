@@ -9,12 +9,14 @@
       <br>
       <br>
     </div>
+    <SuccessesList />
     <ContactsList />
   </div>
 </template>
 
 <script>
 import ContactsList from '@/components/ContactsList.vue';
+import SuccessesList from '@/components/SuccessesList.vue';
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
 
@@ -22,6 +24,7 @@ export default {
   name: 'HomeView',
   components: {
     ContactsList,
-  }
+    SuccessesList
+}
 }
 </script>

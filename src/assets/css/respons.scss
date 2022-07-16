@@ -86,7 +86,23 @@
                 // height: 100%;
             }
         }
-        
+
+       // <<===========================SECTION #successes===========================>>
+
+
+    //    section#successes .clients_successes_text p {
+    //         // max-width: 600px;
+    //         max-width: calc(100% - 100px);
+    //     }
+
+        section#successes .clients_successes_block_wrap .success_point + .clients_successes_text {
+            justify-content: space-between;
+        }
+
+        section#successes .clients_successes_text .successes_line {
+            right: -180px;
+        }
+       
 
     // <<===========================Footer===========================>>
 
@@ -104,6 +120,7 @@
         }
 
 }
+
 
 @media screen and (max-width: 1430px) {
 
@@ -158,7 +175,14 @@
         }
     }
 
+    // <<===========================SECTION #successes===========================>>
+    section#successes .clients_successes_block_wrap .success_point + .clients_successes_text {
+        margin-bottom: 20px;    
+    }
+
+
 }
+
 
 @media screen and (max-width: 1380px) {
       // <<===========================SECTION #services===========================>>
@@ -318,6 +342,28 @@
 
 }
 
+@media screen and (max-width: 1225px) {
+    // <<===========================SECTION #successes===========================>>
+    section#successes .clients_successes_item {
+        flex-direction: column;
+        align-items: center;
+    }
+    section#successes .wrap_img {
+        max-width: 700px;
+        width: 100%;
+    }
+    section#successes .clients_successes_block_wrap {
+        max-width: 700px;
+        width: 100%;
+    }
+    section#successes .clients_successes_text .successes_line {
+        top: 11px;
+        transform: rotate(0deg);
+    }
+
+}
+
+
 @media screen and (max-width: 1200px) {
 
     // <<===========================HEADER===========================>>
@@ -417,7 +463,18 @@
     section#successes {
         padding-top: 200px;
         margin-bottom: 80px;
+
+        h2 {
+            font-size: 3.2rem;
+        }
     }
+
+    section#successes .wrap_img {
+        height: 100%;
+        width: 100%;
+    }
+
+  
     
 
     // <<===========================Footer===========================>>
@@ -486,9 +543,12 @@
         }
         .wrap_content,
         .wrap_img {
-            max-width: 1000px;
+            max-width: 700px;
             width: 100%;
         }
+    }
+    section#seminars .seminars {
+        align-items: center;
     }
 }
 
@@ -617,8 +677,6 @@
         }
     }
 
-
-
     // <<===========================SECTION #contacts & map===========================>>
 
     section#contacts {    
@@ -661,8 +719,43 @@
     // <<===========================SECTION #services===========================>>
     section#services h1 + p {
         margin-bottom: 70px;
-      }
+    }
+
+    // <<===========================SECTION #successes===========================>>
+    section#successes .clients_successes_block_wrap .success_point + .clients_successes_text{
+        align-items: center;     
+    }        
+    section#successes .clients_successes_text .successes_line {
+        top: 50px;
+        right: -210px;
+        transform: rotate(2deg);
+    }
+    .line_path {
+        height: 277px;
+        width: 216px;
+    }
+    section#successes .clients_successes_text p {
+        // font-size: 1rem;
+    }
+
 }
+
+@media screen and (max-width: 740px) {
+// <<===========================SECTION #successes===========================>>
+
+    section#successes .clients_successes_text p {
+        font-size: 1rem;
+    }
+
+    // <<===========================SECTION #successes===========================>>
+
+    section#successes {
+        h2 {
+            font-size: 3rem;
+        }
+    }
+}
+    
 
 @media screen and (max-width: 720px) {
     // <<===========================SECTION #payment===========================>>
@@ -702,7 +795,17 @@
         line-height: 2rem;
     }
 
+}
 
+@media screen and (max-width: 690px) {
+
+    // <<===========================SECTION #successes===========================>>
+
+    section#successes {
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
 }
 
 
@@ -731,6 +834,21 @@
     section#services h1 {
         font-size: 2.8rem;
     }
+
+// <<===========================SECTION #successes===========================>>
+    section#successes .clients_successes_block_wrap .success_point + .clients_successes_text {
+        flex-direction: column-reverse;
+        // max-width: 500px;
+        // width: 100%;
+    }
+    section#successes .clients_successes_text {
+        width: 150%;
+    }
+    section#successes .clients_successes_text .successes_line {
+        right: -21%;
+        top: 2%;
+    }
+    
 
 }
 
@@ -802,10 +920,6 @@
         }
     } 
 
-
-
-
-
     // <<===========================SECTION #contact_form===========================>>
 
     section#contact_form {
@@ -835,7 +949,54 @@
         }
     
     }
+
+    // <<===========================SECTION #successes===========================>>
+
+    section#successes .clients_successes_block_wrap {
+        padding: 50px;
+    }
+
+    section#successes .clients_successes_text {
+        width: 80%;
+    }
+    section#successes .clients_successes_text .successes_line {
+        right: -38%;
+        top: 30%;
+    }
+    .line_path {
+        height: 207px;
+        width: 126px;
+    }
+
+    section#successes .clients_successes_block_wrap .success_point + .clients_successes_text {
+        flex-direction: row;
+    }
+
+    section#successes .clients_successes_text p {
+        line-height: 1.25rem;
+    }
     
+    section#successes .clients_successes_block_wrap .success_point p {
+        margin-bottom: 0px;
+        font-size: 1.125rem;
+    }
+    
+    .successes_marker {
+        transform: scale(0.7);
+    }
+    
+}
+
+
+@media screen and (max-width: 575px) {
+
+    // <<===========================SECTION #successes===========================>>
+
+    section#successes {
+        h2 {
+            font-size: 2.3rem;
+        }
+    }
 }
 
 @media screen and (max-width: 560px) {
@@ -853,6 +1014,26 @@
         font-size: 2.1rem;
     }
 
+     // <<===========================SECTION #successes===========================>>
+
+     .successes_line {
+        display: none;
+    }
+    
+    section#successes .clients_successes_block_wrap .success_point + .clients_successes_text {
+        flex-direction: column-reverse;
+    }
+
+    section#successes .clients_successes_text {
+        width: 100%;
+    }
+
+    section#successes .clients_successes_block_wrap {
+        padding: 15px;
+    }
+
+
+    
     
 }
 
@@ -1369,4 +1550,15 @@
         font-size: 1rem;
     }
 
+}
+
+@media screen and (max-width: 325px) {
+
+    // <<===========================SECTION #successes===========================>>
+
+    section#successes {
+        h2 {
+            font-size: 2rem;
+        }
+    }
 }

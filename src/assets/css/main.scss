@@ -270,6 +270,7 @@ input[type=tel] {
     max-width: 354px;
     width: 100%;
     background-color: #F79781;
+    box-shadow: 3px 3px 5px rgba(106, 55, 44, 0.16);
     @include fz(30);
     height: 98px;
     &:hover {
@@ -988,7 +989,8 @@ section#services {
                         position: absolute;
                         top: -22px;
                         left: 22px;
-                        width: 500px;
+                        max-width: 500px;
+                        width: 100%;
                         height: 100px;
                         background-color: #F9FAFB;
                         // background-color: red;

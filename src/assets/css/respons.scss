@@ -4,35 +4,6 @@
 //     }
 // }
 
-
-@media screen and (max-width: 1600px) {
-
-    // <<===========================HEADER===========================>>
-
-
-
-    // <<===========================SECTION #contacts & map===========================>>
-
-
-
-    // <<===========================SECTION #contact_form===========================>>
-
-
-        // <<===========================SECTION #seminars===========================>>
-        section#seminars {
-   
-            .wrap_img {
-                width: 100%;
-                // height: 100%;
-            }
-        }
-    
-
-    // <<===========================Footer===========================>>
-
-
-}
-
 @media screen and (max-width: 1600px) {
 
     // <<===========================HEADER===========================>>
@@ -60,8 +31,10 @@
         }
     }
 
-
-
+    header#header .main_menu ul li {
+        margin-right: 0;
+    }
+   
     // <<===========================SECTION #contacts & map===========================>>
 
     section#contacts {    
@@ -91,7 +64,6 @@
         }
 
 
-
     }
 
 
@@ -105,10 +77,31 @@
         }
 
     }
-    
+
+    // <<===========================SECTION #seminars===========================>>
+        section#seminars {
+
+            .wrap_img {
+                width: 100%;
+                // height: 100%;
+            }
+        }
+        
 
     // <<===========================Footer===========================>>
 
+}
+
+
+@media screen and (max-width: 1530px) {
+
+        // <<===========================SECTION #services===========================>>
+
+        section#services {
+            .services_list {
+                gap: 50px;
+            }
+        }
 
 }
 
@@ -165,6 +158,19 @@
         }
     }
 
+}
+
+@media screen and (max-width: 1380px) {
+      // <<===========================SECTION #services===========================>>
+
+      section#services .services_list {
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+
+      section#services h1 + p {
+        margin-bottom: 100px;
+      }
 }
 
 
@@ -651,6 +657,11 @@
         width: 100%;
         height: 100%;
     }
+
+    // <<===========================SECTION #services===========================>>
+    section#services h1 + p {
+        margin-bottom: 70px;
+      }
 }
 
 @media screen and (max-width: 720px) {
@@ -677,6 +688,21 @@
         margin-left: 0;
     }
 
+    // <<===========================SECTION #services===========================>>
+    section#services .services_list .wrap_content > p {
+        margin-left: 50px;
+    }
+
+    section#services .services_list .wrap_content .title_wrap p {
+        font-size: 6rem;
+    }
+
+    section#services .services_list .wrap_content .title_wrap h2 {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+
+
 }
 
 
@@ -697,6 +723,12 @@
 
     // <<===========================SECTION #payment===========================>>
     section#payment h1 {
+        font-size: 2.8rem;
+    }
+
+    // <<===========================SECTION #services===========================>>
+
+    section#services h1 {
         font-size: 2.8rem;
     }
 
@@ -726,6 +758,33 @@
 
 }
 
+
+@media screen and (max-width: 620px) {
+
+    // <<===========================SECTION #services===========================>>
+       section#services h1::after {
+        height: 760px
+       }
+
+
+    // <<===========================SECTION #services===========================>>
+
+    section#services .services_list .wrap_content .title_wrap p {
+        font-size: 5rem;
+    }
+
+    section#services .services_list .wrap_content .title_wrap h2 {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
+    section#services .services_list .wrap_content > p {
+        font-size: 1.15rem;
+    }
+    section#services .services_list .wrap_content .title_wrap {
+        align-items: center;
+    }
+
+}
 
 @media screen and (max-width: 600px) {
 
@@ -794,8 +853,29 @@
         font-size: 2.1rem;
     }
 
+    
 }
 
+
+@media screen and (max-width: 520px) {
+
+     // <<===========================SECTION #services===========================>>
+     section#services h1 + p {
+        font-size: 1.1rem;
+        line-height: 2.2rem;
+     }
+
+     
+    section#services .services_list .wrap_content .title_wrap h2::after {
+        top: -10px;
+    }
+
+    section#services h1 + p::before {
+        top: 15px;
+    }
+    
+
+}
 
 @media screen and (max-width: 490px) {
 
@@ -917,6 +997,7 @@
     
     }
 
+
     // <<===========================Footer===========================>>
 
     footer#footer {
@@ -964,7 +1045,14 @@
         }
     }
     
+ }
 
+ @media screen and (max-width: 430px) {
+     // <<===========================SECTION #services===========================>>
+    
+     section#services h1::after {
+        height: 780px;
+     }
  }
 
 @media screen and (max-width: 410px) {
@@ -1157,6 +1245,12 @@
         font-size: 1.6rem;
     }
 
+    // <<===========================SECTION #services===========================>>
+
+    section#services h1::after {
+        height: 820px;
+    }
+
 }
 
 
@@ -1199,7 +1293,55 @@
                 // height: 300%;
         }
 
+         // <<===========================SECTION #services===========================>>
 
+            section#services h1 {
+            font-size: 1.5625rem;
+            line-height: 1.8925rem;
+            + p {
+                font-size: 1rem;
+                line-height: 1.375rem;
+            }
+        }
+
+        section#services .services_list .wrap_content .title_wrap p {
+            font-size: 4.375rem;
+        }
+        
+        section#services .services_list .wrap_content .title_wrap h2 {
+            font-size: 1.125rem;
+        }
+
+        section#services .services_list .wrap_content > p {
+            font-size: 1rem;
+            line-height: 1.375rem;
+        }
+
+        section#services .services_list .wrap_content .services_price {
+            font-size: 1rem;
+            line-height: 1.25rem;
+        }
+
+        section#services .services_list .wrap_content .services_price span {
+            font-size: 1.875rem;
+            line-height: 1.2rem;
+        }
+        section#services .services_list .wrap_content .services_price p {
+            margin-right: 5px;
+        }
+
+        section#services .services_list .wrap_content > p.services_about::before {
+            top: 9px;
+        }
+
+        section#services .services_list .wrap_content .title_wrap h2::after {
+            width: 95%;
+        }
+
+        section#services h1::after {
+            height: 680px;
+            width: 85%;
+        }
 
 }
 

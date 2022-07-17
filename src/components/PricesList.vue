@@ -34,7 +34,7 @@
                     </slide>
 
                     <template #addons>
-                        <navigation />
+                        <!-- <navigation /> -->
                         <pagination />
                     </template>
                 </carousel>
@@ -160,8 +160,8 @@ export default {
                             itemsToShow: 1,
                             // snapAlign: 'center',
                         },
-                        // 1100px and up
-                        1100: {
+                        // 1050px and up
+                        1050: {
                             itemsToShow: 2,
                             // snapAlign: 'start',
                         },

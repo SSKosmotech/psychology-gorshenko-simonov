@@ -4,7 +4,7 @@
                 <h1>{{ pricesListInfoData.title }}</h1>
 
                 <carousel :settings="sliderSettings">
-                    <slide v-for="(prices, index) in pricesListInfoData.prices" :key="index">
+                    <slide v-for="(prices, index) in pricesListInfoData.prices" :key="index" class="our_prices_slider_item_wrap">
                         <div class="our_prices_slider_item">
 
                             <p>{{ prices.prices_time }}<span>{{ prices.prices_time_name }}</span></p>
@@ -160,7 +160,7 @@ export default {
                             itemsToShow: 1,
                             // snapAlign: 'center',
                         },
-                        // 1050px and up
+                        // 1050px and up (1150px because I changed slider css)
                         1050: {
                             itemsToShow: 2,
                             // snapAlign: 'start',

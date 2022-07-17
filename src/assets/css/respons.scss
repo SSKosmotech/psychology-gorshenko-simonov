@@ -577,11 +577,11 @@
     }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1050px) {
 
 // <<===========================SECTION #prices===========================>>
     section#prices .carousel__viewport {
-        margin-bottom: 20px;
+        margin-bottom: -20px;
     }
 }
     

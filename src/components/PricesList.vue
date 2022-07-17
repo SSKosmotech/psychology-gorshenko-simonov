@@ -3,51 +3,49 @@
             <div class="container">
                 <h1>{{ pricesListInfoData.title }}</h1>
 
+                <carousel :settings="sliderSettings">
+                    <slide v-for="(prices, index) in pricesListInfoData.prices" :key="index">
+                        <div class="our_prices_slider_item">
 
-                <!-- <carousel :items-to-show="1.5">
-                    <slide v-for="slide in 10" :key="slide">
-                        {{ slide }}
+                            <p>{{ prices.prices_time }}<span>{{ prices.prices_time_name }}</span></p>
+                            
+                            <h5>{{ prices.prices_title }}<span>{{ prices.prices_title_color }}</span></h5>
+            
+                            <ul>
+                                <li>{{ prices.prices_about_first }}</li>
+                                <li>{{ prices.prices_about_second }}</li>
+                                <li>{{ prices.prices_about_third }}</li>
+                            </ul>
+            
+                            <div class="slider_prices_wrap">
+                                <div class="slider_prices_first_wrap">
+                                    <p>{{ prices.prices_price_online }}</p>
+                                    <p>{{ prices.prices_price_online_title }}</p>
+                                </div>
+                                <div class="slider_prices_second_wrap">
+                                    <p>{{ prices.prices_price_offline }}</p>
+                                    <p>{{ prices.prices_price_offline_title }}</p>
+                                </div>
+                            </div>
+            
+                            <button type="button" class="btn btn_red">{{ prices.button }}</button>
+
+                        </div>
                     </slide>
 
                     <template #addons>
                         <navigation />
                         <pagination />
                     </template>
-                </carousel> -->
+                </carousel>
+
+            </div>
+            
 
 
-                <div v-for="(prices, index) in pricesListInfoData.prices" :key="index" class="our_prices_slider">
 
 
-                    <div class="our_prices_slider_item">
-
-                        <p>{{ prices.prices_time }}<span>{{ prices.prices_time_name }}</span></p>
-                        
-                        <h5>{{ prices.prices_title }}<span>{{ prices.prices_title_color }}</span></h5>
-        
-                        <ul>
-                            <li>{{ prices.prices_about_first }}</li>
-                            <li>{{ prices.prices_about_second }}</li>
-                            <li>{{ prices.prices_about_third }}</li>
-                        </ul>
-        
-                        <div class="slider_prices_wrap">
-                            <div class="slider_prices_first_wrap">
-                                <p>{{ prices.prices_price_online }}</p>
-                                <p>{{ prices.prices_price_online_title }}</p>
-                            </div>
-                            <div class="slider_prices_second_wrap">
-                                <p>{{ prices.prices_price_offline }}</p>
-                                <p>{{ prices.prices_price_offline_title }}</p>
-                            </div>
-                        </div>
-        
-                        <button type="button" class="btn btn_red">{{ prices.button }}</button>
-
-                    </div>
-
-
-                    <!-- <div class="our_prices_slider_item">
+            <!-- <div class="our_prices_slider_item">
 
                         <p>60<span>хвилин</span></p>
                         
@@ -130,29 +128,50 @@
 
                     </div> -->
 
-
-                </div>
-            </div>
-
         </section>
 </template>
 
 <script>
 import axios from 'axios'
-// import 'vue3-carousel/dist/carousel.css';
-// import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
+import 'vue3-carousel/dist/carousel.css';
+import { Carousel, Slide, Pagination } from 'vue3-carousel';
 
 export default {
     name: 'PricesList',
-//     components: {
-//         Carousel,
-//         Slide,
-//         Pagination,
-//         Navigation,
-//   },
+    components: {
+        Carousel,
+        Slide,
+        Pagination,
+        // Navigation,
+  },
     data () {
             return {
                 pricesListInfoData: [],
+                sliderSettings: {
+                    itemsToShow: 3,
+                    wrapAround: true,
+                    snapAlign: 'start',
+                    // autoplay: 5000,
+                    pauseAutoplayOnHover: true,
+                    slideWidth: 540,
+                    breakpoints: {
+                        // 0px and up
+                        0: {
+                            itemsToShow: 1,
+                            // snapAlign: 'center',
+                        },
+                        // 1100px and up
+                        1100: {
+                            itemsToShow: 2,
+                            // snapAlign: 'start',
+                        },
+                        // 1600 and up
+                        1600: {
+                            itemsToShow: 3,
+                            // snapAlign: 'start',
+                        },
+                    },
+                }
             }
         },
         created() {

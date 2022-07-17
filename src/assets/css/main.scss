@@ -1081,8 +1081,8 @@ section#prices {
         background: rgba(211, 221, 230, 0.4);
         max-width: 440px;
         width: 100%;
-        height: 645px;
-        padding: 3px 23px 46px 38px;
+        height: 675px;
+        padding: 20px 23px 46px 38px;
         p {
             align-self: flex-end;
             color: #D3DDE6;
@@ -1100,7 +1100,9 @@ section#prices {
             @include fz(30);
             line-height: 2.25rem;
             margin-bottom: 30px;
+            align-self: flex-start;
             & span {
+                align-self: flex-start;
                 color: #D3DDE6;
             }
         }
@@ -1176,7 +1178,25 @@ section#prices {
         }
     }
 
-
+    .carousel__pagination-button {
+        background: linear-gradient(180deg, rgba(247, 151, 129, 0.2) 0%, rgba(242, 218, 213, 0) 100%), rgba(247, 151, 129, 0.7);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+    .carousel__pagination-button--active {
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.2) 0%, rgba(242, 218, 213, 0) 100%), #F79781;
+        // width: 30px;
+        // height: 30px;
+        transform: scale(1.5);
+    }
+    .carousel__pagination {
+        align-items: center;
+        // padding-top: 80px;
+    }
+    .carousel__viewport {
+        margin-bottom: 60px;
+    }
 }
 
 // <<===========================SECTION #successes===========================>>

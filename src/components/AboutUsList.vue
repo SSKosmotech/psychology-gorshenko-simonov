@@ -3,9 +3,15 @@
             <div class="container">
 
                 <div class="about_us_wrap">
-                    <div class="wrap_img">
+                    <!-- <div class="wrap_img">
                         <img src="@/assets/images/about_us_img.jpg" alt="Про нас фото">
-                    </div>
+                    </div> -->
+                    <div class="wrap_img">
+                        <picture v-for="(img, index) in aboutUsListInfoData.image" :key="index">
+                                <source :srcset="require(`@/assets/images/`+img.about_img_mobile)" media="(max-width: 490px)"/>
+                                <img :src="require(`@/assets/images/`+img.about_img)" :alt="aboutUsListInfoData.title+` — Фото`">
+                        </picture>
+                     </div>
 
                     <div class="about_us_title_wrap">
                         <h1>{{ aboutUsListInfoData.title }}</h1>

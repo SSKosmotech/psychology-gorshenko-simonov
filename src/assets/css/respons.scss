@@ -124,6 +124,22 @@
         margin-bottom: 10px;
     }
 
+     // <<===========================SECTION #about-us===========================>>
+
+       section#about_us .about_us_title_wrap {
+        padding: 50px;
+       }
+
+       section#about_us .about_us_title_wrap::after {
+        max-width: 1200px;
+        width: 100%;
+       }
+
+    // <<===========================SECTION #specialists===========================>>
+    section#specialists .wrap_img {
+        height: 100%;
+    }
+
     // <<===========================Footer===========================>>
 
 }
@@ -286,8 +302,18 @@
             align-items: center;
         }
 
+}
 
+@media screen and (max-width: 1320px) {
 
+    // <<===========================SECTION #specialists===========================>>
+    section#specialists .specialists_wrap .meta_wrap {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    section#specialists .specialists_wrap .meta_wrap p {
+        margin-right: 0;
+    }
 }
 
 
@@ -471,6 +497,68 @@
         margin-bottom: 80px;
   
     }
+
+    section#about_us .about_us_wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+    section#about_us .wrap_img {
+        max-width: 700px;
+        width: 100%;
+    }
+    section#about_us .about_us_title_wrap {
+        max-width: 700px;
+        width: 100%;
+    }
+    section#about_us .about_us_title_wrap::after {
+        top: -1043px;
+    }
+
+    section#about_us .wrap_img {
+        border-radius: 522px 0 0 0;
+    }
+
+    section#about_us .about_us_title_wrap h1 {
+        font-size: 3.2rem;
+    }
+
+    section#about_us .five_reasons .reason_wrap svg {
+        transform: scale(0.9);
+    }
+
+    section#about_us .five_reasons h2 {
+        font-size: 3.2rem;
+    }
+
+    section#about_us .about_us_wrap {
+        margin-bottom: 60px;
+    }
+
+    // <<===========================SECTION #specialists===========================>>
+    
+    section#specialists .specialists_item_wrap {
+            flex-direction: column;
+            align-items: center;
+    }
+    section#specialists .wrap_img,
+    section#specialists .specialists_wrap {
+        max-width: 700px;
+        width: 100%;
+    }
+    section#specialists .wrap_img {
+        border-radius: 545px 0 0 0;
+    }
+    section#specialists .specialists_item_wrap_reverse .wrap_img {
+        border-radius: 0 545px 0 0;
+    }
+
+    section#specialists .btn_red {
+        align-self: center;
+    }
+
+    section#specialists h1 {
+        font-size: 3.2rem;
+    }
     
     // <<===========================SECTION #prices===========================>>
 
@@ -499,6 +587,7 @@
         height: 100%;
         width: 100%;
     }
+    
 
   
     
@@ -635,6 +724,30 @@
     }
 
 }
+
+@media screen and (max-width: 900px) {
+
+// <<===========================SECTION #about-us===========================>>
+
+    section#about_us .five_reasons .reason_wrap svg {
+        transform: scale(0.8);
+    }
+
+    section#about_us .five_reasons .reasons_top,
+    section#about_us .five_reasons .reasons_bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        // margin-right: 0;
+    }
+    section#about_us .five_reasons .reason_wrap {
+        margin-right: 0;
+    }
+
+
+}
+
+
 
 
 
@@ -835,6 +948,17 @@
         line-height: 2rem;
     }
 
+    // <<===========================SECTION #about-us===========================>>
+
+    section#about_us .five_reasons h2 {
+        font-size: 2.8rem;
+    }
+
+    // <<===========================SECTION #specialists===========================>>
+    section#specialists .specialists_wrap .meta_wrap {
+        align-self: center;
+    }
+
 }
 
 @media screen and (max-width: 690px) {
@@ -942,6 +1066,29 @@
         align-items: center;
     }
 
+    // <<===========================SECTION #about-us===========================>>
+    section#about_us .about_us_title_wrap h1 {
+        font-size: 2.8rem;
+    }
+
+    section#about_us .five_reasons h2 {
+        font-size: 2rem;
+        margin-left: 60px;
+    }
+
+    section#about_us .about_us_title_wrap > p {
+        font-size: 1.15rem;
+    }
+
+    section#about_us .about_us_title_wrap {
+        padding: 20px;
+    }
+
+    section#about_us .five_reasons h2 span {
+        font-size: 5rem;
+        left: -60px;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -1036,6 +1183,27 @@
         h2 {
             font-size: 2.3rem;
         }
+    }
+
+    // <<===========================SECTION #specialists===========================>>
+    section#specialists .specialists_wrap .icons_wrap {
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+    section#specialists .specialists_wrap .icon_wrap {
+        margin-right: 0;
+    }
+
+     // <<===========================SECTION #specialists===========================>>
+
+     section#specialists h1 {
+        font-size: 2.5rem;
+    }
+    section#specialists .specialists_wrap {
+        padding: 30px;
     }
 }
 
@@ -1230,6 +1398,35 @@
     }
 
 
+  // <<===========================SECTION #about-us===========================>>
+  section#about_us .about_us_title_wrap h1 {
+    font-size: 2rem;
+    }
+
+    section#about_us .five_reasons h2 {
+        font-size: 1.5rem;
+        margin-left: 50px;
+    }
+
+    section#about_us .about_us_title_wrap > p {
+        font-size: 1rem;
+    }
+
+    section#about_us .five_reasons h2 span {
+        font-size: 4rem;
+        left: -50px;
+    }
+
+    section#about_us .about_us_title_wrap {
+        padding: 20px;
+    }
+
+    section#about_us .wrap_img {
+        border-radius: 522px 522px 0 0;
+    }
+
+
+
 
     // <<===========================Footer===========================>>
 
@@ -1243,6 +1440,15 @@
     }
         
 }
+
+@media screen and (max-width: 465px) {
+    // <<===========================SECTION #specialists===========================>>
+    section#specialists .specialists_wrap h3 {
+        font-size: 1.7rem;
+        line-height: 2.25rem;
+    }
+}
+
 
 
 @media screen and (max-width: 450px) {
@@ -1609,6 +1815,30 @@
         height: 560px
     }
 
+    // <<===========================SECTION #about-us===========================>>
+    section#about_us .about_us_title_wrap > p {
+        line-height: 2rem;
+    }
+    section#about_us .five_reasons h2 {
+        line-height: 2.4rem;
+    }
+    section#about_us .five_reasons h2 {
+        font-size: 1.3rem;
+    }
+    section#about_us .about_us_title_wrap h1 {
+        font-size: 1.7rem;
+    }
+    section#about_us .about_us_title_wrap::after {
+        height: 1130px;
+    }
+
+    // <<===========================SECTION #specialists===========================>>
+    section#specialists .specialists_wrap > p {
+        font-size: 1.15rem;
+        line-height: 2rem;
+    }
+
+
 }
 
 @media screen and (max-width: 360px) {
@@ -1625,6 +1855,13 @@
     // <<===========================SECTION #payment===========================>>
     section#payment .title_wrap h2 {
         font-size: 1.125rem;
+    }
+
+    
+    // <<===========================SECTION #specialists===========================>>
+
+    section#specialists h1 {
+        font-size: 1.7rem;
     }
 
 }
@@ -1646,4 +1883,10 @@
             font-size: 2rem;
         }
     }
+     // <<===========================SECTION #specialists===========================>>
+     section#specialists .specialists_wrap > p {
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
 }
+

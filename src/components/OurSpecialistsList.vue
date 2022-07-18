@@ -1,6 +1,8 @@
 <template>
-    <section id="our_specialists">
+    <section id="specialists">
         <div class="container">
+
+            <h1>Наші спеціалісти</h1>
         
             <div class="wrap_content">
 

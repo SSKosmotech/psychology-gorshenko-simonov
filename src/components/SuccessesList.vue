@@ -14,7 +14,6 @@
                             <img :src="require(`@/assets/images/`+successes.successes_img)" :alt="successesListInfoData.title+` — Петрик`">
                         </picture>
 
-                        
                     </div>
 
                     <div class="clients_successes_block_wrap">

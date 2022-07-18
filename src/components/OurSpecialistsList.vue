@@ -152,7 +152,25 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
-    name: 'OurSpecialistsList'
+    name: 'OurSpecialistsList',
+    data () {
+        return {
+            ourSpecialistsListInfoData: [],
+        }
+    },
+    created() {
+        axios
+            .get('/data/aboutUsInfo.json')
+            .then(resp=>{
+                this.ourSpecialistsListInfoData = resp.data
+            })
+            .catch(err=>{
+                this.$toast.error(err)
+            })
+
+    }
 }
 </script>

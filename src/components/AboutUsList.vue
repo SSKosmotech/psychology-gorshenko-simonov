@@ -110,7 +110,25 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
-    name: 'AboutUsList'
+    name: 'AboutUsList',
+    data () {
+        return {
+            aboutUsListInfoData: [],
+        }
+    },
+    created() {
+        axios
+            .get('/data/aboutUsInfo.json')
+            .then(resp=>{
+                this.aboutUsListInfoData = resp.data
+            })
+            .catch(err=>{
+                this.$toast.error(err)
+            })
+
+    }
 }
 </script>

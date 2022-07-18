@@ -1,0 +1,75 @@
+{
+    "title": "Ціни",
+    "about_us": [
+        {
+            "prices_time": "60",
+            "prices_time_name": "хвилин",
+            "prices_title": "Консультація у ",
+            "prices_title_color": "власниці центру",
+            "prices_about_first": "Lorem ipsum dolor sit amet",
+            "prices_about_second": "Lorem ipsum dolor sit amet",
+            "prices_about_third": "Lorem ipsum dolor sit amet",
+            "prices_price_online": "500₴",
+            "prices_price_online_title": "Онлайн",
+            "prices_price_offline": "700₴",
+            "prices_price_offline_title": "Офлайн",
+            "button": "Записатися"
+        },
+        {
+            "prices_time": "60",
+            "prices_time_name": "хвилин",
+            "prices_title": "Перша ",
+            "prices_title_color": "консультація",
+            "prices_about_first": "Lorem ipsum dolor sit amet",
+            "prices_about_second": "Lorem ipsum dolor sit amet",
+            "prices_about_third": "Lorem ipsum dolor sit amet",
+            "prices_price_online": "400₴",
+            "prices_price_online_title": "Онлайн",
+            "prices_price_offline": "500₴",
+            "prices_price_offline_title": "Офлайн",
+            "button": "Записатися"
+        },
+        {
+            "prices_time": "60",
+            "prices_time_name": "хвилин",
+            "prices_title": "Наступна ",
+            "prices_title_color": "консультація",
+            "prices_about_first": "Lorem ipsum dolor sit amet",
+            "prices_about_second": "Lorem ipsum dolor sit amet",
+            "prices_about_third": "Lorem ipsum dolor sit amet",
+            "prices_price_online": "300₴",
+            "prices_price_online_title": "Онлайн",
+            "prices_price_offline": "400₴",
+            "prices_price_offline_title": "Офлайн",
+            "button": "Записатися"
+        },
+        {
+            "prices_time": "60",
+            "prices_time_name": "хвилин",
+            "prices_title": "На виїзд ",
+            "prices_title_color": "консультація",
+            "prices_about_first": "Lorem ipsum dolor sit amet",
+            "prices_about_second": "Lorem ipsum dolor sit amet",
+            "prices_about_third": "Lorem ipsum dolor sit amet",
+            "prices_price_online": "300₴",
+            "prices_price_online_title": "Онлайн",
+            "prices_price_offline": "400₴",
+            "prices_price_offline_title": "Офлайн",
+            "button": "Записатися"
+        },
+        {
+            "prices_time": "60",
+            "prices_time_name": "хвилин",
+            "prices_title": "Консультація ",
+            "prices_title_color": "сертифікат",
+            "prices_about_first": "Lorem ipsum dolor sit amet",
+            "prices_about_second": "Lorem ipsum dolor sit amet",
+            "prices_about_third": "Lorem ipsum dolor sit amet",
+            "prices_price_online": "300₴",
+            "prices_price_online_title": "Онлайн",
+            "prices_price_offline": "400₴",
+            "prices_price_offline_title": "Офлайн",
+            "button": "Записатися"
+        }
+    ]
+}

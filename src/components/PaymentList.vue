@@ -15,7 +15,11 @@
                     </div>
     
                     <div class="wrap_img">
-                        <img src="@/assets/images/payment-card.jpg" alt="Оплата на картку">
+                        <!-- <img :src="require(`@/assets/images/`+payments.img)" alt="Оплата на картку"> -->
+                        <picture>
+                            <source :srcset="require(`@/assets/images/`+paymants.img_mobile)" media="(max-width: 1350px)"/>
+                            <img :src="require(`@/assets/images/`+paymants.img)" :alt="paymants.button_text+` — Фото`">
+                        </picture>
                     </div>
                 </div>
                 

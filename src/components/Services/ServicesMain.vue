@@ -8,6 +8,8 @@
 
                 <div class="accordion_services_wrap">
 
+                    
+
                     <div class="accordion_services_item">
                         <div class="wrap_tab">
                             <div class="accordion_services_tab">
@@ -69,10 +71,16 @@
 
 <script>
 import axios from 'axios'
+// import Accordion from "@/components/Accordion/accordion";
+// import AccordionItem from "@/components/Accordion/accordion-item";
 
 export default {
     name: 'ServicesMain',
-        data () {
+    // components: {
+    //     Accordion,
+    //     AccordionItem
+    // },
+    data () {
         return {
             servicesMainInfoData: [],
         }

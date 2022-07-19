@@ -1407,6 +1407,11 @@ section#first_screen_main_page {
         overflow: hidden;
         border-radius: 520px 0 0 0;
         filter: drop-shadow(3px 3px 5px rgba(75, 104, 130, 0.17));
+        img {
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
     }
     .first_screen_content_wrap {
         max-width: 898px;
@@ -1620,6 +1625,9 @@ section#turn_to_us {
         img {
             object-fit: none;
             object-position: 0px -60px;
+            &:hover {
+                // transform: scale(1.1);
+            }
         }
     }
     .turn_to_us_bottom_info {

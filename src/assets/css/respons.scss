@@ -634,8 +634,35 @@
         display: none;
     }
 
-  
+    // <<===========================SECTION #turn_to_us===========================>>
     
+        section#turn_to_us .turn_to_us_img_wrap{
+            margin-bottom: 40px;
+        }
+        section#turn_to_us .turn_to_us_img_wrap {
+            flex-direction: column;
+            align-items: center;
+        }
+        section#turn_to_us .turn_to_us_img_wrap_reverse {
+            background-color: #F9FAFB;
+        }
+        section#turn_to_us .turn_to_us_img_wrap_reverse {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        section#turn_to_us .turn_to_us_img_wrap img {
+            filter: grayscale(100%);
+        }
+
+        section#turn_to_us .wrap_img,
+        section#turn_to_us .turn_to_us_img_wrap_reverse .wrap_img {
+            border-radius: 0 400px 400px 0;
+        }
+
+        section#turn_to_us h1 {
+            font-size: 3.2rem;
+        }
 
     // <<===========================Footer===========================>>
 
@@ -840,6 +867,25 @@
     }
 
 }
+
+@media screen and (max-width: 810px) {
+    // <<===========================SECTION #turn_to_us===========================>>
+    
+    section#turn_to_us h1 {
+        font-size: 2.5rem;
+    }
+    section#turn_to_us .turn_to_us_text_wrap h4 {
+        font-size: 1.6rem;
+    }
+    section#turn_to_us .turn_to_us_bottom_info p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    section#turn_to_us .turn_to_us_bottom_info {
+        padding: 40px 80px;
+    }
+}
+
 
 @media screen and (max-width: 790px) {
     // <<===========================SECTION #for_psychologists===========================>>
@@ -1115,6 +1161,33 @@
 
     section#for_psychologists {
         margin-bottom: 40px;    
+    }
+
+    // <<===========================SECTION #turn_to_us===========================>>
+    
+       section#turn_to_us h1 {
+        font-size: 2.2rem;
+    }
+    section#turn_to_us .turn_to_us_text_wrap h4 {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+    section#turn_to_us .turn_to_us_text_wrap p {
+        font-size: 1.2rem;
+    }
+    section#turn_to_us .turn_to_us_bottom_info p {
+        font-size: 1.3rem;
+    }
+    section#turn_to_us .turn_to_us_bottom_info {
+        padding: 40px 40px;
+    }
+
+    section#turn_to_us .turn_to_us_bottom_info::before {
+        top: -150px
+    }
+
+    section#turn_to_us .turn_to_us_bottom_info::after {
+        top: -43px;
     }
 
 
@@ -1973,6 +2046,13 @@
     section#first_screen_main_page .first_screen_content_wrap button {
         top: 560px;
     }
+    section#first_screen_main_page .first_screen_content_wrap::after {
+        display: block;
+        top: -240px;
+        height: 600px;
+        width: 458px;
+        // width: 100%;
+    }
 
 }
 
@@ -2005,6 +2085,10 @@
     section#first_screen_main_page .first_screen_content_wrap button {
         top: 550px;
     }
+
+    section#first_screen_main_page .first_screen_content_wrap::after {
+        width: 445px;
+    }
     
 }
 
@@ -2020,6 +2104,9 @@
     section#first_screen_main_page .first_screen_content_wrap button {
         top: 540px;
     }
+    section#first_screen_main_page .first_screen_content_wrap::after {
+        width: 435px;
+    }
 
 }
 
@@ -2028,6 +2115,9 @@
     
     section#first_screen_main_page .first_screen_content_wrap button {
         top: 520px;
+    }
+    section#first_screen_main_page .first_screen_content_wrap::after {
+        width: 425px;
     }
 }
 
@@ -2044,6 +2134,11 @@
      section#specialists .specialists_wrap > p {
         font-size: 1rem;
         line-height: 1.8rem;
+    }
+    // <<===========================SECTION #first_screen_main_page===========================>>
+
+    section#first_screen_main_page .first_screen_content_wrap::after {
+        width: 415px;
     }
 
 }

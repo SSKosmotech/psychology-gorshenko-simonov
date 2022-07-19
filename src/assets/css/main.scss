@@ -1400,6 +1400,11 @@ section#first_screen_main_page {
     .wrap_first_screen {
         display: flex;
     }
+    .wrap_img {
+        height: 100%;
+        overflow: hidden;
+        border-radius: 520px 0 0 0;
+    }
     .first_screen_content_wrap {
         max-width: 898px;
         width: 100%;
@@ -1460,7 +1465,40 @@ section#first_screen_main_page {
             }
         }
         button {
+            position: relative;
             margin-bottom: 58px;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50px;
+                right: -55px;
+                width: 160px;
+                height: 245px;
+                transform: rotate(40deg);
+                border-radius: 50%;
+                border: 3px solid #F79781;
+                clip: rect(0,490px,20px,0);
+                // top: -40%;
+                // left: 50%;
+                // border: 3px solid #F79781;
+            }
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 107px;
+                right: -80px;
+                width: 15px;
+                height: 15px;
+                border-top: 3px solid #F79781;
+                border-left: 3px solid #F79781;
+                transform: rotate(225deg);
+            }
+        }
+        .sign_up_wrap {
+            position: relative;
+            // border: 1px solid red;
         }
         .sign_up_price_wrap {
             display: flex;

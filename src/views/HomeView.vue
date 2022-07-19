@@ -10,7 +10,7 @@
       <!-- <br> -->
     <!-- </div> -->
     <FirstScreenMainPage />
-    <ServicesMain />
+    <!-- <ServicesMain /> -->
     <PricesList />
     <SuccessesList />
     <ContactsList />
@@ -21,7 +21,7 @@
 import ContactsList from '@/components/ContactsList.vue';
 import SuccessesList from '@/components/SuccessesList.vue';
 import PricesList from '@/components/PricesList.vue';
-import ServicesMain from '@/components/Services/ServicesMain.vue';
+// import ServicesMain from '@/components/Services/ServicesMain.vue';
 import FirstScreenMainPage from '@/components/MainPages/FirstScreenMainPage.vue';
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
@@ -32,7 +32,7 @@ export default {
     ContactsList,
     SuccessesList,
     PricesList,
-    ServicesMain,
+    // ServicesMain,
     FirstScreenMainPage
 }
 }

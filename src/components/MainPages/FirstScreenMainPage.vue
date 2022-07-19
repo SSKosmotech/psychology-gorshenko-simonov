@@ -4,26 +4,26 @@
             <div class="container">
 
                 <div class="wrap_first_screen">
-                    <div class="wrap_img">
-                        <img src="@/assets/images/first_screen_main_page.jpg" alt="Центр Практичної психології — фото">
+                    <div class="wrap_img" v-for="(img, index) in firstScreenInfoData.image" :key="index">
+                        <img :src="require(`@/assets/images/`+img.first_screen_img)" :alt="firstScreenInfoData.type+` `+firstScreenInfoData.name+` — Фото`">
                     </div>
     
                     <div class="first_screen_content_wrap">
     
-                        <h3>Центр</h3>
-                        <h1>Практичної психології</h1>
-                        <h2>Меланії Горшенко</h2>
-                        <p>Твій психолог завжди поруч, де б ти не був.</p>
+                        <h3>{{firstScreenInfoData.type}}</h3>
+                        <h1>{{firstScreenInfoData.name}}</h1>
+                        <h2>{{firstScreenInfoData.surname}}</h2>
+                        <p>{{firstScreenInfoData.quote}}</p>
                         <div class="sign_up_wrap">
-                            <button type="button" class="btn btn_red">Записатися</button>
+                            <button type="button" class="btn btn_red">{{firstScreenInfoData.button}}</button>
                             <div class="sign_up_price_wrap">
                                 <div class="sign_up_text">
-                                    <p>Знижено ціну</p>
-                                    <p>на перше заняття: </p>
+                                    <p>{{firstScreenInfoData.promotion}}</p>
+                                    <p>{{firstScreenInfoData.promotion_text}}</p>
                                 </div>
                                 <div class="sign_up_price">
-                                    <p>300₴</p>
-                                    <p>600 ₴</p>
+                                    <p>{{firstScreenInfoData.promotion_price}}</p>
+                                    <p>{{firstScreenInfoData.promotion_old_price}}</p>
                                 </div>
                             </div>
                         </div>
@@ -37,7 +37,25 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
-    name: "FirstScreenMainPage"
+    name: "FirstScreenMainPage",
+    data () {
+        return {
+            firstScreenInfoData: [],
+        }
+    },
+    created() {
+        axios
+            .get('/data/firstScreenMainPageInfo.json')
+            .then(resp=>{
+                this.firstScreenInfoData = resp.data
+            })
+            .catch(err=>{
+                this.$toast.error(err)
+            })
+
+    }
 }
 </script>

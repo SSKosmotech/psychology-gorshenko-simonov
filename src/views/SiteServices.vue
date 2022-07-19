@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import ServicesList from '@/components/ServicesList.vue';
+import ServicesList from '@/components/Services/ServicesList.vue';
 export default {
     name: "SiteServices",
     components: { ServicesList }

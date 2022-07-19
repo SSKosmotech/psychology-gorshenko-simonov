@@ -11,6 +11,7 @@
     <!-- </div> -->
     <FirstScreenMainPage />
     <TurnToUs />
+    <WhyWe />
     <ServicesMain />
     <PricesList />
     <SuccessesList />
@@ -25,6 +26,7 @@ import PricesList from '@/components/PricesList.vue';
 import ServicesMain from '@/components/Services/ServicesMain.vue';
 import FirstScreenMainPage from '@/components/MainPages/FirstScreenMainPage.vue';
 import TurnToUs from '@/components/MainPages/TurnToUs.vue';
+import WhyWe from '@/components/MainPages/WhyWe.vue';
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
 
@@ -36,7 +38,8 @@ export default {
     PricesList,
     ServicesMain,
     FirstScreenMainPage,
-    TurnToUs
+    TurnToUs,
+    WhyWe
 }
 }
 </script>

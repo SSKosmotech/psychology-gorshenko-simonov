@@ -1689,6 +1689,114 @@ section#turn_to_us {
     }
 }
 
+// <<===========================SECTION #turn_to_us===========================>>
+section#why_we {
+    h1 {
+        margin-bottom: 70px;
+    }    
+    .our_lists_detail_wrap {
+        padding-top: 50px;
+        ul {
+            list-style: none;
+            // margin-bottom: 110px;
+            li {
+                @include fz(30);
+                line-height: 2.375rem;
+                position: relative;
+                margin-bottom: 40px;
+                padding-left: 40px;
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 22px;
+                    left: 0;
+                    width: 12px;
+                    height: 4px;
+                    background-color: #F79781;
+                    // border-bottom: 3px solid #536779;
+                    // border-left: 3px solid #536779;
+                    border-radius: 200px;
+                    transform: rotate(55deg);
+                }
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 17px;
+                    left: 2px;
+                    width: 24px;
+                    height: 4px;
+                    background-color: #F79781;
+                    // border-bottom: 3px solid #536779;
+                    // border-left: 3px solid #536779;
+                    border-radius: 200px;
+                    transform: rotate(-58deg);
+                }
+            }
+        }
+        a {
+            @include fz(30);
+            line-height: 2.375rem;
+            text-decoration: underline;
+            position: relative;
+            display: block;
+            color: #536779;
+            &::before {
+                content: '';
+                display:block;
+                position: absolute;
+                top: 22px;
+                left: 210px;
+                width: 46px;
+                height: 3px;
+                background-color: #F79781;
+                // border-bottom: 3px solid #536779;
+                // border-left: 3px solid #536779;
+            }
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 16px;
+                left: 240px;
+                width: 15px;
+                height: 15px;
+                border-bottom: 3px solid #F79781;
+                border-left: 3px solid #F79781;
+
+                // background-color: #F79781;
+                transform: rotate(225deg);
+            }
+        }
+    }
+    
+    .our_lists_wrap {
+        display: flex;
+    }
+    .our_lists_detail_wrap {
+        max-width: 953px;
+        width: 100%;
+        border: 1px solid red;
+
+    }
+    .wrap_img {
+        border-radius: 0 400px 0 0;
+        border: 1px solid red;
+        overflow: hidden;
+        height: 474px;
+        max-width: 474px;
+        width: 100%;
+        img {
+            object-fit: none;
+            object-position: 0px 0px;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
 
 // <<===========================SECTION #prices===========================>>
 

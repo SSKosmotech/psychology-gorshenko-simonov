@@ -69,31 +69,47 @@
 
             </div>       
         </div>
-        
-       
+
+       <back-to-top bottom="50px" right="50px">
+            <button type="button" class="btn btn-info btn-to-top"><i class="fa fa-chevron-up"></i></button>
+        </back-to-top>
+
     </header>
 </template>
 
 <script>
+import BackToTop from "../../node_modules/vue-backtotop/src/BackToTop.vue";
 export default {
-    name: 'SiteHeader',
-    data () {
+    data() {
         return {
             isFixed: false,
             isOpenMobileMenu: false
-        }
+        };
     },
     created() {
-        window.addEventListener('scroll', this.toggleFixedScroll)
+        window.addEventListener("scroll", this.toggleFixedScroll);
     },
     methods: {
-        toggleFixedScroll(){
+        toggleFixedScroll() {
             // this.isFixed = window.scrollY > 148
-            this.isFixed = window.scrollY > 80
+            this.isFixed = window.scrollY > 80;
         },
         toggleMobileMenu() {
-            this.isOpenMobileMenu = !this.isOpenMobileMenu
+            this.isOpenMobileMenu = !this.isOpenMobileMenu;
         }
-    }
+    },
+    components: { BackToTop }
 }
 </script>
+
+<style scoped>
+
+.btn-to-top {
+  width: 60px;
+  height: 60px;
+  padding: 10px 16px;
+  border-radius: 50%;
+  font-size: 22px;
+  line-height: 22px;
+}
+</style>

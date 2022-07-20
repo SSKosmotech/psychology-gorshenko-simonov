@@ -3,13 +3,20 @@
 
             <div class="container">
 
-                <h1>Як замовити консультацію</h1>
+               <h1>{{ consultationInfoData.title }}</h1>
 
                <div class="wrap_all_block_consultation">
 
-                    <div class="consultation_wrap">
+                    <div  class="consultation_wrap">
 
-                        <div class="consultation_item_wrap">
+                        <div v-for="(consultation, index) in consultationInfoData.consultation_lists" :key="index" class="consultation_item_wrap">
+                            <p>{{ consultation.consultation_count }}</p>
+                            <h4>{{ consultation.consultation_step }}</h4>
+                            <p>{{ consultation.consultation_to_do }}</p>
+                        </div> 
+
+
+                        <!-- <div class="consultation_item_wrap">
                             <p>01</p>
                             <h4>Залишіть заявку</h4>
                             <p>Наш координатор напише вам у вказаний месенджер, щоб підібрати психолога та формат роботи.</p>
@@ -31,16 +38,14 @@
                             <p>03</p>
                             <h4>Почніть спілкування</h4>
                             <p>Після оплати послуги психолог зв'яжеться з вами у вказаному месенджері цього ж дня. Ви домовитеся про дату та час, і почнете роботу.</p>
-                        </div>
+                        </div> -->
                         
                     </div>
 
-                    <button type="button" class="btn btn_red">Залишити заявку</button>
+                    <button type="button" class="btn btn_red">{{ consultationInfoData.button }}</button>
 
                </div>
                 
-
-
 
             </div>
             
@@ -49,7 +54,24 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
-    name: 'ConsultationList'
+    name: 'ConsultationList',
+    data () {
+        return {
+            consultationInfoData: [],
+        }
+    },
+    created() {
+        axios
+            .get('/data/consultationInfo.json')
+            .then(resp=>{
+                this.consultationInfoData = resp.data
+            })
+            .catch(err=>{
+                this.$toast.error(err)
+            })
+    }
 }
 </script>

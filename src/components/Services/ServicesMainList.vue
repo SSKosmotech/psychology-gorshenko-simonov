@@ -132,7 +132,7 @@ import {
 import '@dafcoe/vue-collapsible-panel/dist/vue-collapsible-panel.css'
 
 export default {
-    name: 'ServicesMain',
+    name: 'ServicesMainList',
     components: {
         VueCollapsiblePanelGroup,
         VueCollapsiblePanel

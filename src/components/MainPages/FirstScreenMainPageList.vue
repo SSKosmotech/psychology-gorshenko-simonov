@@ -40,7 +40,7 @@
 import axios from 'axios'
 
 export default {
-    name: "FirstScreenMainPage",
+    name: "FirstScreenMainPageList",
     data () {
         return {
             firstScreenInfoData: [],

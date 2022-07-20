@@ -99,7 +99,7 @@
 import axios from 'axios'
 
 export default {
-    name: 'TurnToUs',
+    name: 'TurnToUsList',
     data () {
         return {
             turnToUsListInfoData: [],

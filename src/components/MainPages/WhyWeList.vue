@@ -52,7 +52,7 @@
 import axios from 'axios'
 
 export default {
-    name: 'WhyWe',
+    name: 'WhyWeList',
     data () {
         return {
             whyWeListInfoData: [],

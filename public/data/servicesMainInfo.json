@@ -1,0 +1,31 @@
+{
+    "title": "Наші Послуги",
+    "img": [
+        {
+            "image": "main-services-01.jpg"
+        }
+    ],
+    "accordion_services": [
+        {
+            "accordion_title": "Індивідуальні заняття",
+            "accordion_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "accordion_price_name": "Ціна: ",
+            "accordion_price_text": "від: ",
+            "accordion_price": "700 ₴"
+        },
+        {
+            "accordion_title": "Сімейний психотерапевт",
+            "accordion_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "accordion_price_name": "Ціна: ",
+            "accordion_price_text": "від: ",
+            "accordion_price": "400 ₴"
+        },
+        {
+            "accordion_title": "Дитячий психотерапевт",
+            "accordion_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "accordion_price_name": "Ціна: ",
+            "accordion_price_text": "від: ",
+            "accordion_price": "500 ₴"
+        }
+    ]
+}

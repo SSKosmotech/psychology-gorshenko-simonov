@@ -2,29 +2,32 @@
     <section id="we_offer_you">
         <div class="container">
 
-            <h1>Пропонуємо вам</h1>
+            <h1>{{ weOfferYouInfoData.title }}</h1>
 
             <div class="offer_wrap">
                 <div class="offer_content_wrap">
-                    <p>За місяць до цілі</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    <p>{{ weOfferYouInfoData.offer_paragraph_before }}</p>
+                    <p>{{ weOfferYouInfoData.offer_paragraph_text }}</p>
                     <ul>
+                        <template v-for="(list, index) in weOfferYouInfoData.we_offer_you" :key="index">
+                            <li v-html="list.offer_item"></li>
+                        </template>
+                        <!-- <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</li>
                         <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</li>
                         <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</li>
-                        <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</li> -->
                     </ul>
                     <div class="change_life_wrap">
-                        <button type="button" class="btn btn_red">Змінити життя</button>
+                        <button type="button" class="btn btn_red">{{ weOfferYouInfoData.button }}</button>
                         <div class="offer_price_wrap">
-                            <p>Ціна трансформації:</p>
-                            <span>400₴</span>
+                            <p>{{ weOfferYouInfoData.price_name }}</p>
+                            <span>{{ weOfferYouInfoData.price }}</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="wrap_img">
-                    <img src="@/assets/images/we-offer-you-img.jpg" alt="we_offer_you — Фото">
+                <div v-for="(img, index) in weOfferYouInfoData.img" :key="index" class="wrap_img">
+                    <img :src="require(`@/assets/images/`+img.image)" :alt="weOfferYouInfoData.title+` — Фото`">
                 </div>
 
             </div>
@@ -34,7 +37,24 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
-    name: 'OfferYou'
+    name: 'OfferYou',
+    data () {
+        return {
+            weOfferYouInfoData: [],
+        }
+    },
+    created() {
+        axios
+            .get('/data/weOfferYouInfo.json')
+            .then(resp=>{
+                this.weOfferYouInfoData = resp.data
+            })
+            .catch(err=>{
+                this.$toast.error(err)
+            })
+    }
 }
 </script>

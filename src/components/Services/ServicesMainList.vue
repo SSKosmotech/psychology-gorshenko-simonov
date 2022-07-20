@@ -4,14 +4,29 @@
 
             <div class="container">
 
-                <h2>Наші Послуги</h2>
+                <h2>{{ servicesMainInfoData.title }}</h2>
 
                 <div class="accordion_services_wrap">
 
                     <div class="accordion_services_item">
 
                         <div class="wrap_tab">
-                             <vue-collapsible-panel-group accordion>
+                             <vue-collapsible-panel-group accordion >
+                                <vue-collapsible-panel v-bind:expanded="index === 0" v-for="(accordion, index) in servicesMainInfoData.accordion_services" :key="index">
+                                    <template #title>
+                                    <div class="accordion_services_tab">
+                                        <h5>{{ accordion.accordion_title }}</h5>
+                                    </div>
+                                    </template>
+                                    <template #content>
+                                        <div class="accordion_services_info">
+                                            <p>{{ accordion.accordion_paragraph }}</p>
+                                            <p><span>{{ accordion.accordion_price_name }}</span>{{ accordion.accordion_price_text }}<span>{{ accordion.accordion_price }}</span></p>
+                                        </div>
+                                    </template>
+                                </vue-collapsible-panel>
+
+                                <!--vue-collapsible-panel-group accordion>
                                 <vue-collapsible-panel>
                                     <template #title>
                                     <div class="accordion_services_tab">
@@ -50,13 +65,13 @@
                                             <p><span>Ціна: </span>від <span>500 ₴</span></p>
                                         </div>
                                     </template>
-                                </vue-collapsible-panel>
+                                </vue-collapsible-panel> -->
                             </vue-collapsible-panel-group>
                         </div>
 
 
-                        <div class="wrap_img">
-                            <img src="@/assets/images/main-services-01.jpg" alt="Індивідуальні заняття — фото">
+                        <div v-for="(img, index) in servicesMainInfoData.img" :key="index" class="wrap_img">
+                            <img :src="require(`@/assets/images/`+img.image)" :alt="servicesMainInfoData.title+` — Фото`">
                         </div>
                     </div>
 
@@ -144,7 +159,7 @@ export default {
     },
     created() {
         axios
-            .get('/data/servicesInfo.json')
+            .get('/data/servicesMainInfo.json')
             .then(resp=>{
                 this.servicesMainInfoData = resp.data
             })

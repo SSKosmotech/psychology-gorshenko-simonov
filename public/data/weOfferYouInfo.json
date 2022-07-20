@@ -1,0 +1,30 @@
+{
+    "title": "Пропонуємо вам",
+    "offer_paragraph_before": "За місяць до цілі",
+    "offer_paragraph_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    "button": "Змінити життя",
+    "price_name": "Ціна трансформації:",
+    "price": "400₴",
+    "img": [
+        {
+            "image": "we-offer-you-img.jpg"
+        }
+    ],
+    "we_offer_you": [
+        {
+            "offer_item": "<b>75%</b> людей залишаються з нами й надалі"
+        },
+        {
+            "offer_item": "<b>24/7</b> - час, який можемо тобі присвятити"
+        },
+        {
+            "offer_item": "Ми <b>персонально</b> під тебе складемо план нашої роботи"
+        },
+        {
+            "offer_item": "Наші фахівці вивчають <b>нові підходи</b> до терапії"
+        },
+        {
+            "offer_item": "<b>Європейські</b> методи терапії"
+        }
+    ]
+}

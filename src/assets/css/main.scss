@@ -1691,6 +1691,7 @@ section#turn_to_us {
 
 // <<===========================SECTION #turn_to_us===========================>>
 section#why_we {
+    margin-bottom: 150px;
     h1 {
         margin-bottom: 70px;
     }    
@@ -1711,8 +1712,8 @@ section#why_we {
                     position: absolute;
                     top: 22px;
                     left: 0;
-                    width: 12px;
-                    height: 4px;
+                    width: 15px;
+                    height: 5px;
                     background-color: #F79781;
                     // border-bottom: 3px solid #536779;
                     // border-left: 3px solid #536779;
@@ -1724,9 +1725,9 @@ section#why_we {
                     display: block;
                     position: absolute;
                     top: 17px;
-                    left: 2px;
-                    width: 24px;
-                    height: 4px;
+                    left: 3px;
+                    width: 27px;
+                    height: 5px;
                     background-color: #F79781;
                     // border-bottom: 3px solid #536779;
                     // border-left: 3px solid #536779;
@@ -1773,16 +1774,17 @@ section#why_we {
     
     .our_lists_wrap {
         display: flex;
+        margin-bottom: 60px;
     }
     .our_lists_detail_wrap {
         max-width: 953px;
         width: 100%;
-        border: 1px solid red;
+        // border: 1px solid red;
 
     }
     .wrap_img {
         border-radius: 0 400px 0 0;
-        border: 1px solid red;
+        // border: 1px solid red;
         overflow: hidden;
         height: 474px;
         max-width: 474px;
@@ -1792,6 +1794,34 @@ section#why_we {
             object-position: 0px 0px;
             &:hover {
                 transform: scale(1.1);
+            }
+        }
+    }
+    .interesting_offer {
+        display: flex;
+        .interesting_offer_text_wrap {
+            color: #264158;
+            @include fz(27);
+            line-height: 2.3125rem;
+            background-color: #F9FAFB;
+            max-width: 910px;
+            padding: 80px 166px 80px 80px;
+            width: 100%;
+            & p:nth-child(odd) {
+                margin-bottom: 20px;
+            }
+        }
+        .wrap_interesting_img {
+            max-width: 530px;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 400px 0 0 400px;
+            // border: 1px solid red;
+            img {
+                object-position: -100px 0px;
+                &:hover {
+                    transform: scale(1.1);
+                }
             }
         }
     }
@@ -1910,7 +1940,7 @@ section#prices {
                     top: 22px;
                     left: 0;
                     width: 12px;
-                    height: 4px;
+                    height: 5px;
                     background-color: #536779;
                     // border-bottom: 3px solid #536779;
                     // border-left: 3px solid #536779;
@@ -1924,7 +1954,7 @@ section#prices {
                     top: 17px;
                     left: 2px;
                     width: 24px;
-                    height: 4px;
+                    height: 5px;
                     background-color: #536779;
                     // border-bottom: 3px solid #536779;
                     // border-left: 3px solid #536779;

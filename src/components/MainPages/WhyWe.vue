@@ -22,15 +22,15 @@
                         </div>
 
                         <div class="wrap_img">
-                            <img src="@/assets/images/why_we_pic.jpg" alt="why_we_pic - фото">
+                            <img src="@/assets/images/why-we-reasons.jpg" alt="why_we_pic - фото">
                         </div>
 
                     </div>
 
                     <div class="interesting_offer">
                         
-                        <div class="wrap_img">
-                            <img src="" alt="">
+                        <div class="wrap_interesting_img">
+                            <img src="@/assets/images/why-we-interesting-offer.jpg" alt="interesting-offer — фото">
                         </div>
 
                         <div class="interesting_offer_text_wrap">

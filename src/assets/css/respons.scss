@@ -653,6 +653,7 @@
 
         section#turn_to_us .turn_to_us_img_wrap img {
             filter: grayscale(100%);
+            object-position: 0px -55px;
         }
 
         section#turn_to_us .wrap_img,
@@ -663,6 +664,47 @@
         section#turn_to_us h1 {
             font-size: 3.2rem;
         }
+
+    // <<===========================SECTION #why_we===========================>>
+    section#why_we h1{
+        font-size: 3.2rem;    
+    }
+
+    section#why_we .our_lists_wrap {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    section#why_we .wrap_img {
+        border-radius: 400px 400px 0 0;
+        width: 100%;
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    section#why_we .interesting_offer {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    section#why_we .interesting_offer .wrap_interesting_img {
+            // border-radius: 400px 400px 0 0;
+            border-radius: 400px 400px 0 0;
+            // max-width: 534px;
+            height: 355px;
+            // width: 100%;
+            border: 1px solid red;
+            img {
+                object-position: -76px -3px;
+                object-fit: none;
+            }
+    }
+    section#why_we .interesting_offer .interesting_offer_text_wrap {
+        padding: 40px;
+    }
 
     // <<===========================Footer===========================>>
 
@@ -1333,6 +1375,27 @@
                 display: none;
             }
         }
+        
+
+        // <<===========================SECTION #why_we===========================>>
+        section#why_we .our_lists_detail_wrap ul li {
+            font-size: 1.475rem;
+            line-height: 2rem;
+        }
+        section#why_we .our_lists_detail_wrap a {
+            font-size: 1.475rem;
+        }
+        section#why_we .our_lists_detail_wrap a::before {
+            left: 160px;
+        }
+        section#why_we .our_lists_detail_wrap a::after {
+            left: 190px;
+        }
+        section#why_we .interesting_offer .interesting_offer_text_wrap {
+            font-size: 1.4rem;
+            line-height: 2rem;
+        }
+
 
 }
 
@@ -1424,7 +1487,6 @@
     section#services h1 + p::before {
         top: 15px;
     }
-    
 
 }
 
@@ -1545,8 +1607,13 @@
                 line-height: 4rem;
             }
         }
-    
     }
+
+    // <<===========================SECTION #why_we===========================>>
+    section#why_we .our_lists_detail_wrap {
+        padding-top: 0;
+    }
+    
 
 
     // <<===========================SECTION #prices===========================>>
@@ -1557,6 +1624,10 @@
     
     section#prices .our_prices_slider_item {
         height: 630px
+    }
+
+    section#why_we .wrap_img {
+        height: 400px;
     }
 
 
@@ -1609,6 +1680,10 @@
         font-size: 1.7rem;
         line-height: 2.25rem;
     }
+    // <<===========================SECTION #why_we===========================>>
+    section#why_we h1 {
+        font-size: 2.6rem;
+    } 
 }
 
 
@@ -1644,7 +1719,7 @@
           
             }
         }
-    }
+    }  
     
  }
 
@@ -1681,6 +1756,26 @@
         top: 600px;
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    // <<===========================SECTION #why_we===========================>>
+  
+    section#why_we .our_lists_detail_wrap ul li {
+        font-size: 1.275rem;
+        line-height: 1.6rem;
+    }
+    section#why_we .our_lists_detail_wrap a {
+        font-size: 1.275rem;
+    }
+    section#why_we .our_lists_detail_wrap a::before {
+        left: 140px;
+    }
+    section#why_we .our_lists_detail_wrap a::after {
+        left: 170px;
+    }
+    section#why_we .interesting_offer .interesting_offer_text_wrap {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
     }
 
  }
@@ -2054,6 +2149,24 @@
         // width: 100%;
     }
 
+    // <<===========================SECTION #turn_to_us===========================>>
+        section#turn_to_us .turn_to_us_bottom_info p {
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+        }
+        section#turn_to_us .turn_to_us_bottom_info {
+            padding: 15px;
+        }
+        section#why_we h1 {
+            font-size: 2.2rem;
+        }
+
+        
+    // <<===========================SECTION #prices===========================>>
+
+    section#why_we .wrap_img {
+        height: 350px;
+    }
 }
 
 @media screen and (max-width: 360px) {

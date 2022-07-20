@@ -1467,6 +1467,7 @@ section#first_screen_main_page {
         overflow: hidden;
         border-radius: 520px 0 0 0;
         filter: drop-shadow(3px 3px 5px rgba(75, 104, 130, 0.17));
+        margin-bottom: 150px;//*** maybe need delete
         img {
             &:hover {
                 transform: scale(1.1);
@@ -2133,7 +2134,7 @@ section#consultation {
                 z-index: 1;
             }
         }
-        &:nth-child(3) {
+        &:nth-child(4) {
             // border: 1px solid red;
             // color: red;
             position: relative;
@@ -2142,7 +2143,7 @@ section#consultation {
                 display: block;
                 position: absolute;
                 bottom: -21px;
-                right: -160px;
+                left: -205px;
                 width: 216px;
                 height: 245px;
                 transform: rotate(12deg);
@@ -2158,8 +2159,8 @@ section#consultation {
                 content: '';
                 display: block;
                 position: absolute;
-                bottom: 208px;
-                right: -26px;
+                bottom: 209px;
+                left: -137px;
                 width: 15px;
                 height: 15px;
                 border-top: 3px solid #F79781;
@@ -2866,6 +2867,13 @@ footer#footer {
 
 .hamb_menu {
     display: none;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
 }
 
 

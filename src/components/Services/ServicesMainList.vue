@@ -11,7 +11,7 @@
                     <div class="accordion_services_item">
 
                         <div class="wrap_tab">
-                             <vue-collapsible-panel-group accordion >
+                             <vue-collapsible-panel-group accordion>
                                 <vue-collapsible-panel v-bind:expanded="index === 0" v-for="(accordion, index) in servicesMainInfoData.accordion_services" :key="index">
                                     <template #title>
                                     <div class="accordion_services_tab">

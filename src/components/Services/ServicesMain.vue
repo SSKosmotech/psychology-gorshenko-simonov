@@ -8,10 +8,6 @@
 
                 <div class="accordion_services_wrap">
 
-                    
-
-                    
-
                     <div class="accordion_services_item">
 
                         <div class="wrap_tab">

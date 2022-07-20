@@ -706,6 +706,18 @@
         padding: 40px;
     }
 
+    // <<===========================SECTION #accordion_services===========================>>
+
+    section#accordion_services .accordion_services_item{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 40px;
+
+        .vcpg {
+            border-right: 3px solid #D3DDE6;
+        }
+    }
+
     // <<===========================Footer===========================>>
 
     footer#footer {
@@ -1466,7 +1478,28 @@
     }
 
 
+    // <<===========================SECTION #accordion_services===========================>>
+
+    section#accordion_services .accordion_services_item h5 {
+        font-size: 1.6rem;
+        line-height: 3rem;
+    }
+    section#accordion_services .accordion_services_info p:first-of-type {
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+    section#accordion_services .accordion_services_info span:nth-child(odd) {
+        font-size: 1.6rem;
+    }
+    section#accordion_services .accordion_services_info span:nth-child(even) {
+        font-size: 3.4rem;
+    }
+
+     // <<===========================SECTION #accordion_services===========================>>
     
+     section#accordion_services h2 {
+        font-size: 3.2rem;
+     }
     
 }
 
@@ -1720,6 +1753,26 @@
             }
         }
     }  
+
+    
+
+    // <<===========================SECTION #accordion_services===========================>>
+
+    section#accordion_services .accordion_services_item h5 {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+    section#accordion_services .accordion_services_info span:nth-child(odd) {
+        font-size: 1.4rem;
+    }
+    section#accordion_services .accordion_services_info span:nth-child(even) {
+        font-size: 3rem;
+    }
+
+    section#accordion_services h2 {
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+    }
     
  }
 
@@ -2009,6 +2062,28 @@
 }
 
 
+@media screen and (max-width: 380px) {
+
+    // <<===========================SECTION #accordion_services===========================>>
+    
+    section#accordion_services .accordion_services_item h5 {
+        font-size: 1.06rem;
+        line-height: 1.8rem;
+    }
+    section#accordion_services .accordion_services_info span:nth-child(odd) {
+        font-size: 1.4rem;
+    }
+    section#accordion_services .accordion_services_info span:nth-child(even) {
+        font-size: 2.5rem;
+    }
+    section#accordion_services .vcp__body {
+        height: 340px !important;
+    }
+}
+
+
+
+
 
 @media screen and (max-width: 375px) {
 
@@ -2202,6 +2277,12 @@
     section#first_screen_main_page .first_screen_content_wrap::after {
         width: 445px;
     }
+
+    // <<===========================SECTION #accordion_services===========================>>
+
+    section#accordion_services h2 {
+        font-size: 2.2rem;
+    }
     
 }
 
@@ -2220,6 +2301,9 @@
     section#first_screen_main_page .first_screen_content_wrap::after {
         width: 435px;
     }
+
+    
+
 
 }
 

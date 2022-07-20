@@ -1081,6 +1081,8 @@ section#services {
 
 // <<===========================SECTION #accordion_services===========================>>
 section#accordion_services {
+    margin-bottom: 150px;
+    
     h2 {
         text-transform: uppercase;
         @include fz(60);
@@ -1089,20 +1091,22 @@ section#accordion_services {
         color: #264158;
         margin-bottom: 113px;
     }
-   
+       
     .accordion_services_item {
         display: flex;
         h5 {
             color: #264158;
             @include fz(30);
             line-height: 3.4375rem;
+            padding-top: 20px;
             margin-bottom: 1.4375rem;
         }
         .wrap_tab {
             max-width: 880px;
             width: 100%;
-            border-left: 3px solid #D3DDE6;
-            border-bottom: 3px solid #D3DDE6;
+            height: 630px;
+            // border-left: 3px solid #D3DDE6;
+            // border-bottom: 3px solid #D3DDE6;
         }
         .wrap_img {
             // width: 100%;
@@ -1141,6 +1145,57 @@ section#accordion_services {
     .vcp__header-title {
         font-weight: 700;
     }
+    .vcp__header {
+        background-color: #FFF;
+        height: 100px;
+    }
+    .vcp__body {
+        height: 325px !important;
+        transition: all 0s ease;
+        // transition: all .3s cubic-bezier(2.5,.25,0,1);
+        // overflow-anchor: none;
+
+    }
+    .vcp {
+        // --border-color: #D3DDE6;
+        --border-color: #D3DDE6;
+        --base-color: green;
+        
+    }
+    .vcpg {
+        border: 3px solid #D3DDE6;
+        // border-top: transparent;
+        border-right: transparent;
+    }
+    .vcpg[data-v-63943e43] .vcp:not(:first-of-type) .vcp__header { 
+        border-top: 3px solid var(--border-color);
+    }
+    section#accordion_services .vcpg[data-v-63943e43] .vcp:not(:first-of-type) .vcp__header {
+        border-top: 3px solid var(--border-color);
+    }
+    .vcpg[data-v-63943e43] .vcp__body {
+        border-top: 3px solid var(--border-color);
+    }
+    .vcp--expanded .vcp__header-icon[data-v-64321428] {
+        position: relative;
+        transition: all 0s ease;
+        ::before {
+            transition: all 0s ease;
+            content: '';
+            display: block;
+            position: absolute;
+            top: -12px;
+            left: 863px;
+            height: 100px;
+            width: 6px;
+            background-color: #F79781;
+            border-radius: 200px;
+        }
+    }
+    .vcp__header-icon[data-v-64321428] svg {
+        display: none;
+    }
+
 }
 
 // <<===========================SECTION #about-us===========================>>

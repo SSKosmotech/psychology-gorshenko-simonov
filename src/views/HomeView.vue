@@ -12,8 +12,8 @@
     <FirstScreenMainPage />
     <ConsultationList/>
     <ServicesMain />
-    <OfferYouList/>
     <TurnToUs />
+    <OfferYouList/>
     <WhyWe />
     <PricesList />
     <SuccessesList />

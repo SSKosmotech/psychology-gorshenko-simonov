@@ -117,15 +117,46 @@
             </div>
     
             <div class="btn-centr">
-                <button class="btn" type="button">Вам передзвонити?</button>
+                <button class="btn" type="button" @click.prevent="showForm">Вам передзвонити?</button>
             </div>
-        </div>
-       
+        </div>   
     </footer>
+
+        <modal-window v-if="showModal" @close="showModal = false">
+            <!-- <template v-slot:header></template> -->
+            <template #header>
+                <button type="button" class="close_modal_btn" @click="showModal = false"></button>
+            </template>
+            <template #body>
+                <!-- <FeedbackForm/> -->
+                <FeedbackForm/>
+            </template>
+            <template #footer>
+                <div></div>
+            </template>
+
+        </modal-window>
+    
 </template>
 
 <script>
+import ModalWindow from '@/components/ModalWindow'
+import FeedbackForm from './FeedbackForm.vue';
 export default {
-    name: 'SiteFooter',
+    name: "SiteFooter",
+    components: { 
+        ModalWindow,
+        FeedbackForm 
+    },
+    data() {
+        return {
+            showModal: false
+        }
+    },
+    methods: {
+        showForm() {
+            this.showModal = true
+        }
+    }
 }
 </script>

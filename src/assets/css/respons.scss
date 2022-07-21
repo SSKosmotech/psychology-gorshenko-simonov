@@ -543,6 +543,11 @@
         order: -1;
     }
 
+    section#for_psychologists_form form {
+        flex-direction: column;
+        align-items: center;
+    }
+
     // <<===========================SECTION #payment===========================>>
     section#payment {
         padding-top: 200px;
@@ -1064,7 +1069,7 @@
     // <<===========================HEADER===========================>>
 
     header#header {
-        .btn-callback {
+        .btn_callback {
             display: none;
         }
     }

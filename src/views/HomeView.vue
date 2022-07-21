@@ -1,21 +1,13 @@
 <template>
   <div class="home">
-    <!-- <div class="container"> -->
-      <!-- <h1 style="padding-top: 240px">Hello Serhii</h1> -->
-      <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-      <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-      <!-- <br> -->
-      <!-- <br> -->
-      <!-- <br> -->
-      <!-- <br> -->
-    <!-- </div> -->
     <FirstScreenMainPage />
-    <ConsultationList/>
-    <ServicesMain />
     <TurnToUs />
-    <OfferYouList/>
     <WhyWe />
+    <OurSpecialistsList/>
+    <ServicesMain />
     <PricesList />
+    <OfferYouList/>
+    <ConsultationList/>
     <SuccessesList />
     <ContactsList />
   </div>
@@ -31,6 +23,7 @@ import TurnToUs from '@/components/MainPages/TurnToUsList.vue';
 import WhyWe from '@/components/MainPages/WhyWeList.vue';
 import OfferYouList from '@/components/MainPages/OfferYouList.vue';
 import ConsultationList from '@/components/MainPages/ConsultationList.vue';
+import OurSpecialistsList from '@/components/OurSpecialistsList.vue';
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
 
@@ -45,7 +38,8 @@ export default {
     TurnToUs,
     WhyWe,
     OfferYouList,
-    ConsultationList
+    ConsultationList,
+    OurSpecialistsList
 }
 }
 </script>

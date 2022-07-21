@@ -19,9 +19,11 @@
                                 <!-- <li>Наші фахівці вивчають <b>нові підходи</b> до терапії</li> -->
                                 <!-- <li><b>Європейські</b> методи терапії</li> -->
                             </ul>
-                            <a :href="whyWeListInfoData.link" target="_blank">
+                            <!-- <a :href="whyWeListInfoData.link" target="_blank" :title="whyWeListInfoData.title"> 
+                                </a>-->
+                            <router-link to="/about-us" target="_blank" :title="whyWeListInfoData.title">
                                 {{ whyWeListInfoData.link_text }}
-                            </a>
+                            </router-link>
                         </div>
 
                         <div class="wrap_img">

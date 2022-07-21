@@ -1,5 +1,5 @@
 <template>
-    <section id="successes">
+    <section id="successes" v-if="successesListInfoData !== null">
 
             <div class="container">
 
@@ -141,7 +141,7 @@ export default {
     name: 'SuccessesList',
     data () {
         return {
-            successesListInfoData: [],
+            successesListInfoData: null,
         }
     },
     created() {

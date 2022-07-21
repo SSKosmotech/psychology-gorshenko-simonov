@@ -1,5 +1,5 @@
 <template>
-    <section id="consultation">
+    <section id="consultation" v-if="consultationInfoData !== null">
 
             <div class="container">
 
@@ -60,7 +60,7 @@ export default {
     name: 'ConsultationList',
     data () {
         return {
-            consultationInfoData: [],
+            consultationInfoData: null,
         }
     },
     created() {

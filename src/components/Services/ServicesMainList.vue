@@ -1,6 +1,6 @@
 <template>
     
-        <section id="accordion_services">
+        <section id="accordion_services" v-if="servicesMainInfoData !== null">
 
             <div class="container">
 
@@ -70,8 +70,8 @@
                         </div>
 
 
-                        <div v-for="(img, index) in servicesMainInfoData.img" :key="index" class="wrap_img">
-                            <img :src="require(`@/assets/images/`+img.image)" :alt="servicesMainInfoData.title+` — Фото`">
+                        <div class="wrap_img">
+                            <img :src="require(`@/assets/images/`+servicesMainInfoData.image)" :alt="servicesMainInfoData.title+` — Фото`">
                         </div>
                     </div>
 
@@ -154,7 +154,7 @@ export default {
     },
     data () {
         return {
-            servicesMainInfoData: [],
+            servicesMainInfoData: null,
         }
     },
     created() {

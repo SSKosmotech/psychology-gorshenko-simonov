@@ -1,11 +1,11 @@
 <template>
 
-    <section id="first_screen_main_page">
+    <section id="first_screen_main_page" v-if="firstScreenInfoData !== null">
             <div class="container">
 
                 <div class="wrap_first_screen">
-                    <div class="wrap_img" v-for="(img, index) in firstScreenInfoData.image" :key="index">
-                        <img :src="require(`@/assets/images/`+img.first_screen_img)" :alt="firstScreenInfoData.type+` `+firstScreenInfoData.name+` — Фото`">
+                    <div class="wrap_img">
+                        <img :src="require(`@/assets/images/`+firstScreenInfoData.first_screen_img)" :alt="firstScreenInfoData.type+` `+firstScreenInfoData.name+` — Фото`">
                     </div>
     
                     <div class="first_screen_content_wrap">
@@ -43,7 +43,7 @@ export default {
     name: "FirstScreenMainPageList",
     data () {
         return {
-            firstScreenInfoData: [],
+            firstScreenInfoData: null,
         }
     },
     created() {

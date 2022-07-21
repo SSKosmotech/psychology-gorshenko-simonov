@@ -1,9 +1,12 @@
 <template>
+
+<div v-if="psychologistsInfoData !== null">
+
     <section id="for_psychologists">
             <div class="container">
                 <div class="psychologists_content_wrap">
-                    <div class="wrap_img" v-for="(img, index) in psychologistsInfoData.image" :key="index">
-                        <img :src="require(`@/assets/images/`+img.img)" :alt="psychologistsInfoData.title" />
+                    <div class="wrap_img">
+                        <img :src="require(`@/assets/images/`+psychologistsInfoData.img)" :alt="psychologistsInfoData.title" />
                         <!-- <img :src="require('@/assets/images/'+pic)" :alt="title" /> -->
                         <!-- <img src="@/assets/images/for-psychologists.jpg" alt="Для психологів" /> -->
                     </div>
@@ -35,6 +38,8 @@
 
         </div>
     </section>
+</div>
+    
 </template>
 
 <script>
@@ -43,7 +48,7 @@ export default {
     name: 'ForPsychologistsList',
     data () {
         return {
-            psychologistsInfoData: []
+            psychologistsInfoData: null,
         }
     },
     created() {

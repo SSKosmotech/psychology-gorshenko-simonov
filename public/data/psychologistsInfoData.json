@@ -8,9 +8,5 @@
         "name": "Марія",
         "phone": "+ 38 (000) 000-00-00"
     },
-    "image": [
-        {
-            "img": "for-psychologists.jpg"
-        }
-    ]
+    "img": "for-psychologists.jpg"
 }

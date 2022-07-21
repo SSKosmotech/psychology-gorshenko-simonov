@@ -1,5 +1,5 @@
 <template>
-    <section id="about_us">
+    <section id="about_us" v-if="aboutUsListInfoData !== null">
             <div class="container">
 
                 <div class="about_us_wrap">
@@ -7,9 +7,9 @@
                         <img src="@/assets/images/about_us_img.jpg" alt="Про нас фото">
                     </div> -->
                     <div class="wrap_img">
-                        <picture v-for="(img, index) in aboutUsListInfoData.image" :key="index">
-                                <source :srcset="require(`@/assets/images/`+img.about_img_mobile)" media="(max-width: 490px)"/>
-                                <img :src="require(`@/assets/images/`+img.about_img)" :alt="aboutUsListInfoData.title+` — Фото`">
+                        <picture>
+                                <source :srcset="require(`@/assets/images/`+aboutUsListInfoData.about_img_mobile)" media="(max-width: 490px)"/>
+                                <img :src="require(`@/assets/images/`+aboutUsListInfoData.about_img)" :alt="aboutUsListInfoData.title+` — Фото`">
                         </picture>
                      </div>
 
@@ -132,7 +132,7 @@ export default {
     name: 'AboutUsList',
     data () {
         return {
-            aboutUsListInfoData: [],
+            aboutUsListInfoData: null,
         }
     },
     created() {

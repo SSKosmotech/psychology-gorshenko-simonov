@@ -1,5 +1,5 @@
 <template>
-    <section id="why_we">
+    <section id="why_we" v-if="whyWeListInfoData !== null">
             <div class="container">
             
                 <h1>{{ whyWeListInfoData.title }}</h1>
@@ -24,16 +24,16 @@
                             </a>
                         </div>
 
-                        <div v-for="(img, index) in whyWeListInfoData.image" :key="index" class="wrap_img">
-                            <img :src="require(`@/assets/images/`+img.img_reasons)" :alt="whyWeListInfoData.title+`_01 — Фото`">
+                        <div class="wrap_img">
+                            <img :src="require(`@/assets/images/`+whyWeListInfoData.img_reasons)" :alt="whyWeListInfoData.title+`_01 — Фото`">
                         </div>
 
                     </div>
 
                     <div class="interesting_offer">
                         
-                        <div v-for="(img, index) in whyWeListInfoData.image" :key="index" class="wrap_interesting_img">
-                            <img :src="require(`@/assets/images/`+img.img_interesting_offer)" :alt="whyWeListInfoData.title+`_02 — Фото`">
+                        <div class="wrap_interesting_img">
+                            <img :src="require(`@/assets/images/`+whyWeListInfoData.img_interesting_offer)" :alt="whyWeListInfoData.title+`_02 — Фото`">
                         </div>
 
                         <div class="interesting_offer_text_wrap">
@@ -55,7 +55,7 @@ export default {
     name: 'WhyWeList',
     data () {
         return {
-            whyWeListInfoData: [],
+            whyWeListInfoData: null,
         }
     },
     created() {

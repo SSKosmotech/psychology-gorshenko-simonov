@@ -1,10 +1,6 @@
 {
     "title": "Наші Послуги",
-    "img": [
-        {
-            "image": "main-services-01.jpg"
-        }
-    ],
+    "image": "main-services-01.jpg",
     "accordion_services": [
         {
             "accordion_title": "Індивідуальні заняття",

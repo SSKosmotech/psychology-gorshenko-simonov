@@ -2,12 +2,8 @@
     "title": "Чому саме ми?",
     "interesting_offer_01": "<b>Зменшили вартість</b> наших послуг на час військових дій. <b>Все буде Україна!</b>",
     "interesting_offer_02": "Нехай панічні атаки та тривожність йдуть слідом за орками.",
-    "image": [
-        {
-            "img_reasons": "why-we-reasons.jpg",
-            "img_interesting_offer": "why-we-interesting-offer.jpg"
-        }
-    ],
+    "img_reasons": "why-we-reasons.jpg",
+    "img_interesting_offer": "why-we-interesting-offer.jpg",
     "why_we_lists": [
         {
             "list_item": "<b>75%</b> людей залишаються з нами й надалі"

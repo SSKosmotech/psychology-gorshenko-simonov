@@ -1,5 +1,5 @@
 <template>
-    <section id="prices">
+    <section id="prices" v-if="pricesListInfoData !== null">
             <div class="container">
                 <h1>{{ pricesListInfoData.title }}</h1>
 
@@ -146,7 +146,7 @@ export default {
   },
     data () {
             return {
-                pricesListInfoData: [],
+                pricesListInfoData: null,
                 sliderSettings: {
                     itemsToShow: 3,
                     wrapAround: true,

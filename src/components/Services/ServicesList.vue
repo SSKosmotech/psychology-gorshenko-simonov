@@ -1,5 +1,5 @@
 <template>
-    <section id="services">
+    <section id="services" v-if="servicesListInfoData !== null">
             <div class="container">
                 <div>
                     <h1>{{ servicesListInfoData.title }}</h1>
@@ -98,7 +98,7 @@
 
             </div>
 
-        </section>
+    </section>
 </template>
 
 <script>
@@ -107,7 +107,7 @@ export default {
     name: 'ServicesList',
         data () {
         return {
-            servicesListInfoData: [],
+            servicesListInfoData: null,
         }
     },
     created() {

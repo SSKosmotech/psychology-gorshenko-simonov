@@ -1,5 +1,5 @@
 <template>
-    <section id="turn_to_us">
+    <section id="turn_to_us" v-if="turnToUsListInfoData !== null">
             <div class="container">
 
                 <h1>{{turnToUsListInfoData.title}}</h1>
@@ -102,7 +102,7 @@ export default {
     name: 'TurnToUsList',
     data () {
         return {
-            turnToUsListInfoData: [],
+            turnToUsListInfoData: null,
         }
     },
     created() {

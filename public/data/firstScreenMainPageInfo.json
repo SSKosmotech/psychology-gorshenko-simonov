@@ -8,10 +8,5 @@
     "promotion_text": "на перше заняття: ",
     "promotion_price": "300₴",
     "promotion_old_price": "600 ₴",
-
-    "image": [
-        {
-            "first_screen_img": "first_screen_main_page.jpg"
-        }
-    ]
+    "first_screen_img": "first_screen_main_page.jpg"
 }

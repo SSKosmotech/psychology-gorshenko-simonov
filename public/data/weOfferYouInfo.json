@@ -5,11 +5,7 @@
     "button": "Змінити життя",
     "price_name": "Ціна трансформації:",
     "price": "400₴",
-    "img": [
-        {
-            "image": "we-offer-you-img.jpg"
-        }
-    ],
+    "image": "we-offer-you-img.jpg",
     "we_offer_you": [
         {
             "offer_item": "<b>75%</b> людей залишаються з нами й надалі"

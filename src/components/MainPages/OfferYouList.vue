@@ -1,5 +1,5 @@
 <template>
-    <section id="we_offer_you">
+    <section id="we_offer_you" v-if="weOfferYouInfoData !== null">
         <div class="container">
 
             <h1>{{ weOfferYouInfoData.title }}</h1>
@@ -26,8 +26,8 @@
                     </div>
                 </div>
 
-                <div v-for="(img, index) in weOfferYouInfoData.img" :key="index" class="wrap_img">
-                    <img :src="require(`@/assets/images/`+img.image)" :alt="weOfferYouInfoData.title+` — Фото`">
+                <div class="wrap_img">
+                    <img :src="require(`@/assets/images/`+weOfferYouInfoData.image)" :alt="weOfferYouInfoData.title+` — Фото`">
                 </div>
 
             </div>
@@ -43,7 +43,7 @@ export default {
     name: 'OfferYou',
     data () {
         return {
-            weOfferYouInfoData: [],
+            weOfferYouInfoData: null,
         }
     },
     created() {

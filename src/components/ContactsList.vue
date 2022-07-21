@@ -1,6 +1,6 @@
 <!-- <template v-for="(contactInfo, index) in contactsListInfoData" :key="index" > -->
 <template>
-    <section id="contacts" >
+    <section id="contacts">
         <div class="container">
 
             <!-- <h1>Контакти</h1> -->

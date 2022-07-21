@@ -1,5 +1,5 @@
 <template>
-    <section id="payment">
+    <section id="payment" v-if="paymentListInfoData !== null">
             <div class="container">
                 <h1>{{ paymentListInfoData.title }}</h1>
 
@@ -92,7 +92,7 @@ export default {
     name: 'PaymentList',
     data () {
         return {
-            paymentListInfoData: [],
+            paymentListInfoData: null,
         }
     },
     created() {

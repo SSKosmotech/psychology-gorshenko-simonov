@@ -1642,6 +1642,10 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     section#accordion_services .accordion_services_info span:nth-child(even) {
         font-size: 3.4rem;
     }
+    section#accordion_services .vcp--expanded .accordion_services_tab ::before{
+                top: -5px;
+    }
+
 
      // <<===========================SECTION #accordion_services===========================>>
     
@@ -1966,6 +1970,9 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     section#accordion_services h2 {
         font-size: 2.5rem;
         margin-bottom: 50px;
+    }
+    section#accordion_services .vcp--expanded .accordion_services_tab ::before{
+        top: -12px;
     }
     
  }
@@ -2351,6 +2358,9 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
     section#accordion_services .vcp__body {
         height: 340px !important;
+    }
+    section#accordion_services .vcp--expanded .accordion_services_tab ::before{
+        top: -14px;
     }
 
     // <<===========================SECTION #we_offer_you===========================>>

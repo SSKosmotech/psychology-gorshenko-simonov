@@ -1106,7 +1106,7 @@ section#accordion_services {
     .accordion_services_item {
         display: flex;
         h5 {
-            color: #264158;
+            color: #D3DDE6;
             @include fz(30);
             line-height: 3.4375rem;
             padding-top: 20px;
@@ -1151,6 +1151,7 @@ section#accordion_services {
             font-weight: 700;
             line-height: 2rem;
             margin-right: 20px;
+            font-family: 'Montserrat', sans-serif;
         }
         span:nth-child(even){
             font-family: 'Arsenal', sans-serif;
@@ -1192,27 +1193,54 @@ section#accordion_services {
     .vcpg[data-v-63943e43] .vcp__body {
         border-top: 3px solid var(--border-color);
     }
-    .vcp--expanded .vcp__header-icon[data-v-64321428] {
+    // .vcp .vcp--expandable h5 {
+    //     color: #D3DDE6;
+    // }
+    // .vcp--expanded .vcp__header-icon[data-v-64321428] {
+    //     position: relative;
+    //     transition: all 0s ease;
+    //     border: 1px solid red;
+    //     ::before {
+    //         transition: all 0s ease;
+    //         content: '';
+    //         display: block;
+    //         position: absolute;
+    //         top: -12px;
+    //         left: 863px;
+    //         height: 100px;
+    //         width: 6px;
+    //         background-color: #F79781;
+    //         border-radius: 200px;
+    //     }
+    // }
+    .vcp--expanded .accordion_services_tab {
         position: relative;
-        transition: all 0s ease;
-        ::before {
             transition: all 0s ease;
-            content: '';
-            display: block;
-            position: absolute;
-            top: -12px;
-            left: 863px;
-            height: 100px;
-            width: 6px;
-            background-color: #F79781;
-            border-radius: 200px;
-        }
+            // border: 1px solid red;
+            ::before {
+                transition: all 0s ease;
+                content: '';
+                display: block;
+                position: absolute;
+                top: -1px;
+                left: -17px;
+                height: 100px;
+                width: 6px;
+                background-color: #F79781;
+                border-radius: 200px;
+            }
+            & h5 {
+                color: #264158;//***
+            }
+
     }
     .vcp__header-icon[data-v-64321428] svg {
         display: none;
     }
+  
 
 }
+
 
 // <<===========================SECTION #about-us===========================>>
 
@@ -2718,7 +2746,6 @@ footer#footer {
             line-height: 4.1875rem;
             margin-bottom: 40px;
         }
-
     }
 
 // <<===========================/404===========================>>
@@ -2880,7 +2907,7 @@ footer#footer {
     // background: rgba(84, 116, 253, .5);
     height: 100vh;
     z-index: 29;
-    transform: translateX(-150%);
+    transform: translateX(-200%);
     transition: all 0.2s ease;
     &.open {
         -webkit-transform: translateX(0);

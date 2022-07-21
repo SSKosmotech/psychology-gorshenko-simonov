@@ -2877,5 +2877,48 @@ footer#footer {
     display: block;
 }
 
+// <<===========================Button to top styles===========================>>
+
+.btn_to_top {
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    position: relative;
+    // border: 1px solid red;
+    // padding: 10px 16px;
+    // font-size: 22px;
+    // line-height: 22px;
+    
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 43px;
+        border-top: 3px solid #FFF;
+        top: 42px;
+        left: 26%;
+        transform: rotate(90deg);
+        // height: 3px;
+        // background-color: #FFF;
+        // top: 0px!important;
+        // transform: rotate(90deg)!important;
+    }
+        &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-top: 3px solid #FFF;
+        border-left: 3px solid #fff;
+        top: 21px;
+        left: 42%;
+        transform: rotate(45deg);
+    }
+    &:focus {
+        outline: none;
+        border: transparent;
+    }
+}
 
 

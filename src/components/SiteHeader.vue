@@ -68,10 +68,11 @@
                 </div>
 
             </div>       
+        
         </div>
 
-        <back-to-top bottom="50px" right="50px">
-            <button type="button" class="btn btn-info btn-to-top"><i class="fa fa-chevron-up"></i></button>
+        <back-to-top bottom="50px" right="50px" visibleoffset="600">
+            <button type="button" class="btn btn_to_top test"></button>
         </back-to-top>
 
     </header>
@@ -101,15 +102,3 @@ export default {
     components: { BackToTop }
 }
 </script>
-
-<style scoped>
-
-.btn-to-top {
-  width: 60px;
-  height: 60px;
-  padding: 10px 16px;
-  border-radius: 50%;
-  font-size: 22px;
-  line-height: 22px;
-}
-</style>

@@ -647,7 +647,7 @@
     
     // <<===========================SECTION #prices===========================>>
 
-    section#prices {
+    section#prices.pad_top {
         padding-top: 200px;
         margin-bottom: 80px;
 
@@ -678,7 +678,8 @@
     // <<===========================SECTION #first_screen_main_page===========================>>
 
     section#first_screen_main_page {
-        padding-top: 240px;
+        // padding-top: 240px;
+        padding-top: 160px;
         margin-bottom: 50px;
     }
     section#first_screen_main_page .wrap_first_screen {
@@ -862,6 +863,17 @@
         }
      }
 
+     // <<===========================404 page style===========================>>
+     .not_found {
+        padding-top: 200px;
+        p:first-of-type {
+            font-size: 17rem;
+            line-height: 1;
+        }
+        p:last-of-type {
+            font-size: 2.5rem;
+        }
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -1057,6 +1069,11 @@
             font-size: 2.4rem;
             margin-bottom: 80px;
         }
+    }
+
+    // <<===========================Mmobile_menu_style===========================>>
+    #side_block {
+        width: 70%;
     }
 }
 
@@ -1393,6 +1410,17 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         gap: 50px;
     }
 
+    // <<===========================404 page style===========================>>
+        .not_found {
+        p:first-of-type {
+            font-size: 10rem;
+            line-height: 1;
+        }
+        p:last-of-type {
+            font-size: 2rem;
+        }
+    }
+
 }
 
 
@@ -1661,6 +1689,22 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         }
     }
     
+    // <<===========================Mmobile_menu_style===========================>>
+    #side_block {
+        width: 80%;
+    }
+    #side_block .wrap_mobile_menu .mobile_menu_top_wrap {
+        margin-bottom: 15px;
+    }
+    #side_block .wrap_mobile_menu .menu_bottom_wrap .btn_callback {
+        max-width: 260px;
+        height: 67px;
+        width: 100%;
+        font-size: 1rem;
+    }
+    #side_block .wrap_mobile_menu .menu_bottom_wrap .mobile_contacts_wrap {
+        margin-bottom: 10px;
+    }
 }
 
 
@@ -1695,6 +1739,14 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         line-height: 2rem;
     }
 
+}
+
+@media screen and (max-width: 520px) {
+    // <<===========================Mmobile_menu_style===========================>>
+     #mobile_logo {
+        width: 250px;
+    }
+    
 }
 
 @media screen and (max-width: 490px) {
@@ -1792,6 +1844,10 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
     section#payment .title_wrap {
         margin-bottom: 20px;
+    }
+    section#payment .wrap_content a {
+        line-height: 3.5rem;
+        margin-left: 0;
     }
 
     // <<===========================SECTION #seminars===========================>>
@@ -1974,7 +2030,15 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     section#accordion_services .vcp--expanded .accordion_services_tab ::before{
         top: -12px;
     }
+
+      // <<===========================Mmobile_menu_style===========================>>
+      #mobile_logo {
+        width: 220px;
+      }
     
+      #side_block .wrap_mobile_menu .mobile_menu_top_wrap{
+        margin-bottom: 30px;
+      }
  }
 
  @media screen and (max-width: 430px) {
@@ -2062,6 +2126,17 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         }
 
  }
+
+
+@media screen and (max-width: 420px) {
+   // <<===========================Mmobile_menu_style===========================>>
+   #mobile_logo {
+        width: 210px;
+    }
+}
+
+
+    
 
 @media screen and (max-width: 410px) {
 
@@ -2245,6 +2320,14 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     footer#footer {
         padding-bottom: 35px;
     }
+
+    // <<===========================Mmobile_menu_style===========================>>
+    #side_block .wrap_mobile_menu .mobile_menu_top_wrap .hamburger {
+        padding-top: 35px;
+    }
+    #side_block .wrapper {
+        padding-top: 10px;
+    }
         
 }
 
@@ -2306,7 +2389,74 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         font-size: 1.1rem;
     }
 
+    // <<===========================404 page style===========================>>
+    .not_found {
+        p:first-of-type {
+            font-size: 8rem;
+            line-height: 1;
+        }
+        p:last-of-type {
+            font-size: 1.5rem;
+            line-height: 1.8rem;
+        }
+        a {
+            font-size: 1rem;
+        }
+    }
+
+    // <<===========================Modal_window_style===========================>>
+    header#header .modal-container {
+        max-width: 300px;
+    }
+
 }
+
+@media screen and (max-width: 400px) {
+    // <<===========================Mmobile_menu_style===========================>>
+    #side_block .wrap_mobile_menu .mobile_menu_top_wrap {
+        flex-direction: column;
+        margin-bottom: 0;
+        padding-top: 15px;
+    }
+    #side_block .logo {
+        margin-bottom: 20px;
+    }
+    #side_block .wrap_mobile_menu .mobile_menu_top_wrap {
+        // margin-bottom: -15px;
+    }
+    #side_block .wrap_mobile_menu .menu_bottom_wrap .mobile_menu li {
+        margin-bottom: 5px;
+    }
+    #side_block .wrap_mobile_menu .menu_bottom_wrap .mobile_contacts_wrap a span {
+        display: none;
+    }
+    #side_block .wrap_mobile_menu .menu_bottom_wrap .mobile_contacts_wrap {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+    #side_block .wrap_mobile_menu .menu_bottom_wrap .mobile_contacts_wrap a svg {
+        transform: scale(1);
+    }
+    #side_block .wrap_mobile_menu .menu_bottom_wrap .mobile_menu {
+        margin-bottom: 20px;
+    }
+
+
+        
+    
+    // #mobile_logo {
+    //     width: 200px;
+    // }
+    // #side_block .wrap_mobile_menu .mobile_menu_top_wrap .hamburger {
+    //     padding-top: 35px;
+    // }
+    // #side_block .wrapper {
+    //     padding-top: 10px;
+    // }
+}
+
+
 
 @media screen and (max-width: 390px) {
 
@@ -2545,6 +2695,15 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
 }
 
+@media screen and (max-width: 365px) {
+    // <<===========================Mmobile_menu_style===========================>>
+    #side_block .wrap_mobile_menu .menu_bottom_wrap .btn_callback {
+        font-size: 0.9rem;
+    }
+}
+
+
+
 @media screen and (max-width: 360px) {
     // <<===========================SECTION #for_psychologists===========================>>
 
@@ -2629,6 +2788,24 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     // <<===========================SECTION #we_offer_you===========================>>
         section#we_offer_you h1 {
         font-size: 1.85rem;
+    }
+
+    // <<===========================404 page style===========================>>
+    .not_found {
+        p:last-of-type {
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+        }
+        a {
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+            padding-top: 15px;
+        }
+    }
+
+    // <<===========================Mmobile_menu_style===========================>>
+    #side_block .wrap_mobile_menu .menu_bottom_wrap .btn_callback {
+        font-size: 0.82rem;
     }
 }
 

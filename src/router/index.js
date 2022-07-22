@@ -83,8 +83,8 @@ const router = createRouter({
   // history: createWebHashHistory(),
   history: createWebHistory(),
   routes, 
-  linkActiveClass: "active",
-  linkExactActiveClass: "exact-active",
+  // linkActiveClass: "active",
+  // linkExactActiveClass: "exact-active",
   scrollBehavior() {
     // always scroll to top
     return { 

@@ -1,5 +1,5 @@
 <template>
-    <section id="prices" v-if="pricesListInfoData !== null">
+    <section id="prices" v-if="pricesListInfoData !== null" :class="{'pad_top': $route.path !== '/'}">
             <div class="container">
                 <h1>{{ pricesListInfoData.title }}</h1>
 

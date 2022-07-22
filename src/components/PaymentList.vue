@@ -11,7 +11,11 @@
                             <h2>{{ paymants.payments_title }}</h2>
                         </div>
                         <p>{{ paymants.payments_text }}</p>
-                        <button type="button" class="btn btn_red">{{ paymants.button_text }}</button>
+                            <a class="btn btn_red" :href="paymants.Link" rel="nofollow, noreferrer" target="_blank" :title="paymentListInfoData.title+` `+paymants.payments_title">
+                                <!-- <button type="button" class="btn btn_red"> -->
+                                    {{ paymants.button_text }}
+                                <!-- </button> -->
+                            </a>
                     </div>
     
                     <div class="wrap_img">

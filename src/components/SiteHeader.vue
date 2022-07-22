@@ -12,7 +12,7 @@
                             <!-- <a href="#"> -->
                             <router-link to="/">
                                 <!-- <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="../assets/images/logo-gorshenko.png" alt="logo Gorshenko"> -->
-                                <img src="@/assets/images/logo-gorshenko.png" alt="logo Gorshenko">
+                                <img id="mobile_logo" src="@/assets/images/logo-gorshenko.png" alt="logo Gorshenko">
                             </router-link>
                             <!-- </a> -->
                         </div>
@@ -54,7 +54,7 @@
 
                     <div class="mobile_contacts_wrap">
                         <div>
-                            <a href="tel:+380974070110">
+                            <a href="tel:+380974070110" title="phone">
                                 <svg class="icon_contacts" width="40" height="40" viewbox="0 0 40 40" fill="#D3DDE6" xmlns="http://www.w3.org/2000/svg">
                                     <rect width="40" height="40" rx="5"/>
                                     <path d="M23.7333 22.1427C22.6667 23.3232 22.6667 24.5037 21.6 24.5037C20.5333 24.5037 19.4667 23.3232 18.4 22.1427C17.3333 20.9622 16.2667 19.7817 16.2667 18.6012C16.2667 17.4207 17.3333 17.4207 18.4 16.2402C19.4667 15.0597 16.2667 11.5182 15.2 11.5182C14.1333 11.5182 12 15.0597 12 15.0597C12 17.4207 14.192 22.2076 16.2667 24.5037C18.3413 26.7998 22.6667 29.2257 24.8 29.2257C24.8 29.2257 28 26.8647 28 25.6842C28 24.5037 24.8 20.9622 23.7333 22.1427Z" fill="white"/>
@@ -63,7 +63,7 @@
                             </a>
                         </div>
                         <div>
-                            <a class="contacts_icons" href="mailto:hello@mgoroshenko.com.ua" rel="nofollow, noreferrer" target="_blank" title="">
+                            <a class="contacts_icons" href="mailto:hello@mgoroshenko.com.ua" rel="nofollow, noreferrer" target="_blank" title="email">
                                 <svg class="icon_contacts" width="40" height="40" viewbox="0 0 40 40" fill="#D3DDE6" xmlns="http://www.w3.org/2000/svg">
                                     <rect y="0.00012207" width="40" height="40" rx="5"/>
                                     <path d="M27.7778 12.0001H12.2222C10.9949 12.0001 10 13.0235 10 14.2858V25.7144C10 26.9768 10.9949 28.0001 12.2222 28.0001H27.7778C29.0051 28.0001 30 26.9768 30 25.7144V14.2858C30 13.0235 29.0051 12.0001 27.7778 12.0001Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -73,7 +73,7 @@
                             </a>
                         </div>
                         <div>
-                            <a href="https://goo.gl/maps/p1smwKevMyWX4RhLA" rel="nofollow, noreferrer" target="_blank">
+                            <a href="https://goo.gl/maps/p1smwKevMyWX4RhLA" rel="nofollow, noreferrer" target="_blank" title="adress">
                                 <svg class="icon_contacts icon_map_left" width="30" height="40" viewbox="0 0 30 40" fill="#D3DDE6" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M30 15.4545C30 6.89394 23.3088 0 15 0C6.69118 0 0 6.89394 0 15.4545C0 24.0152 15 40 15 40C15 40 30 24.0152 30 15.4545ZM8.0147 15.1515C8.0147 11.2121 11.1765 7.95455 15 7.95455C18.8235 7.95455 21.9853 11.1364 21.9853 15.1515C21.9853 19.0909 18.8971 22.3485 15 22.3485C11.1765 22.3485 8.0147 19.0909 8.0147 15.1515Z" />
                                 </svg>

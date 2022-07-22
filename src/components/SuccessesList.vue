@@ -1,5 +1,5 @@
 <template>
-    <section id="successes" v-if="successesListInfoData !== null">
+    <section id="successes" v-if="successesListInfoData !== null" :class="{'pad_top': $route.path !== '/'}">
 
             <div class="container">
 

@@ -1,6 +1,8 @@
 <template>
     <div class="container not_found">
-        <h1>Page not found</h1>
+        <p>404</p>
+        <p>Дуже шкода, але таку сторінку не знайдено.</p>
+        <router-link to="/" class="btn">Повернутися на головну</router-link>
     </div>
 </template>
 

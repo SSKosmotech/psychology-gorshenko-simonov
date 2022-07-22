@@ -1,5 +1,5 @@
 <template>
-    <section id="services" v-if="servicesListInfoData !== null">
+    <section id="services" v-if="servicesListInfoData !== null" :class="{'pad_top': $route.path !== '/'}">
             <div class="container">
                 <div>
                     <h1>{{ servicesListInfoData.title }}</h1>

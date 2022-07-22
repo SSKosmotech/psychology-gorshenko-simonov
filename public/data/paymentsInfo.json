@@ -7,7 +7,8 @@
             "payments_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "button_text": "Сплатити",
             "img": "payment-card.jpg",
-            "img_mobile": "payment-card-1350.jpg"
+            "img_mobile": "payment-card-1350.jpg",
+            "Link": "https://www.privat24.ua/rd/transfer_to_card/?hash=rd%2Ftransfer_to_card%2F%7B%22from%22%3A%22%22%2C%22to%22%3A%224149629385130075%22%2C%22amt%22%3A%22100%22%2C%22ccy%22%3A%22UAH%22%7D"
         },
         {
             "counts": "02",
@@ -15,7 +16,8 @@
             "payments_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "button_text": "Сплатити",
             "img": "payment-cash.jpg",
-            "img_mobile": "payment-cash-1350.jpg"
+            "img_mobile": "payment-cash-1350.jpg",
+            "Link": "https://docs.google.com/document/d/1GgUI28SnrUy5xEPzTOFm8Kn4Ek8ccx08tys2SjHbpnY/edit?usp=sharing"
 
         },
         {
@@ -24,7 +26,8 @@
             "payments_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "button_text": "Сплатити",
             "img": "payment-check.jpg",
-            "img_mobile": "payment-check-1350.jpg"
+            "img_mobile": "payment-check-1350.jpg",
+            "Link": "https://docs.google.com/document/d/1XAozxbqfjTBdGN1pCjMzy0-pNKAsKb3yC8ihGCKMqBQ/edit?usp=sharing"
         }
     ]
 }

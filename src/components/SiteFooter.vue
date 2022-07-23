@@ -140,8 +140,8 @@
 </template>
 
 <script>
-import ModalWindow from '@/components/ModalWindow'
-import FeedbackForm from './FeedbackForm.vue';
+import ModalWindow from '@/components/Modules/ModalWindow'
+import FeedbackForm from '@/components/Modules/FeedbackForm.vue';
 export default {
     name: "SiteFooter",
     components: { 

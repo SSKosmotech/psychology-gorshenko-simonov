@@ -195,8 +195,8 @@
 
 <script>
 import BackToTop from "../../node_modules/vue-backtotop/src/BackToTop.vue";
-import ModalWindow from '@/components/ModalWindow'
-import FeedbackForm from '@/components/FeedbackForm.vue'
+import ModalWindow from '@/components/Modules/ModalWindow'
+import FeedbackForm from '@/components/Modules/FeedbackForm.vue'
 
 export default {
     name: 'SiteHeader',

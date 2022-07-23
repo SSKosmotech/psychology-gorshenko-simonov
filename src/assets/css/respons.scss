@@ -449,7 +449,8 @@
             display: block;
         }
         & button {
-            order: -1;
+            // order: -1;
+            order: 0;
             transition: all .2s ease;
         }
     }

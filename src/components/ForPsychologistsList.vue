@@ -21,46 +21,33 @@
             </div>
     </section>
 
-    <section id="for_psychologists_form">
-        <div class="container">
+    <ForPsychologistsForm />
 
-            <h2>{{ psychologistsInfoData.title_form }}</h2>
-
-            <form action="#">
-                <input type="text" id="name" name="name" :placeholder="psychologistsInfoData?.placeholders?.name" required>
-                <label for="name"></label>
-                
-                <input type="tel" id="tel" name="tel" :placeholder="psychologistsInfoData?.placeholders?.phone" required>
-                <label for="tel"></label>
-                
-                <button type="submit" class="btn btn_m">{{ psychologistsInfoData.button }}</button>
-            </form>
-
-        </div>
-    </section>
 </div>
     
 </template>
 
 <script>
 import axios from 'axios'
+import ForPsychologistsForm from '@/components/Modules/ForPsychologistsForm.vue'
+
 export default {
-    name: 'ForPsychologistsList',
-    data () {
+    name: "ForPsychologistsList",
+    data() {
         return {
             psychologistsInfoData: null,
-        }
+        };
     },
     created() {
         axios
-            .get('/data/psychologistsInfoData.json')
-            .then(resp=>{
-                this.psychologistsInfoData = resp.data
-            })
-            .catch(err=>{
-                this.$toast.error(err)
-            })
-
-    }
+            .get("/data/psychologistsInfoData.json")
+            .then(resp => {
+            this.psychologistsInfoData = resp.data;
+        })
+            .catch(err => {
+            this.$toast.error(err);
+        });
+    },
+    components: { ForPsychologistsForm }
 }
 </script>

@@ -78,6 +78,10 @@
 
     }
 
+    section#contact_form #feedback_contact_form .wrap_error .error_text {
+        left: -288px;
+    }
+
     // <<===========================SECTION #seminars===========================>>
         section#seminars {
 
@@ -226,6 +230,12 @@
             }
         }
 
+    // <<===========================SECTION #contact_form===========================>>
+
+    section#contact_form #feedback_contact_form .wrap_error .error_text {
+        left: -279px;
+    }
+
 }
 
 
@@ -244,9 +254,20 @@
             }
             button {
                 max-width: 320px;
-                width: 100%;            }
+                width: 100%;            
             }
+        }
     }
+
+    section#contact_form #feedback_contact_form .wrap_error .error_text {
+        left: -98px;
+        width: 200px;
+        transform: translateY(-20px);
+    }
+    section#contact_form #feedback_contact_form .wrap_error .error_text_up {
+        transform: translateY(-50px);
+    }
+
 
     // <<===========================SECTION #for_psychologists===========================>>
     section#for_psychologists .psychologists_content_wrap {
@@ -548,6 +569,19 @@
         flex-direction: column;
         align-items: center;
     }
+
+    section#for_psychologists_form #feedback_for_psychologists_form .wrap_error .error_text {
+        left: -98px;
+        transform: translateY(-10px);
+        width: 200px;
+    }
+    section#for_psychologists_form #feedback_for_psychologists_form .wrap_error .error_text_up {
+        transform: translateY(-40px);
+    }
+    section#for_psychologists_form form {
+        gap: 6px;
+    }
+
 
     // <<===========================SECTION #payment===========================>>
     section#payment {
@@ -1012,12 +1046,13 @@
     section#for_psychologists_form form {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
+        // gap: 10px;
     }
 
     section#for_psychologists_form {
         padding-bottom: 60px;
     }
+
 
     // <<===========================SECTION #seminars===========================>>
   
@@ -1813,6 +1848,22 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         margin-bottom: 10px;
     }
 
+    section#contact_form #feedback_contact_form .wrap_error .error_text {
+        left: -98px;
+        width: 200px;
+        transform: translateY(-10px);
+    }
+    section#contact_form #feedback_contact_form .wrap_error .error_text_up {
+        transform: translateY(-40px);
+        // font-size: ;
+    }
+    section#contact_form .alert-success {
+        font-size: 1.2rem;
+    }
+    section#contact_form .alert-danger {
+        font-size: 1.2rem;
+    }
+    
     // <<===========================SECTION #for_psychologists===========================>>
 
     section#for_psychologists h1 {
@@ -1821,6 +1872,14 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
     section#for_psychologists_form h2 {
         font-size: 2rem;
+    }
+
+    section#for_psychologists_form .alert-danger {
+        font-size: 1.2rem;
+    }
+    
+    section#for_psychologists_form .alert-success {
+        font-size: 1.2rem;
     }
 
     // <<===========================SECTION #payment===========================>>
@@ -1968,10 +2027,12 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         font-size: 1.7rem;
         line-height: 2.25rem;
     }
+    
     // <<===========================SECTION #why_we===========================>>
     section#why_we h1 {
         font-size: 2.6rem;
     } 
+
 }
 
 

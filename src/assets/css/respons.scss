@@ -38,7 +38,7 @@
     // <<===========================SECTION #contacts & map===========================>>
 
     section#contacts {    
-        padding-top: 390px;
+        // padding-top: 390px;
         h1 {
             font-size: 3.4rem;
             line-height: 3.4375rem;
@@ -528,7 +528,7 @@
 
 
     // <<===========================SECTION #contacts & map===========================>>
-    section#contacts {    
+    section#contacts.pad_top {    
         padding-top: 200px;
     }
 
@@ -605,7 +605,7 @@
 
     // <<===========================SECTION #services===========================>>
 
-    section#services {
+    section#services.pad_top {
         padding-top: 200px;
         margin-bottom: 80px;
     }
@@ -684,23 +684,25 @@
 
     section#prices.pad_top {
         padding-top: 200px;
-        margin-bottom: 80px;
+        margin-bottom: 80px; 
+    }
 
-        h1 {
-            font-size: 3.2rem;
-            margin-bottom: 80px;
-        }
+    section#prices.pad_top h1,
+    section#prices h1 {
+        font-size: 3.2rem;
+        margin-bottom: 80px;
     }
   
     // <<===========================SECTION #successes===========================>>
 
-    section#successes {
+    section#successes.pad_top {
         padding-top: 200px;
         margin-bottom: 80px;
+    }
 
-        h2 {
-            font-size: 3.2rem;
-        }
+    section#successes.pad_top h2,
+    section#successes h2 {
+        font-size: 3.2rem;
     }
 
     section#successes .wrap_img {
@@ -1190,7 +1192,8 @@
 
      // <<===========================SECTION #prices===========================>>
 
-    section#prices h1 {
+    section#prices.pad_top h1,
+    section#prices h1{
             font-size: 3rem;
             margin-bottom: 40px;
     }
@@ -1206,7 +1209,7 @@
 
     // <<===========================SECTION #successes===========================>>
 
-    section#successes {
+    section#successes.pad_top {
         h2 {
             font-size: 3rem;
         }
@@ -1269,10 +1272,9 @@
 
     // <<===========================SECTION #successes===========================>>
 
-    section#successes {
-        h2 {
+    section#successes.pad_top h2,
+    section#successes h2{
             font-size: 2.5rem;
-        }
     }
 }
 
@@ -1628,10 +1630,9 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
     // <<===========================SECTION #successes===========================>>
 
-    section#successes {
-        h2 {
+    section#successes.pad_top h2,
+    section#successes h2 {
             font-size: 2.3rem;
-        }
     }
 
     // <<===========================SECTION #specialists===========================>>
@@ -2467,7 +2468,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
     // <<===========================Modal_window_style===========================>>
-    header#header .modal-container {
+    #modal_container {
         max-width: 300px;
     }
 
@@ -2875,10 +2876,9 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
     // <<===========================SECTION #successes===========================>>
 
-    section#successes {
-        h2 {
+    section#successes.pad_top h2,
+    section#successes h2 {
             font-size: 2rem;
-        }
     }
      // <<===========================SECTION #specialists===========================>>
      section#specialists .specialists_wrap > p {

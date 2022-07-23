@@ -332,11 +332,22 @@ input[type=tel] {
 // <<===========================HEADER===========================>>
 
 header#header {
+    // border-bottom: 2px solid #D3DDE6;
+    // padding-top: 23px;
+    // position: fixed;
+    // width: 100%;
+    // z-index: 28;
+
     border-bottom: 2px solid #D3DDE6;
     padding-top: 23px;
     position: fixed;
     width: 100%;
     z-index: 28;
+    top: 0;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background-color: #fff;
 
     // background-color: #FFF;
     // padding-bottom: 28px;
@@ -344,15 +355,14 @@ header#header {
         display: flex;
         flex-direction: column;
 
-        &.scroll {
-
-            // box-shadow: 0 0 5px #5474FD;
-            // backdrop-filter: blur(20px);
-            .menu_top_wrap {
-                margin-bottom: 10px;
-                transition: all 0.4s ease;
-            }
-        }
+        // &.up_scroll {
+        //     // box-shadow: 0 0 5px #5474FD;
+        //     // backdrop-filter: blur(20px);
+        //     .menu_top_wrap {
+        //         margin-bottom: 10px;
+        //         transition: all 0.4s ease;
+        //     }
+        // }
     }
 
     & .menu_top_wrap {
@@ -365,7 +375,8 @@ header#header {
     & .menu_top_wrap {
         justify-content: flex-start;
         transition: all 0.4s ease;
-        margin-bottom: 46px;
+        // margin-bottom: 46px;
+        margin-bottom: 10px;
 
         // justify-content: space-between; //for mobile when delete margin-right
         & .logo {
@@ -506,16 +517,20 @@ header#header {
     }
 
     &.fixed {
-        position: fixed;
-        width: 100%;
-        top: 0px;
-        left: 0px;
+
+        top: -243px;
+
+
+        // position: fixed;
+        // width: 100%;
+        // top: 0px;
+        // left: 0px;
         // z-index: 10;
-        background-color: #fff;
+        // background-color: #fff;
         // background: rgba(84, 116, 253, 0.7);
-        -webkit-transition: all 0.2s ease;
-        -o-transition: all 0.2s ease;
-        transition: all .2s ease;
+        // -webkit-transition: all 0.2s ease;
+        // -o-transition: all 0.2s ease;
+        // transition: all .2s ease;
     }
 
 }
@@ -912,7 +927,7 @@ section#for_psychologists_form {
     }
 
 
-    
+
     .alert {
         position: relative;
         padding: .75rem 1.25rem;
@@ -3567,7 +3582,23 @@ footer#footer {
                         // &:visited {
                         //     color: #264158;
                         // }
+                        &.active {
+                            color: #F79781;
+                            position: relative;
+                            padding-left: 40px;
+                            &::before {
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                top: 50%;
+                                left: 0;
+                                width: 30px;
+                                height: 1px;
+                                background-color: #F79781;
+                            }
+                        }
                     }
+                    
 
                     &:last-of-type {
                         font-weight: 700;

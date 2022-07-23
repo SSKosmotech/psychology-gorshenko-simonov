@@ -31,7 +31,7 @@
 
                     <nav class="mobile_menu">
                         <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
-                            <li> <router-link to="/">Головна</router-link></li>
+                            <li><router-link to="/">Головна</router-link></li>
                             <li><router-link to="/about-us">Про нас</router-link></li>
                             <li><router-link to="/services">Послуги</router-link></li>
                             <li><router-link to="/prices">Ціни</router-link></li>
@@ -102,7 +102,8 @@
 
      <header id="header" :class="{'fixed': isFixed}">
         <div class="container">
-            <div class="wrap_menu" :class="{'scroll': isFixed}">
+            <!-- <div class="wrap_menu" :class="{'up_scroll': isFixed}"> -->
+            <div class="wrap_menu">
 
                 <div class="menu_top_wrap">
                     <div class="logo">
@@ -219,9 +220,18 @@ export default {
     //     document.body.classList.add('lock')
     // },
     methods: {
+        // toggleFixedScroll() {
+        //     // this.isFixed = window.scrollY > 148
+        //     this.isFixed = window.scrollY > 80;
+        // },
         toggleFixedScroll() {
-            // this.isFixed = window.scrollY > 148
-            this.isFixed = window.scrollY > 80;
+        const scy = window.scrollY
+        if (scy > this.prevScroll && scy > 180) {
+                this.isFixed = true
+        } else {
+            this.isFixed = false
+        }
+            this.prevScroll = scy <= 0 ? 0 : scy
         },
         toggleMobileMenu() {
             this.isOpenMobileMenu = !this.isOpenMobileMenu

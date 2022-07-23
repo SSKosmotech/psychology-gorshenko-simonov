@@ -14,7 +14,7 @@
                             <p>{{ seminars.seminars_text_price }}</p>
                             <p>{{ seminars.seminars_price }}</p>
                         </div>                        
-                        <button type="button" class="btn btn_red">{{ seminars.button }}</button>
+                        <button type="button" class="btn btn_red" @click.prevent="showForm">{{ seminars.button }}</button>
                     </div>
     
                     <div class="wrap_img">
@@ -120,18 +120,39 @@
                     
                 </div> -->
 
-
             </div>
+
+            <modal-window v-if="showModal" @close="showModal = false">
+                <!-- <template v-slot:header></template> -->
+                <template #header>
+                    <button type="button" class="close_modal_btn" @click="showModal = false"></button>
+                </template>
+                <template #body>
+                    <FeedbackForm/>
+                </template>
+                <template #footer>
+                    <div></div>
+                </template>
+
+            </modal-window>
         </section>
 </template>
 
 <script>
 import axios from 'axios'
+import ModalWindow from '@/components/Modules/ModalWindow'
+import FeedbackForm from '@/components/Modules/FeedbackForm.vue'
+
 export default {
     name: 'SeminarsList',
+    components: {
+        ModalWindow,
+        FeedbackForm
+    },
     data () {
         return {
             seminarsListInfoData: null,
+            showModal: false
         }
     },
     created() {
@@ -143,6 +164,11 @@ export default {
             .catch(err=>{
                 this.$toast.error(err)
             })
+    },
+    methods: {
+        showForm() {
+            this.showModal = true
+        }
     }
 
 }

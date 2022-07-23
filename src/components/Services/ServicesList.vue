@@ -20,7 +20,7 @@
                                 <p>{{ services.services_price_type_from }}</p> 
                                 <span>{{ services.services_price }}</span>
                             </div>
-                            <button type="button" class="btn btn_red">{{ services.button }}</button>
+                            <button type="button" class="btn btn_red" @click.prevent="showForm">{{ services.button }}</button>
 
                         </div>
 
@@ -98,16 +98,38 @@
 
             </div>
 
+        <modal-window v-if="showModal" @close="showModal = false">
+            <!-- <template v-slot:header></template> -->
+            <template #header>
+                <button type="button" class="close_modal_btn" @click="showModal = false"></button>
+            </template>
+            <template #body>
+                <FeedbackForm/>
+            </template>
+            <template #footer>
+                <div></div>
+            </template>
+
+        </modal-window>
+
     </section>
 </template>
 
 <script>
 import axios from 'axios'
+import ModalWindow from '@/components/Modules/ModalWindow'
+import FeedbackForm from '@/components/Modules/FeedbackForm.vue'
+
 export default {
     name: 'ServicesList',
+    components: {
+        ModalWindow,
+        FeedbackForm
+    },
         data () {
         return {
             servicesListInfoData: null,
+            showModal: false
         }
     },
     created() {
@@ -120,6 +142,11 @@ export default {
                 this.$toast.error(err)
             })
 
+    },
+    methods: {
+        showForm() {
+            this.showModal = true
+        }
     }
 }
 </script>

@@ -28,7 +28,7 @@
                                 </div>
                             </div>
             
-                            <button type="button" class="btn btn_red">{{ prices.button }}</button>
+                            <button type="button" class="btn btn_red" @click.prevent="showForm">{{ prices.button }}</button>
 
                         </div>
                     </slide>
@@ -128,6 +128,19 @@
 
                     </div> -->
 
+        <modal-window v-if="showModal" @close="showModal = false">
+            <template #header>
+                <button type="button" class="close_modal_btn" @click="showModal = false"></button>
+            </template>
+            <template #body>
+                <FeedbackForm/>
+            </template>
+            <template #footer>
+                <div></div>
+            </template>
+
+        </modal-window>
+
         </section>
 </template>
 
@@ -135,6 +148,8 @@
 import axios from 'axios'
 import 'vue3-carousel/dist/carousel.css';
 import { Carousel, Slide, Pagination } from 'vue3-carousel';
+import ModalWindow from '@/components/Modules/ModalWindow'
+import FeedbackForm from '@/components/Modules/FeedbackForm.vue'
 
 export default {
     name: 'PricesList',
@@ -143,10 +158,13 @@ export default {
         Slide,
         Pagination,
         // Navigation,
+        ModalWindow,
+        FeedbackForm
   },
     data () {
             return {
                 pricesListInfoData: null,
+                showModal: false,
                 sliderSettings: {
                     itemsToShow: 3,
                     wrapAround: true,
@@ -184,6 +202,11 @@ export default {
                     this.$toast.error(err)
                 })
 
+        },
+        methods: {
+        showForm() {
+            this.showModal = true
         }
+    }
 }
 </script>

@@ -42,12 +42,26 @@
                         
                     </div>
 
-                    <button type="button" class="btn btn_red">{{ consultationInfoData.button }}</button>
+                    <button type="button" class="btn btn_red" @click.prevent="showForm">{{ consultationInfoData.button }}</button>
 
                </div>
                 
 
             </div>
+
+        <modal-window v-if="showModal" @close="showModal = false">
+            <!-- <template v-slot:header></template> -->
+            <template #header>
+                <button type="button" class="close_modal_btn" @click="showModal = false"></button>
+            </template>
+            <template #body>
+                <FeedbackForm/>
+            </template>
+            <template #footer>
+                <div></div>
+            </template>
+
+        </modal-window>
             
         
         </section>
@@ -55,12 +69,19 @@
 
 <script>
 import axios from 'axios'
+import ModalWindow from '@/components/Modules/ModalWindow'
+import FeedbackForm from '@/components/Modules/FeedbackForm.vue'
 
 export default {
     name: 'ConsultationList',
+    components: {
+        ModalWindow,
+        FeedbackForm
+    },
     data () {
         return {
             consultationInfoData: null,
+            showModal: false
         }
     },
     created() {
@@ -72,6 +93,11 @@ export default {
             .catch(err=>{
                 this.$toast.error(err)
             })
+    },
+    methods: {
+        showForm() {
+            this.showModal = true
+        }
     }
 }
 </script>

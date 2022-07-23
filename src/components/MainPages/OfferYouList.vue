@@ -18,7 +18,7 @@
                         <li>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</li> -->
                     </ul>
                     <div class="change_life_wrap">
-                        <button type="button" class="btn btn_red">{{ weOfferYouInfoData.button }}</button>
+                        <button type="button" class="btn btn_red" @click.prevent="showForm">{{ weOfferYouInfoData.button }}</button>
                         <div class="offer_price_wrap">
                             <p>{{ weOfferYouInfoData.price_name }}</p>
                             <span>{{ weOfferYouInfoData.price }}</span>
@@ -33,17 +33,38 @@
             </div>
         </div>
 
+        <modal-window v-if="showModal" @close="showModal = false">
+            <!-- <template v-slot:header></template> -->
+            <template #header>
+                <button type="button" class="close_modal_btn" @click="showModal = false"></button>
+            </template>
+            <template #body>
+                <FeedbackForm/>
+            </template>
+            <template #footer>
+                <div></div>
+            </template>
+
+        </modal-window>
+
     </section>
 </template>
 
 <script>
 import axios from 'axios'
+import ModalWindow from '@/components/Modules/ModalWindow'
+import FeedbackForm from '@/components/Modules/FeedbackForm.vue'
 
 export default {
     name: 'OfferYou',
+    components: {
+        ModalWindow,
+        FeedbackForm
+    },
     data () {
         return {
             weOfferYouInfoData: null,
+            showModal: false
         }
     },
     created() {
@@ -55,6 +76,11 @@ export default {
             .catch(err=>{
                 this.$toast.error(err)
             })
+    },
+    methods: {
+        showForm() {
+            this.showModal = true
+        }
     }
 }
 </script>

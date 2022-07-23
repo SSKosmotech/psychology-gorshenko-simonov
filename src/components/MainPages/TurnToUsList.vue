@@ -89,32 +89,58 @@
                 <div class="turn_to_us_bottom_info">
                     <p>{{ turnToUsListInfoData.bottom_info }}</p>
                 </div>
-                <button type="button" class="btn btn_red">{{ turnToUsListInfoData.button }}</button>
+                <button type="button" class="btn btn_red" @click.prevent="showForm">{{ turnToUsListInfoData.button }}</button>
             </div>
+
+            <modal-window v-if="showModal" @close="showModal = false">
+            <!-- <template v-slot:header></template> -->
+            <template #header>
+                <button type="button" class="close_modal_btn" @click="showModal = false"></button>
+            </template>
+            <template #body>
+                <FeedbackForm />
+            </template>
+            <template #footer>
+                <div></div>
+            </template>
+
+        </modal-window>
 
         </section>
 </template>
 
 <script>
 import axios from 'axios'
+import ModalWindow from '@/components/Modules/ModalWindow'
+import FeedbackForm from '@/components/Modules/FeedbackForm.vue'
 
 export default {
-    name: 'TurnToUsList',
-    data () {
+    name: "TurnToUsList",
+    components: { 
+        ModalWindow,
+        FeedbackForm
+    },
+    data() {
         return {
             turnToUsListInfoData: null,
-        }
+            showModal: false
+        };
     },
     created() {
         axios
-            .get('/data/turnToUsInfo.json')
-            .then(resp=>{
-                this.turnToUsListInfoData = resp.data
-            })
-            .catch(err=>{
-                this.$toast.error(err)
-            })
-
+            .get("/data/turnToUsInfo.json")
+            .then(resp => {
+            this.turnToUsListInfoData = resp.data;
+        })
+            .catch(err => {
+            this.$toast.error(err);
+        });
+    },
+    methods: {
+        showForm() {
+            this.showModal = true
+        }
     }
+    
 }
 </script>

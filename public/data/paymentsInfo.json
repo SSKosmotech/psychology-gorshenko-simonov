@@ -2,7 +2,7 @@
     "payments": [
         {
             "payments_title": "На картку",
-            "payments_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "payments_text": "За допомогою банківської картки (Mastercard, Visa, Google Pay, Apple Pay.)",
             "button_text": "Сплатити",
             "img": "payment-card.jpg",
             "img_mobile": "payment-card-1350.jpg",
@@ -10,7 +10,7 @@
         },
         {
             "payments_title": "Готівка",
-            "payments_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "payments_text": "Готівкою або за допомогою платіжного терміналу у нашому затишному офісі.",
             "button_text": "Сплатити",
             "img": "payment-cash.jpg",
             "img_mobile": "payment-cash-1350.jpg",
@@ -19,7 +19,7 @@
         },
         {
             "payments_title": "На рахунок",
-            "payments_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "payments_text": "Оплата безготівковим платежем на розрахунковий рахунокю",
             "button_text": "Сплатити",
             "img": "payment-check.jpg",
             "img_mobile": "payment-check-1350.jpg",

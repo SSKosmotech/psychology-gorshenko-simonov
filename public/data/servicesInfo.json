@@ -1,10 +1,10 @@
 {
     "title": "Послуги",
-    "about_services": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "about_services": "Центр психології Меланії Горшенко забезпечує індивідуальний підхід до кожного відвідувача та надає психологічну допомогу й рекомендації відносно рішення будь-яких душевних проблем.",
     "services": [
         {
             "services_title": "Індивідуальні консультації",
-            "services_about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+            "services_about": "Багатьом людям дуже важко долати психологічні труднощі, які виникають на життєвому шляху. Консультація психолога полягає в тому, що за його допомогою активуються додаткові психологічні сили...",
             "services_price_type": "Консультація",
             "services_price_type_from": "від",
             "services_price": "700 ₴",
@@ -13,7 +13,7 @@
         },
         {
             "services_title": "Сімейний психотерапевт",
-            "services_about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+            "services_about": "Сімейний психолог - провадить психологічну підготовку партнерів до створення сім’ї, молодих сімейних пар до народження дитини, її виховання та розвитку...",
             "services_price_type": "Консультація",
             "services_price_type_from": "від",
             "services_price": "500 ₴",
@@ -22,7 +22,7 @@
         },
         {
             "services_title": "Дитячий психотерапевт",
-            "services_about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+            "services_about": "Дитяча психіатрія займає особливе місце в медичній науці і є однією з найскладніших галузей. Виникнення психічних розладів у дітей найчастіше відбувається раптово і без видимих причин...",
             "services_price_type": "Консультація",
             "services_price_type_from": "від",
             "services_price": "400 ₴",

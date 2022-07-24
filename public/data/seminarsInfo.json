@@ -3,47 +3,47 @@
         {
             "seminars_theme": "Лекція/Діти",
             "seminars_title": "Як виростити сина, аби він став крутим, як Ілон Маск",
-            "seminars_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "seminars_text": "Виховувати працелюбність на особистому прикладі: Коли мати Ілона Мей Маск переїхала з дітьми з ПАР до Канади, їй доводилося ходити одразу на п’ять робіт. Мати ніколи не читала дітям довгих лекцій про те, що потрібно багато вчитися і працювати. Вона все показувала на власному прикладі...",
             "seminars_text_price": "Ціна:",
-            "seminars_price": "200 ₴",
+            "seminars_price": "400 ₴",
             "button": "Придбати",
             "img": "seminars-son.jpg"
         },
         {
             "seminars_theme": "Лекція",
             "seminars_title": "Як позбутися синдрому фантомної сирени",
-            "seminars_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "seminars_text": "Кількість днів війни збільшується, а число загроз удару з повітря не зменшується. Сирени повітряної тривоги гудуть щодня. Хтось до них звик, а хтось чує навіть тоді, коли їх насправді немає. Це синдром фантомної сирени...",
             "seminars_text_price": "Ціна:",
-            "seminars_price": "200 ₴",
+            "seminars_price": "500 ₴",
             "button": "Придбати",
             "img": "seminars-sirens.jpg"
-        },
-        {
-            "seminars_theme": "Лекція/Діти",
-            "seminars_title": "Як виростити сина, аби він став крутим, як Ілон Маск",
-            "seminars_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "seminars_text_price": "Ціна:",
-            "seminars_price": "200 ₴",
-            "button": "Придбати",
-            "img": "seminars-son.jpg"
         },
         {
             "seminars_theme": "Лекція",
-            "seminars_title": "Як позбутися синдрому фантомної сирени",
-            "seminars_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "seminars_title": "Батькам про підліткову кризу",
+            "seminars_text": "У підлітковий період з’являються нові стреси для батьків. Підліток дуже змінюється, й інколи може здаватись, що поруч з вами живе абсолютно інша дитина...",
             "seminars_text_price": "Ціна:",
-            "seminars_price": "200 ₴",
+            "seminars_price": "500 ₴",
             "button": "Придбати",
-            "img": "seminars-sirens.jpg"
+            "img": "teenage-crisis.jpg"
+        },
+        {
+            "seminars_theme": "Лекція",
+            "seminars_title": "Емоційне вигорання у студентів: як вчасно помітити та попередити",
+            "seminars_text": "Високий ризик розвитку емоційного вигорання відбувається в умовах тривалих або збільшених інтелектуальних та комунікативних навантажень...",
+            "seminars_text_price": "Ціна:",
+            "seminars_price": "400 ₴",
+            "button": "Придбати",
+            "img": "seminars-students.jpg"
         },
         {
             "seminars_theme": "Лекція/Діти",
-            "seminars_title": "Як виростити сина, аби він став крутим, як Ілон Маск",
-            "seminars_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "seminars_title": "Сором’язлива дитина: на що варто звернути батькам увагу та як допомогти.",
+            "seminars_text": "Сором'язливість – це риса особистості та, як наслідок, обумовлена нею поведінка. Основні риси такої поведінки: нерішучість, боязкість, невпевненість у собі.  Найчастіше це проявляється в соціальному середовищі...",
             "seminars_text_price": "Ціна:",
-            "seminars_price": "200 ₴",
+            "seminars_price": "500 ₴",
             "button": "Придбати",
-            "img": "seminars-son.jpg"
+            "img": "seminars-kid.jpg"
         }
     ]
 }

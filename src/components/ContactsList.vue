@@ -14,7 +14,7 @@
 
                          <div v-for="(contacts, index) in contactsListInfoData.contacts" :key="index">
                             <p>{{ contacts.contact_type }}</p>
-                            <a class="contacts_icons" :href="contacts.href" rel="nofollow, noreferrer" target="_blank" :title="contacts.contact_type">
+                            <a class="contacts_icons" :href="contacts.href" rel="nofollow, noreferrer" :title="contacts.contact_type">
                                <!-- <img class="icon_contacts" :class="contacts.width" :src="require(`@/assets/images/`+contacts.svg)" :alt="contacts.contact_type"> -->
                                <div v-html="contacts.svg"></div>
                                <span>{{ contacts.contact_data }}<b>{{ contacts.contact_data_b }}</b></span>

@@ -3,27 +3,27 @@
     "turn_to_us": [
         {
             "turn_to_us_name": "Відчуваєш тривогу в режимі нонстоп?",
-            "turn_to_us_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+            "turn_to_us_text": "Тривога завжди з’являється невчасно. Майбутнє може бути непередбачуваним, навіть у короткостроковій перспективі...",
             "img": "turn-to-us-anxiety.jpg"
         },
         {
             "turn_to_us_name": "Чому хтось цінніший за тебе?",
-            "turn_to_us_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+            "turn_to_us_text": "Цінності творять не лише людину, але й суспільство. Спільні цінності визначають не тільки наше коло спілкування, коло однодумців, а й той напрямок, у якому розвивається вся громада...",
             "img": "turn-to-us-precious.jpg"
         },
         {
             "turn_to_us_name": "Контролюєш себе?",
-            "turn_to_us_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+            "turn_to_us_text": "Людина, яка не вміє керувати своїми емоціями, є емоційно незрілою. У міру своєї зрілості, кожен із нас повинен навчитися емоційної інтелігентності, тобто здатності стримувати емоції...",
             "img": "turn-to-us-control.jpg"
         },
         {
             "turn_to_us_name": "Боїшся за своє майбутнє?",
-            "turn_to_us_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+            "turn_to_us_text": "Останні події у світі показали, що майбутнє може бути вельми непередбачуваним. Але будь-які події не повинні вибивати нас з колії. Що робити, якщо планувати своє життя наперед надто складно...",
             "img": "turn-to-us-afraid.jpg"
         },
         {
             "turn_to_us_name": "Тебе не розуміють?",
-            "turn_to_us_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+            "turn_to_us_text": "Погано коли тебе не розуміють. Для мене головне- це розуміння, так і для кожної людин. Щонайбільше важливо  це для дитини, бо душа її чутлива...",
             "img": "turn-to-us-not-understand.jpg"
         }
     ],

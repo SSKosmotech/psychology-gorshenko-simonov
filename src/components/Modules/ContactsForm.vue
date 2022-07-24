@@ -112,10 +112,10 @@ export default {
             }
 
             if(valid){
-                const message_text = "<i>Заявка з форми на сторінці контактів</i>"+
-                "%0a<b>Name: </b>"+this.name+
-                "%0a<b>Phone number: </b>"+this.phone+
-                "%0a<b>Message: </b>"+this.message
+                const message_text = "<i>Заявка з форми на сторінці \"Контакти\"</i>"+
+                "%0a<b>Ім'я: </b>"+this.name+
+                "%0a<b>Телефон: </b>"+this.phone+
+                "%0a<b>Повідомлання: </b>"+this.message
                 axios
                 .get(`https://api.telegram.org/bot${this.API_BOT_ID}/sendMessage?chat_id=${this.CHAT_ID}&text=${message_text}&parse_mode=HTML`)
                 .then(resp=>{

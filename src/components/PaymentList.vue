@@ -1,13 +1,13 @@
 <template>
     <section id="payment" v-if="paymentListInfoData !== null">
-            <div class="container">
-                <h1>{{ paymentListInfoData.title }}</h1>
+            <!-- <div class="container"> -->
+                <!-- <h1>{{ paymentListInfoData.title }}</h1> -->
 
 
                 <div v-for="(paymants, index) in paymentListInfoData.payments" :key="index" class="payment_method" :class="{payment_method_reverse: index%2 !== 0}">
                     <div class="wrap_content">
                         <div class="title_wrap">
-                            <p>{{ paymants.counts }}</p>
+                            <p>{{ '0'+(index+1) }}</p>
                             <h2>{{ paymants.payments_title }}</h2>
                         </div>
                         <p>{{ paymants.payments_text }}</p>
@@ -86,7 +86,7 @@
                 </div> -->
 
 
-            </div>
+            <!-- </div> -->
         </section>
 </template>
 

@@ -3,7 +3,6 @@
     "about_services": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "services": [
         {
-            "services_count": "01",
             "services_title": "Індивідуальні консультації",
             "services_about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
             "services_price_type": "Консультація",
@@ -13,7 +12,6 @@
             "img": "services-01.jpg"
         },
         {
-            "services_count": "02",
             "services_title": "Сімейний психотерапевт",
             "services_about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
             "services_price_type": "Консультація",
@@ -23,7 +21,6 @@
             "img": "services-02.jpg"
         },
         {
-            "services_count": "03",
             "services_title": "Дитячий психотерапевт",
             "services_about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
             "services_price_type": "Консультація",

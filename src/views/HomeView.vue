@@ -1,14 +1,17 @@
 <template>
-  <div class="home">
+  <div class="container">
     <FirstScreenMainPage />
     <TurnToUs />
     <WhyWe />
     <OurSpecialistsList/>
     <ServicesMain />
+    <h2 class="h2_main_page">Ціни</h2>
     <PricesList />
     <OfferYouList/>
     <ConsultationList/>
+    <h2 class="h2_main_page">Успіхи наших клієнтів</h2>
     <SuccessesList />
+    <h2 class="h2_main_page">Контакти</h2>
     <ContactsList />
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
     <section id="prices" v-if="pricesListInfoData !== null" :class="{'pad_top': $route.path !== '/'}">
-            <div class="container">
-                <h1>{{ pricesListInfoData.title }}</h1>
+            <!-- <div class="container"> -->
+                <!-- <h1>{{ pricesListInfoData.title }}</h1> -->
 
                 <carousel :settings="sliderSettings">
                     <slide v-for="(prices, index) in pricesListInfoData.prices" :key="index" class="our_prices_slider_item_wrap">
@@ -39,7 +39,7 @@
                     </template>
                 </carousel>
 
-            </div>
+            <!-- </div> -->
             
 
 

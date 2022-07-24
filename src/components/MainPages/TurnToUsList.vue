@@ -1,8 +1,8 @@
 <template>
     <section id="turn_to_us" v-if="turnToUsListInfoData !== null">
-            <div class="container">
+            <!-- <div class="container"> -->
 
-                <h1>{{turnToUsListInfoData.title}}</h1>
+                <h2>{{turnToUsListInfoData.title}}</h2>
 
                 <div class="turn_to_us_lists_wrap">
 
@@ -90,7 +90,7 @@
                     <p>{{ turnToUsListInfoData.bottom_info }}</p>
                 </div>
                 <button type="button" class="btn btn_red" @click.prevent="showForm">{{ turnToUsListInfoData.button }}</button>
-            </div>
+            <!-- </div> -->
 
             <modal-window v-if="showModal" @close="showModal = false">
             <!-- <template v-slot:header></template> -->

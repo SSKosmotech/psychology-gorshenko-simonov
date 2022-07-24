@@ -1,9 +1,9 @@
 <template>
     <section id="successes" v-if="successesListInfoData !== null" :class="{'pad_top': $route.path !== '/'}">
 
-            <div class="container">
+            <!-- <div class="container"> -->
 
-                <h2>{{ successesListInfoData.title }}</h2>
+                <!-- <h2>{{ successesListInfoData.title }}</h2> -->
 
                 <div v-for="(successes, index) in successesListInfoData.successes" :key="index" class="clients_successes_item" :class="{clients_successes_item_reverse: index % 2 !== 0}">
                     
@@ -130,7 +130,7 @@
                     
                 </div> -->
             
-            </div>
+            <!-- </div> -->
 
         </section>
 </template>

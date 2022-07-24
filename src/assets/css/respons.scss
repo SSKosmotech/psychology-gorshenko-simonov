@@ -5,7 +5,7 @@
 // }
 
 @media screen and (max-width: 1600px) {
-
+    
     // <<===========================HEADER===========================>>
 
     header#header {
@@ -39,7 +39,8 @@
 
     section#contacts {    
         // padding-top: 390px;
-        h1 {
+        // h1 {
+        .page_title {
             font-size: 3.4rem;
             line-height: 3.4375rem;
             margin-bottom: 64px;
@@ -284,7 +285,7 @@
         border-radius: 400px 400px 0 0;
     }
 
-    section#for_psychologists h1 {
+    section#for_psychologists h2 {
         font-size: 3.5rem;
     }
 
@@ -320,7 +321,7 @@
         align-items: center;
       }
 
-      section#services h1 + p {
+      section#services h2 + p {
         margin-bottom: 100px;
       }
 
@@ -340,7 +341,8 @@
 // <<===========================SECTION #contacts & map===========================>>
 
     section#contacts {    
-        h1 {
+        // h1 {
+        .page_title {
             font-size: 3.2rem;
             line-height: 3.2rem;
         }
@@ -363,7 +365,7 @@
             gap: 20px;
         }
     
-        section#for_psychologists h1 {
+        section#for_psychologists h2 {
             font-size: 3.2rem;
         }
 
@@ -528,7 +530,8 @@
 
 
     // <<===========================SECTION #contacts & map===========================>>
-    section#contacts.pad_top {    
+    // section#contacts.pad_top {    
+    .page_title {    
         padding-top: 200px;
     }
 
@@ -550,7 +553,7 @@
         gap: 40px;
     }
 
-    section#for_psychologists h1 {
+    section#for_psychologists h2 {
         // font-size: 3.2rem;
         margin-bottom: 20px;
     }
@@ -585,8 +588,12 @@
 
     // <<===========================SECTION #payment===========================>>
     section#payment {
-        padding-top: 200px;
+        // padding-top: 200px;
         margin-bottom: 80px;
+    }
+
+    .page_title {
+        padding-top: 200px;
     }
 
     section#payment .payment_method .wrap_img {
@@ -605,7 +612,9 @@
 
     // <<===========================SECTION #services===========================>>
 
-    section#services.pad_top {
+    section#services {
+    // section#services.pad_top {
+    // .page_title {
         padding-top: 200px;
         margin-bottom: 80px;
     }
@@ -638,7 +647,7 @@
         border-radius: 522px 0 0 0;
     }
 
-    section#about_us .about_us_title_wrap h1 {
+    section#about_us .about_us_title_wrap h2 {
         font-size: 3.2rem;
     }
 
@@ -676,34 +685,38 @@
         align-self: center;
     }
 
-    section#specialists h1 {
+    section#specialists h2 {
         font-size: 3.2rem;
     }
     
     // <<===========================SECTION #prices===========================>>
 
-    section#prices.pad_top {
+    // section#prices.pad_top {
+    .page_title {
         padding-top: 200px;
         margin-bottom: 80px; 
+        font-size: 3.2rem;
     }
 
-    section#prices.pad_top h1,
-    section#prices h1 {
-        font-size: 3.2rem;
-        margin-bottom: 80px;
-    }
+    // section#prices.pad_top h1,
+    // section#prices h1 {
+    //     font-size: 3.2rem;
+    //     margin-bottom: 80px;
+    // }
   
     // <<===========================SECTION #successes===========================>>
 
-    section#successes.pad_top {
+    // section#successes.pad_top {
+    .page_title {
         padding-top: 200px;
         margin-bottom: 80px;
-    }
-
-    section#successes.pad_top h2,
-    section#successes h2 {
         font-size: 3.2rem;
     }
+
+    // section#successes.pad_top h2,
+    // section#successes h2 {
+    //     font-size: 3.2rem;
+    // }
 
     section#successes .wrap_img {
         height: 100%;
@@ -775,12 +788,12 @@
             border-radius: 0 400px 400px 0;
         }
 
-        section#turn_to_us h1 {
+        section#turn_to_us h2 {
             font-size: 3.2rem;
         }
 
     // <<===========================SECTION #why_we===========================>>
-    section#why_we h1{
+    section#why_we h2{
         font-size: 3.2rem;    
     }
 
@@ -833,7 +846,7 @@
     }
 
     // <<===========================SECTION #consultation===========================>>
-    section#consultation h1 {
+    section#consultation h2 {
         font-size: 3.2rem;
     }
     section#consultation .consultation_item_wrap p:first-of-type {
@@ -910,6 +923,14 @@
         p:last-of-type {
             font-size: 2.5rem;
         }
+    }
+
+    // <<===========================PageTitle_h2_style===========================>>
+
+    .h2_main_page {
+        font-size: 3.2rem;
+        line-height: 3.4375rem;
+        margin-bottom: 20px;
     }
 }
 
@@ -1012,7 +1033,7 @@
     // <<===========================SECTION #consultation===========================>>
 
     section#consultation {
-        h1 {
+        h2 {
             font-size: 2.8rem;
         }
     }
@@ -1035,7 +1056,7 @@
         align-items: center;
     }
 
-    section#for_psychologists h1 {
+    section#for_psychologists h2 {
         // font-size: 3.2rem;
         margin-bottom: 20px;
     }
@@ -1072,7 +1093,7 @@
 @media screen and (max-width: 810px) {
     // <<===========================SECTION #turn_to_us===========================>>
     
-    section#turn_to_us h1 {
+    section#turn_to_us h2 {
         font-size: 2.5rem;
     }
     section#turn_to_us .turn_to_us_text_wrap h4 {
@@ -1084,6 +1105,14 @@
     }
     section#turn_to_us .turn_to_us_bottom_info {
         padding: 40px 80px;
+    }
+
+    
+    // <<===========================PageTitle_h2_style===========================>>
+
+    .h2_main_page {
+        font-size: 3rem;
+        line-height: 3.4375rem;
     }
 }
 
@@ -1103,7 +1132,7 @@
      // <<===========================SECTION #consultation===========================>>
 
      section#consultation {
-        h1 {
+        h2 {
             font-size: 2.4rem;
             margin-bottom: 80px;
         }
@@ -1132,7 +1161,8 @@
     // <<===========================SECTION #contacts & map===========================>>
 
     section#contacts {    
-        h1 {
+        // h1 {
+        .page_title {
             font-size: 3rem;
             line-height: 3rem;
         }
@@ -1169,7 +1199,7 @@
     }
 
     // <<===========================SECTION #services===========================>>
-    section#services h1 + p {
+    section#services h2 + p {
         margin-bottom: 70px;
     }
 
@@ -1192,8 +1222,12 @@
 
      // <<===========================SECTION #prices===========================>>
 
-    section#prices.pad_top h1,
-    section#prices h1{
+    // section#prices.pad_top h1,
+    // section#prices h1{
+    //         font-size: 3rem;
+    //         margin-bottom: 40px;
+    // }
+    .page_title {
             font-size: 3rem;
             margin-bottom: 40px;
     }
@@ -1209,11 +1243,12 @@
 
     // <<===========================SECTION #successes===========================>>
 
-    section#successes.pad_top {
-        h2 {
-            font-size: 3rem;
-        }
-    }
+    // section#successes.pad_top {
+    // section#successes {
+    //     h2 {
+    //         font-size: 3rem;
+    //     }
+    // }
 }
     
 
@@ -1250,7 +1285,7 @@
         font-size: 6rem;
     }
 
-    section#services .services_list .wrap_content .title_wrap h2 {
+    section#services .services_list .wrap_content .title_wrap h3 {
         font-size: 1.8rem;
         line-height: 2rem;
     }
@@ -1265,6 +1300,9 @@
     section#specialists .specialists_wrap .meta_wrap {
         align-self: center;
     }
+    section#specialists .specialists_wrap .meta_wrap p {
+        font-size: 0.9rem;
+    }
 
 }
 
@@ -1272,17 +1310,17 @@
 
     // <<===========================SECTION #successes===========================>>
 
-    section#successes.pad_top h2,
-    section#successes h2{
-            font-size: 2.5rem;
-    }
+    // section#successes.pad_top h2,
+    // section#successes h2{
+    //         font-size: 2.5rem;
+    // }
 }
 
 
 @media screen and (max-width: 670px) {
     // <<===========================SECTION #for_psychologists===========================>>
 
-    section#for_psychologists h1 {
+    section#for_psychologists h2 {
         font-size: 2.8rem;
     }
 
@@ -1301,7 +1339,7 @@
 
     // <<===========================SECTION #services===========================>>
 
-    section#services h1 {
+    section#services h2 {
         font-size: 2.8rem;
     }
 
@@ -1380,7 +1418,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
             }
         }
     }
-    section#we_offer_you h1 {
+    section#we_offer_you h2 {
         font-size: 3.2rem;
     }
 
@@ -1392,7 +1430,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
     // <<===========================SECTION #turn_to_us===========================>>
     
-       section#turn_to_us h1 {
+       section#turn_to_us h2 {
         font-size: 2.2rem;
     }
     section#turn_to_us .turn_to_us_text_wrap h4 {
@@ -1420,7 +1458,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     // <<===========================SECTION #consultation===========================>>
 
     section#consultation {
-        h1 {
+        h2 {
             font-size: 2rem;
             margin-bottom: 80px;
         }
@@ -1441,7 +1479,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
     // <<===========================SECTION #we_offer_you===========================>>
-    section#we_offer_you h1 {
+    section#we_offer_you h2 {
         font-size: 3rem;
     }
     section#we_offer_you .offer_content_wrap .change_life_wrap {
@@ -1465,7 +1503,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 @media screen and (max-width: 620px) {
 
     // <<===========================SECTION #services===========================>>
-       section#services h1::after {
+       section#services h2::after {
         height: 760px
        }
 
@@ -1476,7 +1514,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         font-size: 5rem;
     }
 
-    section#services .services_list .wrap_content .title_wrap h2 {
+    section#services .services_list .wrap_content .title_wrap h3 {
         font-size: 1.6rem;
         line-height: 1.8rem;
     }
@@ -1488,7 +1526,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
     // <<===========================SECTION #about-us===========================>>
-    section#about_us .about_us_title_wrap h1 {
+    section#about_us .about_us_title_wrap h2 {
         font-size: 2.8rem;
     }
 
@@ -1630,10 +1668,10 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
     // <<===========================SECTION #successes===========================>>
 
-    section#successes.pad_top h2,
-    section#successes h2 {
-            font-size: 2.3rem;
-    }
+    // section#successes.pad_top h2,
+    // section#successes h2 {
+    //         font-size: 2.3rem;
+    // }
 
     // <<===========================SECTION #specialists===========================>>
     section#specialists .specialists_wrap .icons_wrap {
@@ -1649,7 +1687,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
      // <<===========================SECTION #specialists===========================>>
 
-     section#specialists h1 {
+     section#specialists h2 {
         font-size: 2.5rem;
     }
     section#specialists .specialists_wrap {
@@ -1660,7 +1698,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 @media screen and (max-width: 560px) {
     // <<===========================SECTION #for_psychologists===========================>>
 
-    section#for_psychologists h1 {
+    section#for_psychologists h2 {
         font-size: 2.5rem;
     }
 
@@ -1714,14 +1752,14 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
      // <<===========================SECTION #accordion_services===========================>>
     
-     section#accordion_services h2 {
+     section#accordion_services h3 {
         font-size: 3.2rem;
      }
 
     // <<===========================SECTION #consultation===========================>>
 
     section#consultation {
-        h1 {
+        h2 {
             font-size: 1.8rem;
         }
     }
@@ -1748,7 +1786,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 @media screen and (max-width: 520px) {
 
      // <<===========================SECTION #services===========================>>
-     section#services h1 + p {
+     section#services h2 + p {
         font-size: 1.1rem;
         line-height: 2.2rem;
      }
@@ -1758,12 +1796,12 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         top: -10px;
     }
 
-    section#services h1 + p::before {
+    section#services h2 + p::before {
         top: 15px;
     }
 
     // <<===========================SECTION #we_offer_you===========================>>
-    section#we_offer_you h1 {
+    section#we_offer_you h2 {
         font-size: 2.6rem;
         margin-bottom: 40px;
     }
@@ -1867,7 +1905,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     
     // <<===========================SECTION #for_psychologists===========================>>
 
-    section#for_psychologists h1 {
+    section#for_psychologists h2 {
         font-size: 2.2rem;
     }
 
@@ -1956,7 +1994,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
 
   // <<===========================SECTION #about-us===========================>>
-  section#about_us .about_us_title_wrap h1 {
+  section#about_us .about_us_title_wrap h2 {
     font-size: 2rem;
     }
 
@@ -1990,7 +2028,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
     // <<===========================SECTION #we_offer_you===========================>>
 
-    section#we_offer_you h1 {
+    section#we_offer_you h2 {
         font-size: 2.4rem;
         margin-bottom: 20px;
     }
@@ -2030,7 +2068,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
     
     // <<===========================SECTION #why_we===========================>>
-    section#why_we h1 {
+    section#why_we h2 {
         font-size: 2.6rem;
     } 
 
@@ -2041,7 +2079,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 @media screen and (max-width: 450px) {
     // <<===========================SECTION #for_psychologists===========================>>
 
-    section#for_psychologists h1 {
+    section#for_psychologists h2 {
         font-size: 2rem;
     }
 
@@ -2086,7 +2124,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         font-size: 3rem;
     }
 
-    section#accordion_services h2 {
+    section#accordion_services h3 {
         font-size: 2.5rem;
         margin-bottom: 50px;
     }
@@ -2102,12 +2140,24 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
       #side_block .wrap_mobile_menu .mobile_menu_top_wrap{
         margin-bottom: 30px;
       }
+
+    // <<===========================SECTION #services===========================>>
+    section#services h2 {
+        padding-left: 15px;
+    }
+    section#services h2 + p {
+        padding-left: 55px;
+    }
+    section#services h2 + p::before {
+        left: 0;
+    }
+
  }
 
  @media screen and (max-width: 430px) {
      // <<===========================SECTION #services===========================>>
     
-     section#services h1::after {
+     section#services h2::after {
         height: 780px;
      }
 
@@ -2162,7 +2212,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         // <<===========================SECTION #consultation===========================>>
 
         section#consultation {
-            h1 {
+            h2 {
                 font-size: 1.4rem;
             }
         }
@@ -2184,9 +2234,16 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         }
         
         // <<===========================SECTION #we_offer_you===========================>>
-        section#we_offer_you h1 {
+        section#we_offer_you h2 {
             font-size: 2.3rem;
         }
+
+    // <<===========================PageTitle_h2_style===========================>>
+
+    .h2_main_page {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
 
  }
 
@@ -2252,7 +2309,8 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     // <<===========================SECTION #contact_form===========================>>
 
     section#contacts {
-        h1 {
+        // h1 {
+        .page_title {
             font-size: 1.5625rem;
             line-height: 1.875rem;
             text-align: left;
@@ -2397,7 +2455,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 @media screen and (max-width: 405px) {
     // <<===========================SECTION #for_psychologists===========================>>
 
-    section#for_psychologists h1 {
+    section#for_psychologists h2 {
         font-size: 1.8rem;
     }
 
@@ -2407,7 +2465,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
     // <<===========================SECTION #services===========================>>
 
-    section#services h1::after {
+    section#services h2::after {
         height: 820px;
     }
 
@@ -2441,7 +2499,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
     // <<===========================SECTION #we_offer_you===========================>>
-        section#we_offer_you h1 {
+        section#we_offer_you h2 {
         font-size: 2.2rem;
     }
     section#we_offer_you .offer_content_wrap p:nth-child(odd) {
@@ -2526,7 +2584,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     // <<===========================SECTION #consultation===========================>>
 
     section#consultation {
-        h1 {
+        h2 {
             line-height: 2.2rem;
         }
     }
@@ -2577,10 +2635,16 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
     // <<===========================SECTION #we_offer_you===========================>>
-        section#we_offer_you h1 {
+        section#we_offer_you h2 {
         font-size: 2.1rem;
     }
 
+    // <<===========================PageTitle_h2_style===========================>>
+
+    .h2_main_page {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
 
 }
 
@@ -2628,7 +2692,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
          // <<===========================SECTION #services===========================>>
 
-            section#services h1 {
+            section#services h2 {
             font-size: 1.5625rem;
             line-height: 1.8925rem;
             + p {
@@ -2641,7 +2705,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
             font-size: 4.375rem;
         }
         
-        section#services .services_list .wrap_content .title_wrap h2 {
+        section#services .services_list .wrap_content .title_wrap h3 {
             font-size: 1.125rem;
         }
 
@@ -2667,11 +2731,11 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
             top: 9px;
         }
 
-        section#services .services_list .wrap_content .title_wrap h2::after {
+        section#services .services_list .wrap_content .title_wrap h3::after {
             width: 95%;
         }
 
-        section#services h1::after {
+        section#services h2::after {
             height: 680px;
             width: 85%;
         }
@@ -2700,7 +2764,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     section#about_us .five_reasons h2 {
         font-size: 1.3rem;
     }
-    section#about_us .about_us_title_wrap h1 {
+    section#about_us .about_us_title_wrap h2 {
         font-size: 1.7rem;
     }
     section#about_us .about_us_title_wrap::after {
@@ -2735,7 +2799,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         section#turn_to_us .turn_to_us_bottom_info {
             padding: 15px;
         }
-        section#why_we h1 {
+        section#why_we h2 {
             font-size: 2.2rem;
         }
 
@@ -2770,7 +2834,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 @media screen and (max-width: 360px) {
     // <<===========================SECTION #for_psychologists===========================>>
 
-    section#for_psychologists h1 {
+    section#for_psychologists h2 {
         font-size: 1.7rem;
     }
 
@@ -2786,7 +2850,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     
     // <<===========================SECTION #specialists===========================>>
 
-    section#specialists h1 {
+    section#specialists h2 {
         font-size: 1.7rem;
     }
 
@@ -2803,12 +2867,12 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
     // <<===========================SECTION #accordion_services===========================>>
 
-    section#accordion_services h2 {
+    section#accordion_services h3 {
         font-size: 2.2rem;
     }
 
     // <<===========================SECTION #we_offer_you===========================>>
-        section#we_offer_you h1 {
+        section#we_offer_you h2 {
         font-size: 2rem;
     }
     
@@ -2831,7 +2895,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
     // <<===========================SECTION #we_offer_you===========================>>
-        section#we_offer_you h1 {
+        section#we_offer_you h2 {
         font-size: 1.9rem;
     }
 
@@ -2849,7 +2913,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
     
     // <<===========================SECTION #we_offer_you===========================>>
-        section#we_offer_you h1 {
+        section#we_offer_you h2 {
         font-size: 1.85rem;
     }
 
@@ -2876,10 +2940,10 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
     // <<===========================SECTION #successes===========================>>
 
-    section#successes.pad_top h2,
-    section#successes h2 {
-            font-size: 2rem;
-    }
+    // section#successes.pad_top h2,
+    // section#successes h2 {
+    //         font-size: 2rem;
+    // }
      // <<===========================SECTION #specialists===========================>>
      section#specialists .specialists_wrap > p {
         font-size: 1rem;

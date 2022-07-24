@@ -1,8 +1,6 @@
 {
-    "title": "Оплата",
     "payments": [
         {
-            "counts": "01",
             "payments_title": "На картку",
             "payments_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "button_text": "Сплатити",
@@ -11,7 +9,6 @@
             "Link": "https://www.privat24.ua/rd/transfer_to_card/?hash=rd%2Ftransfer_to_card%2F%7B%22from%22%3A%22%22%2C%22to%22%3A%224149629385130075%22%2C%22amt%22%3A%22100%22%2C%22ccy%22%3A%22UAH%22%7D"
         },
         {
-            "counts": "02",
             "payments_title": "Готівка",
             "payments_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "button_text": "Сплатити",
@@ -21,7 +18,6 @@
 
         },
         {
-            "counts": "03",
             "payments_title": "На рахунок",
             "payments_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "button_text": "Сплатити",

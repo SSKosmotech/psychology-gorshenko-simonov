@@ -1,9 +1,9 @@
 <template>
     <section id="consultation" v-if="consultationInfoData !== null">
 
-            <div class="container">
+            <!-- <div class="container"> -->
 
-               <h1>{{ consultationInfoData.title }}</h1>
+               <h2>{{ consultationInfoData.title }}</h2>
 
                <div class="wrap_all_block_consultation">
 
@@ -47,7 +47,7 @@
                </div>
                 
 
-            </div>
+            <!-- </div> -->
 
         <modal-window v-if="showModal" @close="showModal = false">
             <!-- <template v-slot:header></template> -->

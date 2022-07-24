@@ -1,6 +1,6 @@
 <template>
     <section id="about_us" v-if="aboutUsListInfoData !== null">
-            <div class="container">
+            <!-- <div class="container"> -->
 
                 <div class="about_us_wrap">
                     <!-- <div class="wrap_img">
@@ -14,7 +14,7 @@
                      </div>
 
                     <div class="about_us_title_wrap">
-                        <h1>{{ aboutUsListInfoData.title }}</h1>
+                        <h2>{{ aboutUsListInfoData.title }}</h2>
                         <p>{{ aboutUsListInfoData.about_first_paragraph }}</p>
                         <p>{{ aboutUsListInfoData.about_second_paragraph }}</p>
                     </div>
@@ -22,7 +22,7 @@
 
                 <div class="five_reasons">
 
-                    <h2><span>{{ aboutUsListInfoData.about_reasons_count }}</span>{{ aboutUsListInfoData.about_reasons_title }}</h2>
+                    <h2><span>{{ aboutUsListInfoData.about_reasons_times }}</span>{{ aboutUsListInfoData.about_reasons_title }}</h2>
                     
                     <div class="reasons_top">
                             <div class="reason_wrap">
@@ -120,7 +120,7 @@
 
                 </div>
 
-            </div>
+            <!-- </div> -->
     </section>
 
 </template>

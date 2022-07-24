@@ -1,6 +1,6 @@
 <template>
     <section id="for_psychologists_form" v-if="psychologistsInfoData !== null">
-        <div class="container">
+        <!-- <div class="container"> -->
 
             <h2>{{ psychologistsInfoData.title_form }}</h2>
 
@@ -31,7 +31,7 @@
                 <button type="submit" class="btn btn_m">{{ psychologistsInfoData.button }}</button>
             </form>
 
-        </div>
+        <!-- </div> -->
     </section>
 </template>
 

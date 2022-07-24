@@ -1,6 +1,6 @@
 <template>
     <div id="feedback_form" v-if="feedbackFormInfoData !== null">
-       <h2>{{ feedbackFormInfoData.title }}</h2>
+       <h3>{{ feedbackFormInfoData.title }}</h3>
        <p>{{ feedbackFormInfoData.feedback_form_text }}</p>
 
        <form class="form_feedback" @submit.prevent="checkAndSend">

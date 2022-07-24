@@ -1,8 +1,8 @@
 <template>
     <section id="why_we" v-if="whyWeListInfoData !== null">
-            <div class="container">
+            <!-- <div class="container"> -->
             
-                <h1>{{ whyWeListInfoData.title }}</h1>
+                <h2>{{ whyWeListInfoData.title }}</h2>
 
                 <div class="why_we_list_wrap">
 
@@ -46,7 +46,7 @@
                     </div>
 
                 </div>
-            </div>
+            <!-- </div> -->
         </section>
 </template>
 

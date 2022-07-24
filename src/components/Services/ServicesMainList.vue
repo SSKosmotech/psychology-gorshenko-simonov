@@ -2,7 +2,7 @@
     
         <section id="accordion_services" v-if="servicesMainInfoData !== null">
 
-            <div class="container">
+            <!-- <div class="container"> -->
 
                 <h2>{{ servicesMainInfoData.title }}</h2>
 
@@ -131,7 +131,7 @@
                     </div> -->
 
                 </div>
-            </div>
+            <!-- </div> -->
 
         </section>
 

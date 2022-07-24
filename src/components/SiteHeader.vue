@@ -100,8 +100,9 @@
 
 
 
-     <header id="header" :class="{'fixed': isFixed}">
+     <header id="header" :class="{'fixed': isFixed, 'up_scroll': !isFixed && scy > 180}">
         <div class="container">
+        <!-- <div class="container" :class="{'up_scroll': !isFixed}"> -->
             <!-- <div class="wrap_menu" :class="{'up_scroll': isFixed}"> -->
             <div class="wrap_menu">
 
@@ -225,7 +226,7 @@ export default {
         //     this.isFixed = window.scrollY > 80;
         // },
         toggleFixedScroll() {
-        const scy = window.scrollY
+        let scy = window.scrollY
         if (scy > this.prevScroll && scy > 180) {
                 this.isFixed = true
         } else {

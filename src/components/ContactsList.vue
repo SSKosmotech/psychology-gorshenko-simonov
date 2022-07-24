@@ -1,10 +1,11 @@
 <!-- <template v-for="(contactInfo, index) in contactsListInfoData" :key="index" > -->
 <template>
-    <section id="contacts" :class="{'pad_top': $route.path !== '/'}">
-        <div class="container">
+    <!-- <section id="contacts" :class="{'pad_top': $route.path !== '/'}"> -->
+    <section id="contacts">
+        <!-- <div class="container"> -->
 
             <!-- <h1>Контакти</h1> -->
-            <h1>{{ contactsListInfoData.title }}</h1>
+            <!-- <h1>{{ contactsListInfoData.title }}</h1> -->
 
             <div class="contacts_section_wrap">
 
@@ -114,7 +115,7 @@
 
             </div>
 
-        </div>
+        <!-- </div> -->
     </section>
 
 

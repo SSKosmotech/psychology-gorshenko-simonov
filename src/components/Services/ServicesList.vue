@@ -1,8 +1,9 @@
 <template>
-    <section id="services" v-if="servicesListInfoData !== null" :class="{'pad_top': $route.path !== '/'}">
-            <div class="container">
+    <!-- <section id="services" v-if="servicesListInfoData !== null" :class="{'pad_top': $route.path !== '/'}"> -->
+    <section id="services" v-if="servicesListInfoData !== null">
+            <!-- <div class="container"> -->
                 <div>
-                    <h1>{{ servicesListInfoData.title }}</h1>
+                    <h2>{{ servicesListInfoData.title }}</h2>
                     <p>{{ servicesListInfoData.about_services }}</p>
                 </div>
 
@@ -11,8 +12,8 @@
                         <div class="wrap_content">
                             
                             <div class="title_wrap">
-                                <p>{{ services.services_count }}</p>
-                                <h2>{{ services.services_title }}</h2>
+                                <p>{{ '0'+(index+1) }}</p>
+                                <h3>{{ services.services_title }}</h3>
                             </div>
                             <p class="services_about">{{ services.services_about }}</p>
                             <div class="services_price">
@@ -96,7 +97,7 @@
                     </div>
                 </div> -->
 
-            </div>
+            <!-- </div> -->
 
         <modal-window v-if="showModal" @close="showModal = false">
             <!-- <template v-slot:header></template> -->

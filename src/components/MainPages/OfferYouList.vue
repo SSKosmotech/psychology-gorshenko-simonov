@@ -1,8 +1,8 @@
 <template>
     <section id="we_offer_you" v-if="weOfferYouInfoData !== null">
-        <div class="container">
+        <!-- <div class="container"> -->
 
-            <h1>{{ weOfferYouInfoData.title }}</h1>
+            <h2>{{ weOfferYouInfoData.title }}</h2>
 
             <div class="offer_wrap">
                 <div class="offer_content_wrap">
@@ -31,7 +31,7 @@
                 </div>
 
             </div>
-        </div>
+        <!-- </div> -->
 
         <modal-window v-if="showModal" @close="showModal = false">
             <!-- <template v-slot:header></template> -->

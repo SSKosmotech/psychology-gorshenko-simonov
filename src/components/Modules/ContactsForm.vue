@@ -1,7 +1,7 @@
 <template>
 
     <section id="contact_form">
-        <div class="container">
+        <!-- <div class="container"> -->
             <div class="wrap_p_form">
                 <p>{{contactsListInfoData.question}}</p>
                 <!-- <p>Залишились питання? Заповніть форму і ми
@@ -43,7 +43,7 @@
 
                 <button type="submit" class="btn btn_m">{{ contactsListInfoData.button }}</button>
             </form>
-        </div>
+        <!-- </div> -->
     </section>
 </template>
 

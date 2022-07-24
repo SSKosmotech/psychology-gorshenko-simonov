@@ -357,7 +357,7 @@ header#header {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     // background-color: transparent;
-    background-color: #FFF;
+    // background-color: #FFF;
     &.fixed {
         top: -243px;
         // background-color: #fff;
@@ -3558,7 +3558,7 @@ footer#footer {
         height: 15px;
         border-top: 3px solid #FFF;
         border-left: 3px solid #fff;
-        top: 23px;
+        top: 20px;
         left: 43%;
         transform: rotate(45deg)
     }

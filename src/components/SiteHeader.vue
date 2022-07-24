@@ -100,7 +100,7 @@
 
 
 
-     <header id="header" :class="{'fixed': isFixed, 'up_scroll': !isFixed && scy > 180}">
+     <header id="header" :class="{'fixed': isFixed, 'up_scroll': isScrollZero }">
         <div class="container">
         <!-- <div class="container" :class="{'up_scroll': !isFixed}"> -->
             <!-- <div class="wrap_menu" :class="{'up_scroll': isFixed}"> -->
@@ -211,11 +211,13 @@ export default {
         return {
             isFixed: false,
             isOpenMobileMenu: false,
-            showModal: false
+            showModal: false,
+            isScrollZero: false
         }
     },
     created() {
         window.addEventListener("scroll", this.toggleFixedScroll);
+        window.addEventListener("scroll", this.toggleScrollZero);
     },
     // mounted () {
     //     document.body.classList.add('lock')
@@ -226,21 +228,36 @@ export default {
         //     this.isFixed = window.scrollY > 80;
         // },
         toggleFixedScroll() {
-        let scy = window.scrollY
-        if (scy > this.prevScroll && scy > 180) {
-                this.isFixed = true
-        } else {
-            this.isFixed = false
-        }
-            this.prevScroll = scy <= 0 ? 0 : scy
+            let scy = window.scrollY
+            if (scy > this.prevScroll && scy > 180) {
+                    this.isFixed = true
+            } else {
+                this.isFixed = false
+            }
+                this.prevScroll = scy <= 0 ? 0 : scy
         },
-        toggleMobileMenu() {
+        toggleScrollZero() {
+            if(window.scrollY !== 0){
+                this.isScrollZero = true
+            } else {
+                this.isScrollZero = false
+            }
+        },
+        MobileMenu() {
             this.isOpenMobileMenu = !this.isOpenMobileMenu
             this.isOpenMobileMenu === true ? document.body.classList.add('lock') : document.body.classList.remove('lock')
         },
         showForm() {
             this.showModal = true
-        }
+        },
+        // toggleUpScroll() {
+        //     let usc = window.scrollY
+        //     if (usc > 180) {
+        //         this.isUpScroll = true
+        //     } else {
+        //         this.isUpScroll = false
+        //     }
+        // }
     }
 }
 </script>

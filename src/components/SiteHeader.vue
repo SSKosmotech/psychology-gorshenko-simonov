@@ -243,7 +243,7 @@ export default {
                 this.isScrollZero = false
             }
         },
-        MobileMenu() {
+        toggleMobileMenu() {
             this.isOpenMobileMenu = !this.isOpenMobileMenu
             this.isOpenMobileMenu === true ? document.body.classList.add('lock') : document.body.classList.remove('lock')
         },

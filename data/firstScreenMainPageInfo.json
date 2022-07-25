@@ -1,0 +1,12 @@
+{
+    "type": "Центр",
+    "name": "Практичної психології",
+    "surname": "Меланії Горшенко",
+    "quote": "Твій психолог завжди поруч, де б ти не був.",
+    "button": "Записатися",
+    "promotion": "Знижено ціну",
+    "promotion_text": "на перше заняття: ",
+    "promotion_price": "300₴",
+    "promotion_old_price": "600 ₴",
+    "first_screen_img": "first_screen_main_page.jpg"
+}

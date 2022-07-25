@@ -1,0 +1,60 @@
+{
+    "prices": [
+        {
+            "prices_time": "60",
+            "prices_time_name": "хвилин",
+            "prices_title": "Перша ",
+            "prices_title_color": "консультація",
+            "prices_about_first": "Зрозумієте, чи підходить формат",
+            "prices_about_second": "Отримаєте психологічну діагностику",
+            "prices_about_third": "Зробите перший крок",
+            "prices_price_online": "250₴",
+            "prices_price_online_title": "Онлайн",
+            "prices_price_offline": "300₴",
+            "prices_price_offline_title": "Очно",
+            "button": "Записатися"
+        },
+        {
+            "prices_time": "60",
+            "prices_time_name": "хвилин",
+            "prices_title": "Наступна ",
+            "prices_title_color": "консультація",
+            "prices_about_first": "Підбір методики під ваш тип",
+            "prices_about_second": "Онлайн підтримка 24/7",
+            "prices_about_third": "Використання технік для вирішення Вашого запиту",
+            "prices_price_online": "350₴",
+            "prices_price_online_title": "Онлайн",
+            "prices_price_offline": "400₴",
+            "prices_price_offline_title": "Очно",
+            "button": "Записатися"
+        },
+        {
+            "prices_time": "60",
+            "prices_time_name": "хвилин",
+            "prices_title": "Психологічний курс ",
+            "prices_title_color": "\"5 занять\"",
+            "prices_about_first": "Підбір методики під ваш тип",
+            "prices_about_second": "Онлайн підтримка 24/7",
+            "prices_about_third": "Отримаєте приємний подарунок в кінці курсу",
+            "prices_price_online": "1200₴",
+            "prices_price_online_title": "Онлайн",
+            "prices_price_offline": "1500₴",
+            "prices_price_offline_title": "Очно",
+            "button": "Записатися"
+        },
+        {
+            "prices_time": "60",
+            "prices_time_name": "хвилин",
+            "prices_title": "Курс  ",
+            "prices_title_color": "\"Стосунки у парі\"",
+            "prices_about_first": "7 занять + додаткова консультація після курсу",
+            "prices_about_second": "Онлайн підтримка 24/7",
+            "prices_about_third": "Підбір методики під ваш тип",
+            "prices_price_online": "2400₴",
+            "prices_price_online_title": "Онлайн",
+            "prices_price_offline": "3000₴",
+            "prices_price_offline_title": "Очно",
+            "button": "Записатися"
+        }
+    ]
+}

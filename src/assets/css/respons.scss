@@ -959,6 +959,9 @@
     section#prices .carousel__viewport {
         margin-bottom: -20px;
     }
+    section#prices .carousel__track {
+        padding-bottom: 70px
+    }
 }
     
 @media screen and (max-width: 1000px) {
@@ -1992,6 +1995,12 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         height: 400px;
     }
 
+    section#prices .our_prices_slider_item::after {
+        height: 720px;
+    }
+
+
+
 
   // <<===========================SECTION #about-us===========================>>
   section#about_us .about_us_title_wrap h2 {
@@ -2152,6 +2161,13 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         left: 0;
     }
 
+    // <<===========================SECTION #prices===========================>>
+ 
+    section#prices .our_prices_slider_item ul li {
+        font-size: 1.05rem;
+        margin-bottom: 10px;
+    }
+
  }
 
  @media screen and (max-width: 430px) {
@@ -2175,9 +2191,8 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         font-size: 3.2rem;
         margin-bottom: 0;
     }
-    section#prices .our_prices_slider_item {
-        height: 570px
-    }
+  
+
 
     // <<===========================SECTION #first_screen_main_page===========================>>
 
@@ -2751,7 +2766,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
     section#prices .our_prices_slider_item {
-        height: 560px
+        // height: 560px
     }
 
     // <<===========================SECTION #about-us===========================>>

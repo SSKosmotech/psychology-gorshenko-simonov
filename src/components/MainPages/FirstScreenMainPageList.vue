@@ -1,7 +1,7 @@
 <template>
 
     <section id="first_screen_main_page" v-if="firstScreenInfoData !== null">
-            <div class="container">
+            <!-- <div class="container"> -->
 
                 <div class="wrap_first_screen">
                     <div class="wrap_img">
@@ -31,7 +31,7 @@
                     </div>
                 </div>
 
-            </div>
+            <!-- </div> -->
         </section>
 
         <modal-window v-if="showModal" @close="showModal = false">
@@ -70,7 +70,7 @@ export default {
     },
     created() {
         axios
-            .get('/data/firstScreenMainPageInfo.json')
+            .get('data/firstScreenMainPageInfo.json')
             .then(resp=>{
                 this.firstScreenInfoData = resp.data
             })

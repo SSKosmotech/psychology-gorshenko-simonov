@@ -128,7 +128,7 @@ export default {
     },
     created() {
         axios
-            .get("/data/turnToUsInfo.json")
+            .get("data/turnToUsInfo.json")
             .then(resp => {
             this.turnToUsListInfoData = resp.data;
         })

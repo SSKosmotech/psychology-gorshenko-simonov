@@ -239,6 +239,14 @@
 
 }
 
+@media screen and (max-width: 1530px) {
+    // <<===========================SECTION #turn_to_us===========================>>
+    section#turn_to_us {
+        padding-top: 150px;
+    }
+}
+
+
 
 @media screen and (max-width: 1430px) {
 
@@ -357,7 +365,10 @@
         .cont_right_wrap {
             flex-direction: column;
         }
+    }
 
+    section#contacts .contacts_wrap {
+        padding-top: 100px;
     }
         // <<===========================SECTION #for_psychologists===========================>>
         section#for_psychologists .psychologists_content_wrap {
@@ -1119,6 +1130,22 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    .btn_to_top {
+        width: 70px;
+        height: 70px;
+        &::before {
+            top: 15%;
+            left: 50%;
+            height: 40px;
+        }
+        &::after {
+            top: 11px;
+            left: 40.4%;
+        }
+    }
+}
+
 
 @media screen and (max-width: 790px) {
     // <<===========================SECTION #for_psychologists===========================>>
@@ -1190,7 +1217,9 @@
         .address {
             order: -1;
         }
-    
+    }
+    section#contacts .contacts_wrap {
+        padding-top: 50px;
     }
 
     // <<===========================SECTION #for_psychologists===========================>>

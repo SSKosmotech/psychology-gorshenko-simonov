@@ -146,7 +146,7 @@ export default {
     },
     created() {
         axios
-            .get('/data/successesInfo.json')
+            .get('data/successesInfo.json')
             .then(resp=>{
                 this.successesListInfoData = resp.data
             })

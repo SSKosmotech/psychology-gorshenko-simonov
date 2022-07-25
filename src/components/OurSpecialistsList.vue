@@ -275,7 +275,7 @@ export default {
     },
     created() {
         axios
-            .get('/data/ourSpecialistsInfo.json')
+            .get('data/ourSpecialistsInfo.json')
             .then(resp=>{
                 this.ourSpecialistsListInfoData = resp.data
             })

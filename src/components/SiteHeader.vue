@@ -31,16 +31,16 @@
 
                     <nav class="mobile_menu">
                         <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
-                            <li><router-link to="/">Головна</router-link></li>
-                            <li><router-link to="/about-us">Про нас</router-link></li>
-                            <li><router-link to="/services">Послуги</router-link></li>
-                            <li><router-link to="/prices">Ціни</router-link></li>
-                            <li><router-link to="/for-psychologists">Психологам</router-link></li>
-                            <li><router-link to="/seminars">Семінари</router-link></li>
-                            <li><router-link to="/successes">Успіхи</router-link></li>
-                            <li><router-link to="/contacts">Контакти</router-link></li>
+                            <li><router-link to="/" itemprop="url">Головна</router-link></li>
+                            <li><router-link to="/about-us" itemprop="url">Про нас</router-link></li>
+                            <li><router-link to="/services" itemprop="url">Послуги</router-link></li>
+                            <li><router-link to="/prices" itemprop="url">Ціни</router-link></li>
+                            <li><router-link to="/for-psychologists" itemprop="url">Психологам</router-link></li>
+                            <li><router-link to="/seminars" itemprop="url">Семінари</router-link></li>
+                            <li><router-link to="/successes" itemprop="url">Успіхи</router-link></li>
+                            <li><router-link to="/contacts" itemprop="url">Контакти</router-link></li>
                             <li>
-                                <router-link to="/payment" class="header_wallet_text">
+                                <router-link to="/payment" itemprop="url" class="header_wallet_text">
                                     Оплата
                                     <svg class="header_wallet" width="40" height="37" viewbox="0 0 40 37" fill="#536779" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M39.1911 18.9967H36.3211V12.1691C36.3211 12.1378 36.3178 12.1072 36.316 12.0763V6.81856C36.316 6.46104 36.0028 6.17125 35.6162 6.17125H28.1962L21.7814 0.237457C21.6501 0.116097 21.4721 0.0478935 21.2865 0.0478935C21.1009 0.0478935 20.9229 0.116076 20.7916 0.237457L15.9546 4.71172L13.6807 2.60829C13.4074 2.35552 12.9643 2.35552 12.691 2.60829L8.8346 6.1754C8.80913 6.17279 8.78324 6.17125 8.757 6.17125H0.809175C0.422664 6.17125 0.109375 6.46104 0.109375 6.81856V13.7079C0.109375 13.729 0.110642 13.7499 0.112797 13.7705V35.1951C0.112797 36.1639 0.964908 36.9521 2.01226 36.9521H34.4216C35.469 36.9521 36.3211 36.1639 36.3211 35.1951V28.3675H39.1911C39.5777 28.3675 39.8909 28.0777 39.8909 27.7202V19.6441C39.8909 19.2865 39.5776 18.9967 39.1911 18.9967ZM34.9164 7.4659V10.4747C34.7584 10.4351 34.593 10.4121 34.4216 10.4121H32.7808L29.5957 7.4659H34.9164ZM21.2865 1.61065L30.8015 10.4121H28.6774L20.2245 2.59302L21.2865 1.61065ZM19.2348 3.50856L26.6979 10.4121H22.1173L16.9444 5.62716L19.2348 3.50856ZM13.1858 3.98149L14.9649 5.62714L15.9546 6.54258L20.1378 10.4121H18.2303L12.2321 4.86369L13.1858 3.98149ZM16.2508 10.4121H6.23386L11.2423 5.77923L16.2508 10.4121ZM4.25442 10.4121H2.01226C1.8378 10.4121 1.6696 10.4357 1.509 10.4766V7.4659H7.43949L4.25442 10.4121ZM34.9215 35.1951C34.9215 35.45 34.6972 35.6575 34.4216 35.6575H2.01226C1.73666 35.6575 1.51242 35.45 1.51242 35.1951V12.1691C1.51242 11.9142 1.73666 11.7067 2.01226 11.7067H34.4216C34.6801 11.7067 34.8908 11.8898 34.9164 12.1226V13.7079C34.9164 13.7333 34.9185 13.7583 34.9215 13.783V18.9968H28.5608C25.7678 18.9968 23.4955 21.0986 23.4955 23.6821C23.4955 26.2657 25.7678 28.3676 28.5608 28.3676H34.9215V35.1951H34.9215ZM38.4913 27.0729H36.3211H34.9215H28.5608C26.5396 27.0729 24.8951 25.5518 24.8951 23.6821C24.8951 21.8124 26.5396 20.2914 28.5608 20.2914H34.9215H36.3211H38.4913V27.0729Z"/>
@@ -102,7 +102,7 @@
 
      <header id="header" :class="{'fixed': isFixed, 'up_scroll': isScrollZero }">
         <div class="container">
-        <!-- <div class="container" :class="{'up_scroll': !isFixed}"> -->
+            <!-- <div class="container" :class="{'up_scroll': !isFixed}"> -->
             <!-- <div class="wrap_menu" :class="{'up_scroll': isFixed}"> -->
             <div class="wrap_menu">
 
@@ -148,16 +148,16 @@
                 <div class="menu_bottom_wrap">
                     <nav class="main_menu">
                         <ul itemscope itemtype="http://schema.org/SiteNavigationElement">
-                            <li> <router-link to="/">Головна</router-link></li>
-                            <li><router-link to="/about-us">Про нас</router-link></li>
-                            <li><router-link to="/services">Послуги</router-link></li>
-                            <li><router-link to="/prices">Ціни</router-link></li>
-                            <li><router-link to="/for-psychologists">Психологам</router-link></li>
-                            <li><router-link to="/seminars">Семінари</router-link></li>
-                            <li><router-link to="/successes">Успіхи</router-link></li>
-                            <li><router-link to="/contacts">Контакти</router-link></li>
+                            <li><router-link to="/" itemprop="url">Головна</router-link></li>
+                            <li><router-link to="/about-us" itemprop="url">Про нас</router-link></li>
+                            <li><router-link to="/services" itemprop="url">Послуги</router-link></li>
+                            <li><router-link to="/prices" itemprop="url">Ціни</router-link></li>
+                            <li><router-link to="/for-psychologists" itemprop="url">Психологам</router-link></li>
+                            <li><router-link to="/seminars" itemprop="url">Семінари</router-link></li>
+                            <li><router-link to="/successes" itemprop="url">Успіхи</router-link></li>
+                            <li><router-link to="/contacts" itemprop="url">Контакти</router-link></li>
                             <li>
-                                <router-link to="/payment" class="header_wallet_text">
+                                <router-link to="/payment" itemprop="url" class="header_wallet_text">
                                     Оплата
                                     <svg class="header_wallet" width="40" height="37" viewbox="0 0 40 37" fill="#536779" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M39.1911 18.9967H36.3211V12.1691C36.3211 12.1378 36.3178 12.1072 36.316 12.0763V6.81856C36.316 6.46104 36.0028 6.17125 35.6162 6.17125H28.1962L21.7814 0.237457C21.6501 0.116097 21.4721 0.0478935 21.2865 0.0478935C21.1009 0.0478935 20.9229 0.116076 20.7916 0.237457L15.9546 4.71172L13.6807 2.60829C13.4074 2.35552 12.9643 2.35552 12.691 2.60829L8.8346 6.1754C8.80913 6.17279 8.78324 6.17125 8.757 6.17125H0.809175C0.422664 6.17125 0.109375 6.46104 0.109375 6.81856V13.7079C0.109375 13.729 0.110642 13.7499 0.112797 13.7705V35.1951C0.112797 36.1639 0.964908 36.9521 2.01226 36.9521H34.4216C35.469 36.9521 36.3211 36.1639 36.3211 35.1951V28.3675H39.1911C39.5777 28.3675 39.8909 28.0777 39.8909 27.7202V19.6441C39.8909 19.2865 39.5776 18.9967 39.1911 18.9967ZM34.9164 7.4659V10.4747C34.7584 10.4351 34.593 10.4121 34.4216 10.4121H32.7808L29.5957 7.4659H34.9164ZM21.2865 1.61065L30.8015 10.4121H28.6774L20.2245 2.59302L21.2865 1.61065ZM19.2348 3.50856L26.6979 10.4121H22.1173L16.9444 5.62716L19.2348 3.50856ZM13.1858 3.98149L14.9649 5.62714L15.9546 6.54258L20.1378 10.4121H18.2303L12.2321 4.86369L13.1858 3.98149ZM16.2508 10.4121H6.23386L11.2423 5.77923L16.2508 10.4121ZM4.25442 10.4121H2.01226C1.8378 10.4121 1.6696 10.4357 1.509 10.4766V7.4659H7.43949L4.25442 10.4121ZM34.9215 35.1951C34.9215 35.45 34.6972 35.6575 34.4216 35.6575H2.01226C1.73666 35.6575 1.51242 35.45 1.51242 35.1951V12.1691C1.51242 11.9142 1.73666 11.7067 2.01226 11.7067H34.4216C34.6801 11.7067 34.8908 11.8898 34.9164 12.1226V13.7079C34.9164 13.7333 34.9185 13.7583 34.9215 13.783V18.9968H28.5608C25.7678 18.9968 23.4955 21.0986 23.4955 23.6821C23.4955 26.2657 25.7678 28.3676 28.5608 28.3676H34.9215V35.1951H34.9215ZM38.4913 27.0729H36.3211H34.9215H28.5608C26.5396 27.0729 24.8951 25.5518 24.8951 23.6821C24.8951 21.8124 26.5396 20.2914 28.5608 20.2914H34.9215H36.3211H38.4913V27.0729Z"/>

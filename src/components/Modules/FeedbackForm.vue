@@ -67,7 +67,7 @@ export default {
     },
     created() {
         axios
-            .get('/data/feedbackFormInfo.json')
+            .get('data/feedbackFormInfo.json')
             .then(resp=>{
                 this.feedbackFormInfoData = resp.data
             })

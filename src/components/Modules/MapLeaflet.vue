@@ -12,6 +12,13 @@ import '@/assets/plugins/leaflet/leaflet.css'
 
 export default {
     name: 'MapLeaflet',
+    // created() {
+    //     document.body.addEventListener('click', function(e){
+    //         if(e.target.className === 'leaflet-popup-close-button'){
+    //             e.preventDefault()
+    //         }
+    //     })
+    // },
     mounted() {
         const map = L.map("map").setView([49.81984911958817, 24.02887643356052], 12);
         // Google Streets:

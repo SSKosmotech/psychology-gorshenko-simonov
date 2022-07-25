@@ -17,7 +17,7 @@ export default {
     },
     created() {
         axios
-            .get('/data/modalMetaInfo.json')
+            .get('data/modalMetaInfo.json')
             .then(resp=>{
                 this.metaInfoData = resp.data
             })

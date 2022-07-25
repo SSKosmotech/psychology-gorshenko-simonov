@@ -398,13 +398,11 @@ header#header {
     & .menu_top_wrap {
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        // justify-content: flex-start;
+        justify-content: space-between;
         align-items: center;
-    }
-
-    & .menu_top_wrap {
-        justify-content: flex-start;
         transition: all 0.4s ease;
+
         // margin-bottom: 46px;
         margin-bottom: 10px;
 
@@ -753,6 +751,9 @@ section#contacts {
         // .leaflet-popup-pane {
         //     z-index: 700;
         // }
+        .leaflet-popup-close-button {
+            display: none;
+        }
     }
 
    
@@ -3417,8 +3418,12 @@ footer#footer {
         margin-bottom: 50px;
     }
     a {
-        line-height: 5rem;
+        // line-height: 5rem;
+        line-height: 4.3rem;
         text-decoration: none;
+    }
+    & .btn:focus {
+        line-height: 4.3rem;
     }
 
 

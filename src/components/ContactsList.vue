@@ -170,7 +170,7 @@ export default {
     // },
     created() {
         axios
-            .get("/data/contactsInfo.json")
+            .get("data/contactsInfo.json")
             .then(resp => {
             this.contactsListInfoData = resp.data;
         })

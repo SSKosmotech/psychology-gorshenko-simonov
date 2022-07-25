@@ -60,7 +60,7 @@ export default {
     },
     created() {
         axios
-            .get("/data/psychologistsInfoData.json")
+            .get("data/psychologistsInfoData.json")
             .then(resp => {
             this.psychologistsInfoData = resp.data;
         })

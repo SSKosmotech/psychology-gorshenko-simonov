@@ -101,7 +101,7 @@ export default {
     },
     created() {
         axios
-            .get('/data/paymentsInfo.json')
+            .get('data/paymentsInfo.json')
             .then(resp=>{
                 this.paymentListInfoData = resp.data
             })

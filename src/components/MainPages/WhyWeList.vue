@@ -62,7 +62,7 @@ export default {
     },
     created() {
         axios
-            .get('/data/whyWeInfo.json')
+            .get('data/whyWeInfo.json')
             .then(resp=>{
                 this.whyWeListInfoData = resp.data
             })

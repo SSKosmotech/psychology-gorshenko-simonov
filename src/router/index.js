@@ -92,6 +92,7 @@ const router = createRouter({
       behavior: 'smooth'
     }
   },
+  base:'psychology-gorshenko-simonov',
 })
 
 export default router

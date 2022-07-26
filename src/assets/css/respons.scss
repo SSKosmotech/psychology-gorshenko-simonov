@@ -2588,12 +2588,18 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 @media screen and (max-width: 400px) {
     // <<===========================Mmobile_menu_style===========================>>
     #side_block .wrap_mobile_menu .mobile_menu_top_wrap {
-        flex-direction: column;
+        // flex-direction: column;
         margin-bottom: 0;
-        padding-top: 15px;
+        // padding-top: 15px;
+    }
+    #side_block .wrapper::after {
+        top: 95px;
     }
     #side_block .logo {
         margin-bottom: 20px;
+    }
+    #side_block .wrap_mobile_menu .mobile_menu_top_wrap .hamburger {
+        padding-top: 15px;
     }
     #side_block .wrap_mobile_menu .mobile_menu_top_wrap {
         // margin-bottom: -15px;
@@ -2697,6 +2703,15 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     .h2_main_page {
         font-size: 2rem;
         line-height: 2.2rem;
+    }
+
+    // <<===========================Mmobile_menu_style===========================>>
+    #mobile_logo {
+        width: 170px;
+        padding-top: 8px;
+    }
+    #side_block .wrapper {
+        padding-right: 15px;
     }
 
 }

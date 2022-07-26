@@ -831,22 +831,25 @@ section#contact_form {
                 // margin-left: 30px;
                 // top: -35px;
                 // top: 50px;
-                transform: translateY(80px);
+                transform: translateY(90px);
                 // transform: translateX(-93px);
                 left: -293px;
                 // transition: all 0.5s ease;
                 // font-weight: 700;
                 // font-family: 'Cormorant', sans-serif;
                 // font-family: 'Arsenal', sans-serif;
+                // z-index: 50;
+                height: 20px;
             }
             .error_text_up {
-                transform: translateY(50px);
+                transform: translateY(60px);
                 transition: all 0.5s ease;
+                background-color: #FFF;
             }
         }
         .is-invalid {
             // border-color: #dc3545;
-            border: 2px solid #dc3545;
+            border: 1px solid #dc3545;
         }
     }
 
@@ -1007,7 +1010,7 @@ section#for_psychologists_form {
                 // margin-left: 30px;
                 // top: -35px;
                 // top: 50px;
-                transform: translateY(80px);
+                transform: translateY(90px);
                 // transform: translateX(-93px);
                 left: -293px;
                 // transition: all 0.5s ease;
@@ -1016,13 +1019,14 @@ section#for_psychologists_form {
                 // font-family: 'Arsenal', sans-serif;
             }
             .error_text_up {
-                transform: translateY(50px);
+                transform: translateY(60px);
                 transition: all 0.5s ease;
+                background-color: #FFF;
             }
         }
         .is-invalid {
             // border-color: #dc3545;
-            border: 2px solid #dc3545;
+            border: 1px solid #dc3545;
         }
     }
 }
@@ -3378,7 +3382,7 @@ footer#footer {
             margin-left: 30px;
             // top: -35px;
             // top: -20px;
-            transform: translateY(-20px);
+            transform: translateY(-10px);
             left: 0;
             // border: 0px solid;
             // transition: all 0.5s ease;
@@ -3388,14 +3392,18 @@ footer#footer {
         }
         .error_text_up {
             // top: -35px;
-            transform: translateY(-35px);
+            // transform: translateY(-35px);
+            transform: translateY(-28px);
             transition: all 0.5s ease;
+            // z-index: 50;
+            background-color: #FFF;
+            height: 20px;
         }
     }
 
     .is-invalid {
         // border-color: #dc3545;
-        border: 2px solid #dc3545;
+        border: 1px solid #dc3545;
     }
 }
 
@@ -3585,7 +3593,8 @@ footer#footer {
     color: #264158;
     background: #fff;
     // background: rgba(84, 116, 253, .5);
-    height: 100vh;
+    // height: 100vh;
+    height: 105vh;
     z-index: 30;
     transform: translateX(-200%);
     transition: all 0.2s ease;
@@ -3835,6 +3844,7 @@ footer#footer {
         @include fz(30);
         line-height: 2rem;
         margin-bottom: 15px;
+        text-align: center;
     }
     p {
         text-align: center;

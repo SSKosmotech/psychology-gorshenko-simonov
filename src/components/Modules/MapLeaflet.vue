@@ -19,6 +19,14 @@ export default {
     //         }
     //     })
     // },
+    // created() {
+    //     document.body.addEventListener('scroll', function(e){
+    //         if(e.target.className === 'leaflet-container'){
+    //             e.preventDefault()
+    //             e.stopPropagation();
+    //         }
+    //     })
+    // },
     mounted() {
         const map = L.map("map").setView([49.81984911958817, 24.02887643356052], 12);
         // Google Streets:

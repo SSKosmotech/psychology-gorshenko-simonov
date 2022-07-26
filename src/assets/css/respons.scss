@@ -268,13 +268,19 @@
         }
     }
 
-    section#contact_form #feedback_contact_form .wrap_error .error_text {
-        left: -98px;
+    section#contact_form #feedback_contact_form .wrap_error {
         width: 200px;
-        transform: translateY(-20px);
+        // height: 10px;
+        // border: 1px solid green;
+    }
+    section#contact_form #feedback_contact_form .wrap_error .error_text {
+        left: 0px;
+        // width: 200px;
+        transform: translateY(-10px);
     }
     section#contact_form #feedback_contact_form .wrap_error .error_text_up {
-        transform: translateY(-50px);
+        transform: translateY(-39px);
+        // max-width: 150px;
     }
 
 
@@ -584,13 +590,16 @@
         align-items: center;
     }
 
-    section#for_psychologists_form #feedback_for_psychologists_form .wrap_error .error_text {
-        left: -98px;
-        transform: translateY(-10px);
+    section#for_psychologists_form #feedback_for_psychologists_form .wrap_error {
         width: 200px;
     }
+    section#for_psychologists_form #feedback_for_psychologists_form .wrap_error .error_text {
+        left: 0;
+        transform: translateY(-20px);
+        // width: 200px;
+    }
     section#for_psychologists_form #feedback_for_psychologists_form .wrap_error .error_text_up {
-        transform: translateY(-40px);
+        transform: translateY(-30px);
     }
     section#for_psychologists_form form {
         gap: 6px;
@@ -1920,12 +1929,12 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
     section#contact_form #feedback_contact_form .wrap_error .error_text {
-        left: -98px;
-        width: 200px;
-        transform: translateY(-10px);
+        left: 0px;
+        // width: 200px;
+        transform: translateY(0);
     }
     section#contact_form #feedback_contact_form .wrap_error .error_text_up {
-        transform: translateY(-40px);
+        transform: translateY(-30px);
         // font-size: ;
     }
     section#contact_form .alert-success {
@@ -2864,6 +2873,11 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         align-items: center;
     }
 
+    // <<===========================Mmobile_menu_style===========================>>
+    #side_block .wrap_mobile_menu .menu_bottom_wrap .btn_callback {
+        font-size: 0.95rem;
+    }
+
 }
 
 @media screen and (max-width: 365px) {
@@ -2884,6 +2898,13 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
     section#for_psychologists_form h2 {
         font-size: 1.43rem;
+    }
+
+    section#for_psychologists_form #feedback_for_psychologists_form .wrap_error .error_text {
+        left: -27px;
+    }
+    section#for_psychologists_form #feedback_for_psychologists_form .wrap_error {
+        width: 140px;
     }
 
     // <<===========================SECTION #payment===========================>>
@@ -2943,6 +2964,18 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         font-size: 1.9rem;
     }
 
+    // <<===========================SECTION #for_psychologists===========================>>
+
+    section#for_psychologists_form #feedback_for_psychologists_form .wrap_error .error_text {
+        left: -23px;
+    }
+
+    // <<===========================Mmobile_menu_style===========================>>
+    #side_block .wrap_mobile_menu .menu_bottom_wrap .btn_callback   {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
     
 }
 
@@ -2978,6 +3011,21 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     #side_block .wrap_mobile_menu .menu_bottom_wrap .btn_callback {
         font-size: 0.82rem;
     }
+
+    // <<===========================SECTION #for_psychologists===========================>>
+
+    section#for_psychologists_form #feedback_for_psychologists_form .wrap_error .error_text {
+        left: -20px;
+    }
+}
+
+
+@media screen and (max-width: 330px) {
+    // <<===========================SECTION #for_psychologists===========================>>
+
+    section#for_psychologists_form #feedback_for_psychologists_form .wrap_error .error_text {
+        left: -15px;
+    }
 }
 
 @media screen and (max-width: 325px) {
@@ -2997,6 +3045,10 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
     section#first_screen_main_page .first_screen_content_wrap::after {
         width: 415px;
+    }
+
+    section#for_psychologists_form #feedback_for_psychologists_form .wrap_error .error_text {
+        left: -13px;
     }
 
 }

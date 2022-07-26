@@ -2592,6 +2592,9 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
 @media screen and (max-width: 400px) {
     // <<===========================Mobile_menu_style===========================>>
+    #side_block {
+        width: 90%;
+    }
     #side_block .wrap_mobile_menu .mobile_menu_top_wrap {
         // flex-direction: column;
         margin-bottom: 0;

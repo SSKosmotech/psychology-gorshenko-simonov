@@ -864,6 +864,9 @@
             border-right: 3px solid #D3DDE6;
         }
     }
+    section#accordion_services h2 {
+        font-size: 3.2rem;
+    }
 
     // <<===========================SECTION #consultation===========================>>
     section#consultation h2 {
@@ -877,6 +880,9 @@
     section#we_offer_you .offer_wrap {
         flex-direction: column;
         align-items: center;
+    }
+    section#we_offer_you h2 {
+        font-size: 3.2rem;
     }
 
     // <<===========================Footer===========================>>
@@ -1055,10 +1061,8 @@
 
     // <<===========================SECTION #consultation===========================>>
 
-    section#consultation {
-        h2 {
-            font-size: 2.8rem;
-        }
+    section#consultation h2 {
+            // font-size: 2.8rem;
     }
 
 }
@@ -1134,7 +1138,7 @@
     // <<===========================PageTitle_h2_style===========================>>
 
     .h2_main_page {
-        font-size: 3rem;
+        // font-size: 3rem;
         line-height: 3.4375rem;
     }
 }
@@ -1170,14 +1174,12 @@
 
      // <<===========================SECTION #consultation===========================>>
 
-     section#consultation {
-        h2 {
-            font-size: 2.4rem;
+     section#consultation h2 {
+            // font-size: 2.4rem;
             margin-bottom: 80px;
-        }
     }
 
-    // <<===========================Mmobile_menu_style===========================>>
+    // <<===========================Mobile_menu_style===========================>>
     #side_block {
         width: 70%;
     }
@@ -1402,7 +1404,8 @@
 
 
         section#first_screen_main_page .first_screen_content_wrap h1 {
-            font-size: 2.4rem;
+            // font-size: 2.4rem;
+            line-height: 2.5rem;
             margin-bottom: 10px;
         }
         section#first_screen_main_page .first_screen_content_wrap h2 {
@@ -1459,9 +1462,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
             }
         }
     }
-    section#we_offer_you h2 {
-        font-size: 3.2rem;
-    }
+
 
     // <<===========================SECTION #for_psychologists===========================>>
 
@@ -1498,11 +1499,9 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
     // <<===========================SECTION #consultation===========================>>
 
-    section#consultation {
-        h2 {
-            font-size: 2rem;
+    section#consultation h2 {
+            // font-size: 2rem;
             margin-bottom: 80px;
-        }
     }
 
     section#consultation .consultation_item_wrap h4 {
@@ -1521,7 +1520,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
     // <<===========================SECTION #we_offer_you===========================>>
     section#we_offer_you h2 {
-        font-size: 3rem;
+        // font-size: 3.2rem;
     }
     section#we_offer_you .offer_content_wrap .change_life_wrap {
         gap: 50px;
@@ -1726,8 +1725,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         margin-right: 0;
     }
 
-     // <<===========================SECTION #specialists===========================>>
-
      section#specialists h2 {
         font-size: 2.5rem;
     }
@@ -1789,23 +1786,21 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     section#accordion_services .vcp--expanded .accordion_services_tab ::before{
                 top: -5px;
     }
+    section#accordion_services h2 {
+        font-size: 2.5rem;
+    }
 
-
-     // <<===========================SECTION #accordion_services===========================>>
-    
      section#accordion_services h3 {
         font-size: 3.2rem;
      }
 
     // <<===========================SECTION #consultation===========================>>
 
-    section#consultation {
-        h2 {
-            font-size: 1.8rem;
-        }
+    section#consultation h2 {
+         font-size: 2.5rem;
     }
     
-    // <<===========================Mmobile_menu_style===========================>>
+    // <<===========================Mobile_menu_style===========================>>
     #side_block {
         width: 80%;
     }
@@ -1820,6 +1815,12 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
     #side_block .wrap_mobile_menu .menu_bottom_wrap .mobile_contacts_wrap {
         margin-bottom: 10px;
+    }
+
+    // <<===========================SECTION #we_offer_you===========================>>
+
+    section#we_offer_you h2 {
+        font-size: 2.5rem;
     }
 }
 
@@ -1843,7 +1844,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
     // <<===========================SECTION #we_offer_you===========================>>
     section#we_offer_you h2 {
-        font-size: 2.6rem;
+        // font-size: 2.6rem;
         margin-bottom: 40px;
     }
     section#we_offer_you .offer_content {
@@ -1858,9 +1859,15 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 }
 
 @media screen and (max-width: 520px) {
-    // <<===========================Mmobile_menu_style===========================>>
+    // <<===========================Mobile_menu_style===========================>>
      #mobile_logo {
         width: 250px;
+    }
+    #side_block {
+        height: 100vh;
+        .wrapper {
+            height: 100vh;
+        }
     }
     
 }
@@ -2076,7 +2083,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     // <<===========================SECTION #we_offer_you===========================>>
 
     section#we_offer_you h2 {
-        font-size: 2.4rem;
+        // font-size: 2.4rem;
         margin-bottom: 20px;
     }
     section#we_offer_you .offer_content_wrap p:nth-child(odd) {
@@ -2179,7 +2186,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         top: -12px;
     }
 
-      // <<===========================Mmobile_menu_style===========================>>
+      // <<===========================Mobile_menu_style===========================>>
       #mobile_logo {
         width: 220px;
       }
@@ -2264,10 +2271,8 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
         // <<===========================SECTION #consultation===========================>>
 
-        section#consultation {
-            h2 {
-                font-size: 1.4rem;
-            }
+        section#consultation h2 {
+                // font-size: 1.4rem;
         }
     
         section#consultation .consultation_item_wrap h4 {
@@ -2288,7 +2293,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         
         // <<===========================SECTION #we_offer_you===========================>>
         section#we_offer_you h2 {
-            font-size: 2.3rem;
+            // font-size: 2.3rem;
         }
 
     // <<===========================PageTitle_h2_style===========================>>
@@ -2302,7 +2307,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
 
 @media screen and (max-width: 420px) {
-   // <<===========================Mmobile_menu_style===========================>>
+   // <<===========================Mobile_menu_style===========================>>
    #mobile_logo {
         width: 210px;
     }
@@ -2495,7 +2500,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         padding-bottom: 35px;
     }
 
-    // <<===========================Mmobile_menu_style===========================>>
+    // <<===========================Mobile_menu_style===========================>>
     #side_block .wrap_mobile_menu .mobile_menu_top_wrap .hamburger {
         padding-top: 35px;
     }
@@ -2531,7 +2536,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
     // <<===========================SECTION #first_screen_main_page===========================>>
     section#first_screen_main_page .first_screen_content_wrap h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         line-height: 3rem;
     }
     section#first_screen_main_page .first_screen_content_wrap h2 {
@@ -2553,7 +2558,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
     // <<===========================SECTION #we_offer_you===========================>>
         section#we_offer_you h2 {
-        font-size: 2.2rem;
+        // font-size: 2.2rem;
     }
     section#we_offer_you .offer_content_wrap p:nth-child(odd) {
         font-size: 1.4rem;
@@ -2586,7 +2591,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 }
 
 @media screen and (max-width: 400px) {
-    // <<===========================Mmobile_menu_style===========================>>
+    // <<===========================Mobile_menu_style===========================>>
     #side_block .wrap_mobile_menu .mobile_menu_top_wrap {
         // flex-direction: column;
         margin-bottom: 0;
@@ -2605,7 +2610,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         // margin-bottom: -15px;
     }
     #side_block .wrap_mobile_menu .menu_bottom_wrap .mobile_menu li {
-        margin-bottom: 5px;
+        margin-bottom: 0px;
     }
     #side_block .wrap_mobile_menu .menu_bottom_wrap .mobile_contacts_wrap a span {
         display: none;
@@ -2613,13 +2618,16 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     #side_block .wrap_mobile_menu .menu_bottom_wrap .mobile_contacts_wrap {
         display: flex;
         justify-content: space-around;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
     #side_block .wrap_mobile_menu .menu_bottom_wrap .mobile_contacts_wrap a svg {
         transform: scale(1);
     }
     #side_block .wrap_mobile_menu .menu_bottom_wrap .mobile_menu {
-        margin-bottom: 20px;
+        margin-bottom: 5px;
+    }
+    #side_block .wrap_mobile_menu .menu_bottom_wrap .mobile_menu li a {
+        font-size: 1.125rem;
     }
 
 
@@ -2642,10 +2650,8 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
     // <<===========================SECTION #consultation===========================>>
 
-    section#consultation {
-        h2 {
-            line-height: 2.2rem;
-        }
+    section#consultation h2 {
+            // line-height: 2.2rem;
     }
 
     section#consultation .consultation_item_wrap h4 {
@@ -2695,17 +2701,17 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
     // <<===========================SECTION #we_offer_you===========================>>
         section#we_offer_you h2 {
-        font-size: 2.1rem;
+        // font-size: 2.1rem;
     }
 
     // <<===========================PageTitle_h2_style===========================>>
 
     .h2_main_page {
-        font-size: 2rem;
+        // font-size: 2rem;
         line-height: 2.2rem;
     }
 
-    // <<===========================Mmobile_menu_style===========================>>
+    // <<===========================Mobile_menu_style===========================>>
     #mobile_logo {
         width: 170px;
         padding-top: 8px;
@@ -2888,7 +2894,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         align-items: center;
     }
 
-    // <<===========================Mmobile_menu_style===========================>>
+    // <<===========================Mobile_menu_style===========================>>
     #side_block .wrap_mobile_menu .menu_bottom_wrap .btn_callback {
         font-size: 0.95rem;
     }
@@ -2896,7 +2902,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 }
 
 @media screen and (max-width: 365px) {
-    // <<===========================Mmobile_menu_style===========================>>
+    // <<===========================Mobile_menu_style===========================>>
     #side_block .wrap_mobile_menu .menu_bottom_wrap .btn_callback {
         font-size: 0.9rem;
     }
@@ -2931,7 +2937,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     // <<===========================SECTION #specialists===========================>>
 
     section#specialists h2 {
-        font-size: 1.7rem;
+        // font-size: 1.7rem;
     }
 
     // <<===========================SECTION #first_screen_main_page===========================>>
@@ -2953,7 +2959,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
     // <<===========================SECTION #we_offer_you===========================>>
         section#we_offer_you h2 {
-        font-size: 2rem;
+        // font-size: 2rem;
     }
     
 }
@@ -2976,7 +2982,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
     // <<===========================SECTION #we_offer_you===========================>>
         section#we_offer_you h2 {
-        font-size: 1.9rem;
+        // font-size: 1.9rem;
     }
 
     // <<===========================SECTION #for_psychologists===========================>>
@@ -2985,7 +2991,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         left: -23px;
     }
 
-    // <<===========================Mmobile_menu_style===========================>>
+    // <<===========================Mobile_menu_style===========================>>
     #side_block .wrap_mobile_menu .menu_bottom_wrap .btn_callback   {
         padding-left: 10px;
         padding-right: 10px;
@@ -3006,7 +3012,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     
     // <<===========================SECTION #we_offer_you===========================>>
         section#we_offer_you h2 {
-        font-size: 1.85rem;
+        // font-size: 1.85rem;
     }
 
     // <<===========================404 page style===========================>>
@@ -3022,7 +3028,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         }
     }
 
-    // <<===========================Mmobile_menu_style===========================>>
+    // <<===========================Mobile_menu_style===========================>>
     #side_block .wrap_mobile_menu .menu_bottom_wrap .btn_callback {
         font-size: 0.82rem;
     }

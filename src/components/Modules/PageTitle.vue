@@ -1,6 +1,5 @@
 <template>
     <h1 class="page_title" >{{ title }}</h1>
-    <!-- <h1>{{ title }}</h1> -->
 </template>
 
 <script>

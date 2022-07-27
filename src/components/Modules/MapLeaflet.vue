@@ -12,26 +12,10 @@ import '@/assets/plugins/leaflet/leaflet.css'
 
 export default {
     name: 'MapLeaflet',
-    // created() {
-    //     document.body.addEventListener('click', function(e){
-    //         if(e.target.className === 'leaflet-popup-close-button'){
-    //             e.preventDefault()
-    //         }
-    //     })
-    // },
-    // created() {
-    //     document.body.addEventListener('scroll', function(e){
-    //         if(e.target.className === 'leaflet-container'){
-    //             e.preventDefault()
-    //             e.stopPropagation();
-    //         }
-    //     })
-    // },
     mounted() {
         const map = L.map("map").setView([49.81984911958817, 24.02887643356052], 12);
         // Google Streets:
         L.tileLayer("http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}", {
-            // maxZoom: 13,
             subdomains: ["mt0", "mt1", "mt2", "mt3"]
         }).addTo(map);
         const pinIcon = L.icon({
@@ -51,6 +35,5 @@ export default {
             </div>
             `);
     },
-    
 }
 </script>

@@ -1,49 +1,43 @@
 <template>
 
     <section id="contact_form">
-        <!-- <div class="container"> -->
-            <div class="wrap_p_form">
-                <p>{{contactsListInfoData.question}}</p>
-                <!-- <p>Залишились питання? Заповніть форму і ми
-                    вам зателефонуємо через 5 хвилин
-                </p> -->
+        <div class="wrap_p_form">
+            <p>{{contactsListInfoData.question}}</p>
+        </div>
+
+        <div v-if="answer.success" class="alert alert-success">
+            <div>
+                {{ answer.text }}
+            </div>
+        </div>
+        <div v-if="answer.success === false" class="alert alert-danger">
+            <div>
+                {{ answer.text }}
+            </div>
+        </div>
+
+        <form id="feedback_contact_form" @submit.prevent="checkAndSend">
+
+            <input type="text" id="name" :class="{'is-invalid': errors.name !== ''}" v-model.trim="name" @focus="resetError('name')" :placeholder="contactsListInfoData?.placeholders?.name">
+            <label for="name"></label>
+            <div class="wrap_error">
+                <div class="error_text" :class="{'error_text_up': errors.name !== ''}">{{errors.name}}</div>
+            </div>
+            
+            <input type="text" id="tel" :class="{'is-invalid': errors.phone !== ''}" v-model.trim="phone" @focus="resetError('phone')" :placeholder="contactsListInfoData?.placeholders?.phone">
+            <label for="tel"></label>
+            <div class="wrap_error">
+                <div class="error_text" :class="{'error_text_up': errors.phone !== ''}">{{ errors.phone }}</div>
+            </div>
+            
+            <input type="text" id="worries" :class="{'is-invalid': errors.message !== ''}" v-model.trim="message" @focus="resetError('message')" :placeholder="contactsListInfoData?.placeholders?.worries">
+            <label for="worries"></label>
+            <div class="wrap_error">
+                <div class="error_text" :class="{'error_text_up': errors.message !== ''}">{{ errors.message }}</div>
             </div>
 
-            <div v-if="answer.success" class="alert alert-success">
-                <div>
-                    {{ answer.text }}
-                </div>
-            </div>
-            <div v-if="answer.success === false" class="alert alert-danger">
-                <div>
-                    {{ answer.text }}
-                </div>
-            </div>
-
-            <form id="feedback_contact_form" @submit.prevent="checkAndSend">
-
-                <!-- <input type="text" id="name" name="name" :placeholder="Марія" required> -->
-                <input type="text" id="name" :class="{'is-invalid': errors.name !== ''}" v-model.trim="name" @focus="resetError('name')" :placeholder="contactsListInfoData?.placeholders?.name">
-                <label for="name"></label>
-                <div class="wrap_error">
-                    <div class="error_text" :class="{'error_text_up': errors.name !== ''}">{{errors.name}}</div>
-                </div>
-                
-                <input type="text" id="tel" :class="{'is-invalid': errors.phone !== ''}" v-model.trim="phone" @focus="resetError('phone')" :placeholder="contactsListInfoData?.placeholders?.phone">
-                <label for="tel"></label>
-                <div class="wrap_error">
-                    <div class="error_text" :class="{'error_text_up': errors.phone !== ''}">{{ errors.phone }}</div>
-                </div>
-                
-                <input type="text" id="worries" :class="{'is-invalid': errors.message !== ''}" v-model.trim="message" @focus="resetError('message')" :placeholder="contactsListInfoData?.placeholders?.worries">
-                <label for="worries"></label>
-                <div class="wrap_error">
-                    <div class="error_text" :class="{'error_text_up': errors.message !== ''}">{{ errors.message }}</div>
-                </div>
-
-                <button type="submit" class="btn btn_m">{{ contactsListInfoData.button }}</button>
-            </form>
-        <!-- </div> -->
+            <button type="submit" class="btn btn_m">{{ contactsListInfoData.button }}</button>
+        </form>
     </section>
 </template>
 
@@ -119,7 +113,6 @@ export default {
                 axios
                 .get(`https://api.telegram.org/bot${this.API_BOT_ID}/sendMessage?chat_id=${this.CHAT_ID}&text=${message_text}&parse_mode=HTML`)
                 .then(resp=>{
-                    // return resp.json()
                     return this.telegramInfo = resp.data
                 })
                 .then(resp=>{
@@ -149,8 +142,6 @@ export default {
             return Boolean(phone.match(
                 //eslint-disable-next-line
                 /^((8|\+3)[- ]?)?(\(?\d{3}\)?[- ]?)?[\d\-]{7,10}$/
-                // /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/
-                // /(?=.*\+[0-9]{3}\s?[0-9]{2}\s?[0-9]{3}\s?[0-9]{4,5}$)/gm
               ));
         }
     }

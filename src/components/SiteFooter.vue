@@ -5,7 +5,6 @@
                 <div class="footer_logo">
                     <div class="pic">
                         <a href="#">
-                            <!-- <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="../assets/images/logo-gorshenko.png" alt="Logo Gorshenko"> -->
                             <img src="@/assets/images/logo-gorshenko.png" alt="Logo Gorshenko">
                         </a>
                     </div>
@@ -124,12 +123,10 @@
     </footer>
 
         <modal-window v-if="showModal" @close="showModal = false">
-            <!-- <template v-slot:header></template> -->
             <template #header>
                 <button type="button" class="close_modal_btn" @click="showModal = false"></button>
             </template>
             <template #body>
-                <!-- <FeedbackForm/> -->
                 <FeedbackForm/>
             </template>
             <template #footer>

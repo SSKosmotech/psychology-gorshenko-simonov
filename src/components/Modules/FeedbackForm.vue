@@ -5,37 +5,36 @@
 
        <form class="form_feedback" @submit.prevent="checkAndSend">
 
-                <div v-if="answer.success" class="alert alert-success">
-                    <div>
-                        {{ answer.text }}
-                    </div>
+            <div v-if="answer.success" class="alert alert-success">
+                <div>
+                    {{ answer.text }}
                 </div>
-                <div v-if="answer.success === false" class="alert alert-danger">
-                    <div>
-                        {{ answer.text }}
-                    </div>
+            </div>
+            <div v-if="answer.success === false" class="alert alert-danger">
+                <div>
+                    {{ answer.text }}
                 </div>
+            </div>
 
-                <label for="name"></label>
-                <input type="text" id="name" :class="{'is-invalid': errors.name !== ''}" v-model.trim="name" @focus="resetError('name')" :placeholder="feedbackFormInfoData?.placeholders?.name">
-                <div class="wrap_error">
-                    <div class="error_text" :class="{'error_text_up': errors.name !== ''}">{{errors.name}}</div>
-                </div>
-                
-                <label for="text"></label>
-                <input type="text" id="tel" :class="{'is-invalid': errors.phone !== ''}" v-model.trim="phone" @focus="resetError('phone')" :placeholder="feedbackFormInfoData?.placeholders?.phone">
-                <div class="wrap_error">
-                    <div class="error_text" :class="{'error_text_up': errors.phone !== ''}">{{ errors.phone }}</div>
-                </div>
-                
-                <!-- <textarea id="worries" :placeholder="feedbackFormInfoData?.placeholders?.worries" required> </textarea> -->
-                <label for="worries"></label>
-                <input type="text" id="worries" :class="{'is-invalid': errors.message !== ''}" v-model.trim="message" @focus="resetError('message')" :placeholder="feedbackFormInfoData?.placeholders?.worries">
-                <div class="wrap_error">
-                    <div class="error_text" :class="{'error_text_up': errors.message !== ''}">{{ errors.message }}</div>
-                </div>
+            <label for="name"></label>
+            <input type="text" id="name" :class="{'is-invalid': errors.name !== ''}" v-model.trim="name" @focus="resetError('name')" :placeholder="feedbackFormInfoData?.placeholders?.name">
+            <div class="wrap_error">
+                <div class="error_text" :class="{'error_text_up': errors.name !== ''}">{{errors.name}}</div>
+            </div>
+            
+            <label for="text"></label>
+            <input type="text" id="tel" :class="{'is-invalid': errors.phone !== ''}" v-model.trim="phone" @focus="resetError('phone')" :placeholder="feedbackFormInfoData?.placeholders?.phone">
+            <div class="wrap_error">
+                <div class="error_text" :class="{'error_text_up': errors.phone !== ''}">{{ errors.phone }}</div>
+            </div>
+            
+            <label for="worries"></label>
+            <input type="text" id="worries" :class="{'is-invalid': errors.message !== ''}" v-model.trim="message" @focus="resetError('message')" :placeholder="feedbackFormInfoData?.placeholders?.worries">
+            <div class="wrap_error">
+                <div class="error_text" :class="{'error_text_up': errors.message !== ''}">{{ errors.message }}</div>
+            </div>
 
-                <button type="submit" class="btn btn_xs">{{ feedbackFormInfoData.button }}</button>
+            <button type="submit" class="btn btn_xs">{{ feedbackFormInfoData.button }}</button>
         </form>
     </div>
 </template>
@@ -78,7 +77,6 @@ export default {
     },
     methods: {
         checkAndSend(){
-            // alert('Send method!');
             let valid = true
 
             if(this.name === ''){
@@ -114,7 +112,6 @@ export default {
                 axios
                 .get(`https://api.telegram.org/bot${this.API_BOT_ID}/sendMessage?chat_id=${this.CHAT_ID}&text=${message_text}&parse_mode=HTML`)
                 .then(resp=>{
-                    // return resp.json()
                     return this.telegramInfo = resp.data
                 })
                 .then(resp=>{
@@ -144,12 +141,8 @@ export default {
             return Boolean(phone.match(
                 //eslint-disable-next-line
                 /^((8|\+3)[- ]?)?(\(?\d{3}\)?[- ]?)?[\d\-]{7,10}$/
-                // /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/
-                // /(?=.*\+[0-9]{3}\s?[0-9]{2}\s?[0-9]{3}\s?[0-9]{4,5}$)/gm
               ));
         }
     }
-    
-
 }
 </script>

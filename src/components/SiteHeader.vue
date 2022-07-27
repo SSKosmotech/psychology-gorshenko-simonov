@@ -3,18 +3,14 @@
     <div id="side_block" :class="{'open': isOpenMobileMenu}">
         <div class="wrapper">
 
-          
             <div class="wrap_mobile_menu" @click="toggleMobileMenu">
 
                 <div class="mobile_menu_top_wrap">
                     <div class="logo">
                         <div class="pic">
-                            <!-- <a href="#"> -->
                             <router-link to="/">
-                                <!-- <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="../assets/images/logo-gorshenko.png" alt="logo Gorshenko"> -->
                                 <img id="mobile_logo" src="@/assets/images/logo-gorshenko.png" alt="logo Gorshenko">
                             </router-link>
-                            <!-- </a> -->
                         </div>
                     </div>
 
@@ -24,8 +20,6 @@
                             </span>
                     </button>
                 </div>
-                
-                
                     
                 <div class="menu_bottom_wrap">
 
@@ -82,39 +76,28 @@
                         </div>
                     </div>
                     
-                    
                     <button class="btn btn_callback" type="button" @click.prevent="showForm">Вам передзвонити?</button>
                         
-                    
                 </div>
 
             </div> 
-            
-
-            
 
         </div>
     </div>
 
     <div id="page_overlay" :class="{'open': isOpenMobileMenu}" @click="toggleMobileMenu"></div>
 
-
-
-     <header id="header" :class="{'fixed': isFixed, 'up_scroll': isScrollZero }">
+    <header id="header" :class="{'fixed': isFixed, 'up_scroll': isScrollZero }">
         <div class="container">
-            <!-- <div class="container" :class="{'up_scroll': !isFixed}"> -->
-            <!-- <div class="wrap_menu" :class="{'up_scroll': isFixed}"> -->
+
             <div class="wrap_menu">
 
                 <div class="menu_top_wrap">
                     <div class="logo">
                         <div class="pic">
-                            <!-- <a href="#"> -->
                             <router-link to="/">
-                                <!-- <img class="lazy" src="data:image/gif;base64,R0lGODlhAwACAIAAAP///wAAACH5BAEAAAEALAAAAAADAAIAAAICjF8AOw==" data-src="../assets/images/logo-gorshenko.png" alt="logo Gorshenko"> -->
                                 <img src="@/assets/images/logo-gorshenko.png" alt="logo Gorshenko">
                             </router-link>
-                            <!-- </a> -->
                         </div>
                     </div>
                     <div class="address">
@@ -179,12 +162,11 @@
         </back-to-top>
 
         <modal-window v-if="showModal" @close="showModal = false">
-            <!-- <template v-slot:header></template> -->
+
             <template #header>
                 <button type="button" class="close_modal_btn" @click="showModal = false"></button>
             </template>
             <template #body>
-                <!-- <FeedbackForm/> -->
                 <FeedbackForm/>
             </template>
             <template #footer>
@@ -192,6 +174,7 @@
             </template>
 
         </modal-window>
+
     </header>
 </template>
 

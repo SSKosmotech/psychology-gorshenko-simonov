@@ -1,24 +1,15 @@
 # psychology-gorshenko-simonov
 
-## Project setup
+## Проектна робота Сімонова Сергія
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+Багатосторінковий сайт — ЦЕНТР Практичної психології МЕЛАНІЇ ГОРШЕНКО
 ```
 
-### Compiles and minifies for production
+### Номер курсу:
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+20220207_FE_Kovalenko
+Випуск — 28/07/2022
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Проект:
+Дивись [Посилання тут](https://sskosmotech.github.io/psychology-gorshenko-simonov/).

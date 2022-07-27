@@ -5,8 +5,8 @@
 
                 <div class="wrap_first_screen">
                     <div class="wrap_img">
-                        <img :src="require(`@/assets/images/`+firstScreenInfoData.first_screen_img)" :alt="firstScreenInfoData.type+` `+firstScreenInfoData.name+` — Фото`">
-                    </div>
+                            <img :src="require(`@/assets/images/`+firstScreenInfoData.first_screen_img)" :alt="firstScreenInfoData.type+` `+firstScreenInfoData.name+` — Фото`">
+                        </div>
     
                     <div class="first_screen_content_wrap">
     

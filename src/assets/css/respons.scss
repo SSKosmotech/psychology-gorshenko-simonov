@@ -2593,6 +2593,13 @@
     section#for_psychologists_form #feedback_for_psychologists_form .wrap_error .error_text {
         left: -20px;
     }
+    
+    // <<===========================SECTION #consultation===========================>>
+    section#consultation h2 {
+        font-size: 2.3rem;
+        line-height: 2.8rem;
+    }
+
 }
 
 
@@ -2612,7 +2619,7 @@
 
     // <<===========================SECTION #first_screen_main_page===========================>>
     section#first_screen_main_page .first_screen_content_wrap::after {
-        width: 400px;
+        width: 410px;
     }
 
     section#for_psychologists_form #feedback_for_psychologists_form .wrap_error .error_text {

@@ -1,13 +1,6 @@
-// @media screen and (min-width: 2550px) {
-//     .first_screen {
-//         padding-top: 500px;
-//     }
-// }
-
 @media screen and (max-width: 1600px) {
     
     // <<===========================HEADER===========================>>
-
     header#header {
         & .menu_top_wrap{
             justify-content:space-around;
@@ -23,7 +16,7 @@
         }
         & .main_menu {
             & ul {
-                justify-content: space-around; //for mobile when delete margin-right
+                justify-content: space-around;
                 & li {
                     margin-right: 0;
                 }
@@ -36,10 +29,7 @@
     }
    
     // <<===========================SECTION #contacts & map===========================>>
-
     section#contacts {    
-        // padding-top: 390px;
-        // h1 {
         .page_title {
             font-size: 3.4rem;
             line-height: 3.4375rem;
@@ -61,16 +51,12 @@
         .cont_right_wrap {
             display: flex;
             justify-content: space-around;
-            // align-items: center;
         }
 
 
     }
 
-
-
     // <<===========================SECTION #contact_form===========================>>
-
     section#contact_form {
         .wrap_p_form {
             max-width: 1440px;
@@ -88,35 +74,25 @@
 
             .wrap_img {
                 width: 100%;
-                // height: 100%;
             }
         }
 
-       // <<===========================SECTION #successes===========================>>
+    // <<===========================SECTION #successes===========================>>
+    section#successes .clients_successes_block_wrap .success_point + .clients_successes_text {
+        justify-content: space-between;
+    }
 
-
-    //    section#successes .clients_successes_text p {
-    //         // max-width: 600px;
-    //         max-width: calc(100% - 100px);
-    //     }
-
-        section#successes .clients_successes_block_wrap .success_point + .clients_successes_text {
-            justify-content: space-between;
-        }
-
-        section#successes .clients_successes_text .successes_line {
-            right: -180px;
-        }
+    section#successes .clients_successes_text .successes_line {
+        right: -180px;
+    }
        
 
     // <<===========================SECTION #prices===========================>>
-
     section#prices .our_prices_slider_item {
         padding-top: 30px;
     }
 
     section#prices .our_prices_slider_item h5 {
-        // font-size: 1.475rem;
         line-height: 2.2rem;
     }
     
@@ -129,8 +105,7 @@
         margin-bottom: 10px;
     }
 
-     // <<===========================SECTION #about-us===========================>>
-
+    // <<===========================SECTION #about-us===========================>>
        section#about_us .about_us_title_wrap {
         padding: 50px;
        }
@@ -144,10 +119,8 @@
     section#specialists .wrap_img {
         height: 100%;
     }
-
-    // <<===========================Footer===========================>>
-
 }
+
 @media screen and (max-width: 1500px) {
     // <<===========================SECTION #consultation===========================>>
     section#consultation .consultation_wrap {
@@ -178,11 +151,9 @@
         transform: rotate(157deg);
     }
     section#consultation .consultation_item_wrap:nth-child(2) p:first-of-type{
-        // border: 1px solid red;
         left: 77%;
     }
     section#consultation .consultation_item_wrap:nth-child(3) p:first-of-type{
-        // border: 1px solid red;
         left: 77%;
     }
     section#consultation .consultation_item_wrap:nth-child(2)::before {
@@ -216,15 +187,11 @@
         transform: rotate(157deg);
     }
 
-
-
 }
-
 
 @media screen and (max-width: 1530px) {
 
-        // <<===========================SECTION #services===========================>>
-
+    // <<===========================SECTION #services===========================>>
         section#services {
             .services_list {
                 gap: 50px;
@@ -232,7 +199,6 @@
         }
 
     // <<===========================SECTION #contact_form===========================>>
-
     section#contact_form #feedback_contact_form .wrap_error .error_text {
         left: -279px;
     }
@@ -251,7 +217,6 @@
 @media screen and (max-width: 1430px) {
 
     // <<===========================SECTION #contact_form===========================>>
-    
     section#contact_form {
         padding-bottom: 80px;
         form {
@@ -270,17 +235,13 @@
 
     section#contact_form #feedback_contact_form .wrap_error {
         width: 200px;
-        // height: 10px;
-        // border: 1px solid green;
     }
     section#contact_form #feedback_contact_form .wrap_error .error_text {
         left: 0px;
-        // width: 200px;
         transform: translateY(-10px);
     }
     section#contact_form #feedback_contact_form .wrap_error .error_text_up {
         transform: translateY(-39px);
-        // max-width: 150px;
     }
 
 
@@ -289,13 +250,8 @@
         justify-content: space-between;
         gap: 30px;
     }
-
-    // section#for_psychologists .wrap_content::after {
-        // display: none;
-    // }
-    
+ 
     section#for_psychologists .wrap_img {
-        // border-top-right-radius: 65% 65%;
         border-radius: 400px 400px 0 0;
     }
 
@@ -322,14 +278,11 @@
     section#successes .clients_successes_block_wrap .success_point + .clients_successes_text {
         margin-bottom: 20px;    
     }
-
-
 }
 
 
 @media screen and (max-width: 1380px) {
       // <<===========================SECTION #services===========================>>
-
       section#services .services_list {
         flex-direction: column-reverse;
         align-items: center;
@@ -355,7 +308,6 @@
 // <<===========================SECTION #contacts & map===========================>>
 
     section#contacts {    
-        // h1 {
         .page_title {
             font-size: 3.2rem;
             line-height: 3.2rem;
@@ -399,7 +351,6 @@
         }
 
         // <<===========================SECTION #payment===========================>>
-
         section#payment .payment_method {
             flex-direction: column;
             align-items: center;
@@ -409,8 +360,6 @@
         section#payment .payment_method .wrap_img {
             order: -1;
             border-radius: 400px 400px 0 0;
-            // border: 1px solid red;
-            // height: 370px;
         }
 
         section#payment .wrap_content {
@@ -473,7 +422,6 @@
 @media screen and (max-width: 1280px) {
 
     // <<===========================HEADER===========================>>
-
     header#header {
         & .menu_top_wrap{
             justify-content:space-between;
@@ -489,24 +437,10 @@
             display: block;
         }
         & button {
-            // order: -1;
             order: 0;
             transition: all .2s ease;
         }
     }
-
-
-
-    // <<===========================SECTION #contacts & map===========================>>
-
-
-
-    // <<===========================SECTION #contact_form===========================>>
-    
-
-    // <<===========================Footer===========================>>
-
-
 }
 
 @media screen and (max-width: 1225px) {
@@ -530,11 +464,9 @@
 
 }
 
-
 @media screen and (max-width: 1200px) {
 
     // <<===========================HEADER===========================>>
-
     header#header {
         .menu_bottom_wrap {
             display: none;
@@ -544,16 +476,10 @@
         }
     }
 
-
-
     // <<===========================SECTION #contacts & map===========================>>
-    // section#contacts.pad_top {    
     .page_title {    
         padding-top: 200px;
     }
-
-
-    // <<===========================SECTION #contact_form===========================>>
 
     // <<===========================SECTION #for_psychologists===========================>>
     section#for_psychologists {
@@ -562,8 +488,6 @@
     }
   
     section#for_psychologists .psychologists_content_wrap {
-        // justify-content: space-around;
-        // gap: 20px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -571,12 +495,10 @@
     }
 
     section#for_psychologists h2 {
-        // font-size: 3.2rem;
         margin-bottom: 20px;
     }
 
     section#for_psychologists p {
-        // font-size: 1.15rem;
         margin-bottom: 20px;
     }
 
@@ -596,7 +518,6 @@
     section#for_psychologists_form #feedback_for_psychologists_form .wrap_error .error_text {
         left: 0;
         transform: translateY(-20px);
-        // width: 200px;
     }
     section#for_psychologists_form #feedback_for_psychologists_form .wrap_error .error_text_up {
         transform: translateY(-30px);
@@ -608,7 +529,6 @@
 
     // <<===========================SECTION #payment===========================>>
     section#payment {
-        // padding-top: 200px;
         margin-bottom: 80px;
     }
 
@@ -617,7 +537,6 @@
     }
 
     section#payment .payment_method .wrap_img {
-        // max-width: 100%;
         width: 100%;
         height: 100%;
     }
@@ -631,16 +550,12 @@
     
 
     // <<===========================SECTION #services===========================>>
-
     section#services {
-    // section#services.pad_top {
-    // .page_title {
         padding-top: 200px;
         margin-bottom: 80px;
     }
 
     // <<===========================SECTION #about-us===========================>>
-
     section#about_us {
         padding-top: 200px;
         margin-bottom: 80px;
@@ -684,7 +599,6 @@
     }
 
     // <<===========================SECTION #specialists===========================>>
-    
     section#specialists .specialists_item_wrap {
             flex-direction: column;
             align-items: center;
@@ -710,45 +624,26 @@
     }
     
     // <<===========================SECTION #prices===========================>>
-
-    // section#prices.pad_top {
     .page_title {
         padding-top: 200px;
         margin-bottom: 80px; 
         font-size: 3.2rem;
     }
-
-    // section#prices.pad_top h1,
-    // section#prices h1 {
-    //     font-size: 3.2rem;
-    //     margin-bottom: 80px;
-    // }
-  
+ 
     // <<===========================SECTION #successes===========================>>
-
-    // section#successes.pad_top {
     .page_title {
         padding-top: 200px;
         margin-bottom: 80px;
         font-size: 3.2rem;
     }
 
-    // section#successes.pad_top h2,
-    // section#successes h2 {
-    //     font-size: 3.2rem;
-    // }
-
     section#successes .wrap_img {
         height: 100%;
         width: 100%;
     }
 
-
-
     // <<===========================SECTION #first_screen_main_page===========================>>
-
     section#first_screen_main_page {
-        // padding-top: 240px;
         padding-top: 160px;
         margin-bottom: 50px;
     }
@@ -782,7 +677,6 @@
     }
 
     // <<===========================SECTION #turn_to_us===========================>>
-    
         section#turn_to_us .turn_to_us_img_wrap{
             margin-bottom: 40px;
         }
@@ -838,11 +732,8 @@
     }
 
     section#why_we .interesting_offer .wrap_interesting_img {
-            // border-radius: 400px 400px 0 0;
             border-radius: 400px 400px 0 0;
-            // max-width: 534px;
             height: 355px;
-            // width: 100%;
             border: 1px solid red;
             img {
                 object-position: -76px -3px;
@@ -854,7 +745,6 @@
     }
 
     // <<===========================SECTION #accordion_services===========================>>
-
     section#accordion_services .accordion_services_item{
         flex-direction: column-reverse;
         align-items: center;
@@ -886,7 +776,6 @@
     }
 
     // <<===========================Footer===========================>>
-
     footer#footer {
         padding-bottom: 150px;
         .footer_logo {
@@ -935,12 +824,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            // flex-direction: row;
         }
      }
 
-     // <<===========================404 page style===========================>>
-     .not_found {
+    // <<===========================404 page style===========================>>
+    .not_found {
         padding-top: 200px;
         p:first-of-type {
             font-size: 17rem;
@@ -952,7 +840,6 @@
     }
 
     // <<===========================PageTitle_h2_style===========================>>
-
     .h2_main_page {
         font-size: 3.2rem;
         line-height: 3.4375rem;
@@ -961,7 +848,6 @@
 }
 
 @media screen and (max-width: 1100px) {
-
     // <<===========================SECTION #seminars===========================>>
     section#seminars {
         
@@ -981,23 +867,21 @@
 
 @media screen and (max-width: 1050px) {
 
-// <<===========================SECTION #prices===========================>>
+    // <<===========================SECTION #prices===========================>>
     section#prices .carousel__viewport {
         margin-bottom: -20px;
     }
     section#prices .carousel__track {
-        padding-bottom: 70px
+        margin-bottom: 20px;
     }
 }
     
 @media screen and (max-width: 1000px) {
 
     // <<===========================Footer===========================>>
-
     footer#footer {
         .footer_upper_line {
             flex-direction: column;
-            // align-items: flex-start; // 380 px
             .footer_logo {
                 margin-bottom: 25px;
             }
@@ -1031,19 +915,13 @@
         }
         .socials {
             margin-bottom: 20px;
-        }
-        .footer_contacts_wrap {
-            // align-items: flex-start; // 380px
-        }
-        
+        }       
     }
 
 }
 
 @media screen and (max-width: 900px) {
-
 // <<===========================SECTION #about-us===========================>>
-
     section#about_us .five_reasons .reason_wrap svg {
         transform: scale(0.8);
     }
@@ -1053,38 +931,23 @@
         flex-direction: column;
         align-items: center;
         gap: 30px;
-        // margin-right: 0;
     }
     section#about_us .five_reasons .reason_wrap {
         margin-right: 0;
     }
-
-    // <<===========================SECTION #consultation===========================>>
-
-    section#consultation h2 {
-            // font-size: 2.8rem;
-    }
-
 }
-
-
-
 
 
 @media screen and (max-width: 860px) {
 
 // <<===========================SECTION #for_psychologists===========================>>
-
     section#for_psychologists .psychologists_content_wrap {
-        // justify-content: space-around;
-        // gap: 20px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
     section#for_psychologists h2 {
-        // font-size: 3.2rem;
         margin-bottom: 20px;
     }
 
@@ -1096,7 +959,6 @@
     section#for_psychologists_form form {
         flex-direction: column;
         align-items: center;
-        // gap: 10px;
     }
 
     section#for_psychologists_form {
@@ -1105,21 +967,16 @@
 
 
     // <<===========================SECTION #seminars===========================>>
-  
     section#seminars .wrap_content {
         padding: 50px;
-        // position: relative;
         display: flex;
-        flex-direction: column;
-        // align-items: center;
-    
+        flex-direction: column;    
     }
 
 }
 
 @media screen and (max-width: 810px) {
     // <<===========================SECTION #turn_to_us===========================>>
-    
     section#turn_to_us h2 {
         font-size: 2.5rem;
     }
@@ -1136,9 +993,7 @@
 
     
     // <<===========================PageTitle_h2_style===========================>>
-
     .h2_main_page {
-        // font-size: 3rem;
         line-height: 3.4375rem;
     }
 }
@@ -1162,20 +1017,16 @@
 
 @media screen and (max-width: 790px) {
     // <<===========================SECTION #for_psychologists===========================>>
-
     section#for_psychologists .wrap_content::after {
         content: '';
             top: -390px;
             left: -50px;
             max-width: 600px;
             width: 100%;
-            // height: 300%;
     }
 
      // <<===========================SECTION #consultation===========================>>
-
      section#consultation h2 {
-            // font-size: 2.4rem;
             margin-bottom: 80px;
     }
 
@@ -1185,14 +1036,8 @@
     }
 }
 
-
-
-
-
-
 @media screen and (max-width: 760px) {
     // <<===========================HEADER===========================>>
-
     header#header {
         .btn_callback {
             display: none;
@@ -1200,9 +1045,7 @@
     }
 
     // <<===========================SECTION #contacts & map===========================>>
-
     section#contacts {    
-        // h1 {
         .page_title {
             font-size: 3rem;
             line-height: 3rem;
@@ -1220,7 +1063,6 @@
             }
         }
         .cont_left_wrap {
-            // margin-bottom: 60px;
             & div:last-child {
                 margin-bottom: 60px;
             }
@@ -1234,7 +1076,6 @@
     }
 
     // <<===========================SECTION #for_psychologists===========================>>
-
     section#for_psychologists .wrap_img {
         max-width: 100%;
         width: 100%;
@@ -1259,17 +1100,8 @@
         height: 277px;
         width: 216px;
     }
-    section#successes .clients_successes_text p {
-        // font-size: 1rem;
-    }
 
-     // <<===========================SECTION #prices===========================>>
-
-    // section#prices.pad_top h1,
-    // section#prices h1{
-    //         font-size: 3rem;
-    //         margin-bottom: 40px;
-    // }
+    // <<===========================SECTION #prices===========================>>
     .page_title {
             font-size: 3rem;
             margin-bottom: 40px;
@@ -1277,34 +1109,16 @@
 
 }
 
-@media screen and (max-width: 740px) {
-// <<===========================SECTION #successes===========================>>
-
+    @media screen and (max-width: 740px) {
+    // <<===========================SECTION #successes===========================>>
     section#successes .clients_successes_text p {
         font-size: 1rem;
     }
-
-    // <<===========================SECTION #successes===========================>>
-
-    // section#successes.pad_top {
-    // section#successes {
-    //     h2 {
-    //         font-size: 3rem;
-    //     }
-    // }
 }
     
 
 @media screen and (max-width: 720px) {
     // <<===========================SECTION #payment===========================>>
-
-    // section#payment .payment_method .wrap_img {
-    //     // max-height: 330px;
-    //     width: 100%;
-    //     height: 100%;
-    //     border: 1px solid red
-    // }
-    
     section#payment .title_wrap {
         p {
             display: none;
@@ -1334,7 +1148,6 @@
     }
 
     // <<===========================SECTION #about-us===========================>>
-
     section#about_us .five_reasons h2 {
         font-size: 2.8rem;
     }
@@ -1349,20 +1162,8 @@
 
 }
 
-@media screen and (max-width: 690px) {
-
-    // <<===========================SECTION #successes===========================>>
-
-    // section#successes.pad_top h2,
-    // section#successes h2{
-    //         font-size: 2.5rem;
-    // }
-}
-
-
 @media screen and (max-width: 670px) {
     // <<===========================SECTION #for_psychologists===========================>>
-
     section#for_psychologists h2 {
         font-size: 2.8rem;
     }
@@ -1381,16 +1182,13 @@
     }
 
     // <<===========================SECTION #services===========================>>
-
     section#services h2 {
         font-size: 2.8rem;
     }
 
-// <<===========================SECTION #successes===========================>>
+    // <<===========================SECTION #successes===========================>>
     section#successes .clients_successes_block_wrap .success_point + .clients_successes_text {
         flex-direction: column-reverse;
-        // max-width: 500px;
-        // width: 100%;
     }
     section#successes .clients_successes_text {
         width: 150%;
@@ -1400,61 +1198,37 @@
         top: 2%;
     }
 
-        // <<===========================SECTION #first_screen_main_page===========================>>
+    // <<===========================SECTION #first_screen_main_page===========================>>
+    section#first_screen_main_page .first_screen_content_wrap h1 {
+        line-height: 2.5rem;
+        margin-bottom: 10px;
+    }
+    section#first_screen_main_page .first_screen_content_wrap h2 {
+        font-size: 2.4rem;
+        margin-bottom: 30px;
+    }
+    section#first_screen_main_page .first_screen_content_wrap > p {
+        margin-bottom: 30px;
+    }
+    section#first_screen_main_page .first_screen_content_wrap {
+        padding: 15px;
+    }
 
-
-        section#first_screen_main_page .first_screen_content_wrap h1 {
-            // font-size: 2.4rem;
-            line-height: 2.5rem;
-            margin-bottom: 10px;
-        }
-        section#first_screen_main_page .first_screen_content_wrap h2 {
-            font-size: 2.4rem;
-            margin-bottom: 30px;
-        }
-        section#first_screen_main_page .first_screen_content_wrap > p {
-            margin-bottom: 30px;
-        }
-        section#first_screen_main_page .first_screen_content_wrap {
-            padding: 15px;
-        }
-
-        // ***
-        // section#first_screen_main_page .first_screen_content_wrap::after {
-        //     max-width: 1000px;
-        //     width: 100%;
-        //     display: none;
-        // }
-        // section#first_screen_main_page .first_screen_content_wrap button {
-        //     position: absolute;
-        //     top: 650px;
-        //     left: 0;
-        //     &::before,
-        //     &::after {
-        //         display: none;
-        //     }
-        // }
-
-// <<===========================SECTION #consultation===========================>>
-
-section#consultation .consultation_item_wrap:nth-child(1)::before,
-section#consultation .consultation_item_wrap:nth-child(2)::before,
-section#consultation .consultation_item_wrap:nth-child(4)::before,
-section#consultation .consultation_item_wrap:nth-child(1)::after,
-section#consultation .consultation_item_wrap:nth-child(2)::after,
-section#consultation .consultation_item_wrap:nth-child(4)::after {
-    display: none;
-}
-
-
+    // <<===========================SECTION #consultation===========================>>
+    section#consultation .consultation_item_wrap:nth-child(1)::before,
+    section#consultation .consultation_item_wrap:nth-child(2)::before,
+    section#consultation .consultation_item_wrap:nth-child(4)::before,
+    section#consultation .consultation_item_wrap:nth-child(1)::after,
+    section#consultation .consultation_item_wrap:nth-child(2)::after,
+    section#consultation .consultation_item_wrap:nth-child(4)::after {
+        display: none;
+    }
 }
 
 
 
 @media screen and (max-width: 660px) {
-
     // <<===========================SECTION #contacts & map===========================>>
-
     section#contacts {
         .contacts_map_wrap {
             .map_arrow::after {
@@ -1463,15 +1237,12 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         }
     }
 
-
     // <<===========================SECTION #for_psychologists===========================>>
-
     section#for_psychologists {
         margin-bottom: 40px;    
     }
 
     // <<===========================SECTION #turn_to_us===========================>>
-    
        section#turn_to_us h2 {
         font-size: 2.2rem;
     }
@@ -1498,9 +1269,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
     // <<===========================SECTION #consultation===========================>>
-
     section#consultation h2 {
-            // font-size: 2rem;
             margin-bottom: 80px;
     }
 
@@ -1519,15 +1288,12 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
     // <<===========================SECTION #we_offer_you===========================>>
-    section#we_offer_you h2 {
-        // font-size: 3.2rem;
-    }
     section#we_offer_you .offer_content_wrap .change_life_wrap {
         gap: 50px;
     }
 
     // <<===========================404 page style===========================>>
-        .not_found {
+    .not_found {
         p:first-of-type {
             font-size: 10rem;
             line-height: 1;
@@ -1536,20 +1302,16 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
             font-size: 2rem;
         }
     }
-
 }
 
 
 @media screen and (max-width: 620px) {
-
     // <<===========================SECTION #services===========================>>
        section#services h2::after {
         height: 760px
        }
 
-
     // <<===========================SECTION #services===========================>>
-
     section#services .services_list .wrap_content .title_wrap p {
         font-size: 5rem;
     }
@@ -1593,7 +1355,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 @media screen and (max-width: 600px) {
 
     // <<===========================SECTION #contacts & map===========================>>
-
     section#contacts {
         .cont_left_wrap {
             margin-right: 0;
@@ -1607,14 +1368,8 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     } 
 
     // <<===========================SECTION #contact_form===========================>>
-
     section#contact_form {
         .wrap_p_form {
-            // max-width: 300px;
-            // width: 100%;
-            // height: 70px;
-            // text-align: center;
-            // border: 1px solid pink;
             padding-left: 10px;
             padding-right: 10px;
             font-size: 1.275rem;
@@ -1624,7 +1379,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
     // <<===========================SECTION #seminars===========================>>
-
     section#seminars .wrap_content {
         h2 {
             font-size: 1.675rem;
@@ -1637,7 +1391,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
     // <<===========================SECTION #successes===========================>>
-
     section#successes .clients_successes_block_wrap {
         padding: 50px;
     }
@@ -1671,48 +1424,36 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         transform: scale(0.7);
     }
 
-      // <<===========================SECTION #first_screen_main_page===========================>>
-
-        section#first_screen_main_page .first_screen_content_wrap button {
-            &::before,
-            &::after {
-                display: none;
-            }
+    // <<===========================SECTION #first_screen_main_page===========================>>
+    section#first_screen_main_page .first_screen_content_wrap button {
+        &::before,
+        &::after {
+            display: none;
         }
+    }
         
-
-        // <<===========================SECTION #why_we===========================>>
-        section#why_we .our_lists_detail_wrap ul li {
-            font-size: 1.475rem;
-            line-height: 2rem;
-        }
-        section#why_we .our_lists_detail_wrap a {
-            font-size: 1.475rem;
-        }
-        section#why_we .our_lists_detail_wrap a::before {
-            left: 160px;
-        }
-        section#why_we .our_lists_detail_wrap a::after {
-            left: 190px;
-        }
-        section#why_we .interesting_offer .interesting_offer_text_wrap {
-            font-size: 1.4rem;
-            line-height: 2rem;
-        }
-
-
+    // <<===========================SECTION #why_we===========================>>
+    section#why_we .our_lists_detail_wrap ul li {
+        font-size: 1.475rem;
+        line-height: 2rem;
+    }
+    section#why_we .our_lists_detail_wrap a {
+        font-size: 1.475rem;
+    }
+    section#why_we .our_lists_detail_wrap a::before {
+        left: 160px;
+    }
+    section#why_we .our_lists_detail_wrap a::after {
+        left: 190px;
+    }
+    section#why_we .interesting_offer .interesting_offer_text_wrap {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
 }
 
 
 @media screen and (max-width: 575px) {
-
-    // <<===========================SECTION #successes===========================>>
-
-    // section#successes.pad_top h2,
-    // section#successes h2 {
-    //         font-size: 2.3rem;
-    // }
-
     // <<===========================SECTION #specialists===========================>>
     section#specialists .specialists_wrap .icons_wrap {
         flex-direction: column;
@@ -1735,7 +1476,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
 @media screen and (max-width: 560px) {
     // <<===========================SECTION #for_psychologists===========================>>
-
     section#for_psychologists h2 {
         font-size: 2.5rem;
     }
@@ -1749,7 +1489,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
      // <<===========================SECTION #successes===========================>>
-
      .successes_line {
         display: none;
     }
@@ -1768,7 +1507,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
 
     // <<===========================SECTION #accordion_services===========================>>
-
     section#accordion_services .accordion_services_item h5 {
         font-size: 1.6rem;
         line-height: 3rem;
@@ -1790,12 +1528,11 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         font-size: 2.5rem;
     }
 
-     section#accordion_services h3 {
+    section#accordion_services h3 {
         font-size: 3.2rem;
-     }
+    }
 
     // <<===========================SECTION #consultation===========================>>
-
     section#consultation h2 {
          font-size: 2.5rem;
     }
@@ -1818,7 +1555,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
     // <<===========================SECTION #we_offer_you===========================>>
-
     section#we_offer_you h2 {
         font-size: 2.5rem;
     }
@@ -1826,7 +1562,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
 
 @media screen and (max-width: 520px) {
-
      // <<===========================SECTION #services===========================>>
      section#services h2 + p {
         font-size: 1.1rem;
@@ -1844,7 +1579,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
     // <<===========================SECTION #we_offer_you===========================>>
     section#we_offer_you h2 {
-        // font-size: 2.6rem;
         margin-bottom: 40px;
     }
     section#we_offer_you .offer_content {
@@ -1875,25 +1609,12 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 @media screen and (max-width: 490px) {
 
     // <<===========================SECTION #contacts & map===========================>>
-
-    // section#contacts {
-    //     .contacts_wrap{
-    //         a {
-    //             font-size: 1.1rem;
-    //             line-height: 1.2rem;
-    //         }
-    //     }
-    // } 
-
-
     section#contacts {    
         .cont_left_wrap div:last-child {
             margin-bottom: 25px;
         }
         .contacts_section_wrap {
             .contacts_wrap {
-                // padding-left: 29px;
-                // padding-right: 25px;
                 padding: 15px;
             }
         }
@@ -1919,7 +1640,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
 
     // <<===========================SECTION #contact_form===========================>>
-
     section#contact_form {
         .wrap_p_form {
             text-align: left;
@@ -1937,12 +1657,10 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
     section#contact_form #feedback_contact_form .wrap_error .error_text {
         left: 0px;
-        // width: 200px;
         transform: translateY(0);
     }
     section#contact_form #feedback_contact_form .wrap_error .error_text_up {
         transform: translateY(-30px);
-        // font-size: ;
     }
     section#contact_form .alert-success {
         font-size: 1.2rem;
@@ -1952,7 +1670,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
     
     // <<===========================SECTION #for_psychologists===========================>>
-
     section#for_psychologists h2 {
         font-size: 2.2rem;
     }
@@ -1993,12 +1710,12 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         margin-bottom: 20px;
     }
     section#payment .wrap_content a {
-        line-height: 3.5rem;
+        // line-height: 3.5rem;
+        line-height: 2.9rem;
         margin-left: 0;
     }
 
     // <<===========================SECTION #seminars===========================>>
-
     section#seminars .wrap_content {
         h2 {
             font-size: 1.5rem;
@@ -2024,10 +1741,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         padding-top: 0;
     }
     
-
-
     // <<===========================SECTION #prices===========================>>
-
     section#prices .btn_red {
         align-self: center;
     }
@@ -2043,9 +1757,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     section#prices .our_prices_slider_item::after {
         height: 720px;
     }
-
-
-
 
   // <<===========================SECTION #about-us===========================>>
   section#about_us .about_us_title_wrap h2 {
@@ -2075,15 +1786,12 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
     // <<===========================SECTION #consultation===========================>>
-
     section#consultation .consultation_item_wrap p:first-of-type {
         font-size: 5rem;
     }
 
     // <<===========================SECTION #we_offer_you===========================>>
-
     section#we_offer_you h2 {
-        // font-size: 2.4rem;
         margin-bottom: 20px;
     }
     section#we_offer_you .offer_content_wrap p:nth-child(odd) {
@@ -2102,13 +1810,12 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
     // <<===========================Footer===========================>>
-
     footer#footer {
         .footer_upper_line {
-            align-items: flex-start; // 380 px
+            align-items: flex-start;
         }
         .footer_contacts_wrap {
-            align-items: flex-start; // 380px
+            align-items: flex-start;
         }
     }
         
@@ -2132,7 +1839,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
 @media screen and (max-width: 450px) {
     // <<===========================SECTION #for_psychologists===========================>>
-
     section#for_psychologists h2 {
         font-size: 2rem;
     }
@@ -2142,7 +1848,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
     
     // <<===========================SECTION #seminars===========================>>
-
     section#seminars .wrap_content {
         padding: 20px 20px 40px;
 
@@ -2163,10 +1868,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         }
     }  
 
-    
-
     // <<===========================SECTION #accordion_services===========================>>
-
     section#accordion_services .accordion_services_item h5 {
         font-size: 1.3rem;
         line-height: 2rem;
@@ -2186,8 +1888,8 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         top: -12px;
     }
 
-      // <<===========================Mobile_menu_style===========================>>
-      #mobile_logo {
+    // <<===========================Mobile_menu_style===========================>>
+    #mobile_logo {
         width: 220px;
       }
     
@@ -2207,7 +1909,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
     // <<===========================SECTION #prices===========================>>
- 
     section#prices .our_prices_slider_item ul li {
         font-size: 1.05rem;
         margin-bottom: 10px;
@@ -2217,13 +1918,11 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
  @media screen and (max-width: 430px) {
      // <<===========================SECTION #services===========================>>
-    
      section#services h2::after {
         height: 780px;
      }
 
     // <<===========================SECTION #prices===========================>>
-
     section#prices .our_prices_slider_item h5 {
         font-size: 1.5rem;
         line-height: 2.1rem;
@@ -2237,11 +1936,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         margin-bottom: 0;
     }
   
-
-
     // <<===========================SECTION #first_screen_main_page===========================>>
-
-
     section#first_screen_main_page .first_screen_content_wrap button {
         position: absolute;
         top: 600px;
@@ -2250,7 +1945,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
     // <<===========================SECTION #why_we===========================>>
-  
     section#why_we .our_lists_detail_wrap ul li {
         font-size: 1.275rem;
         line-height: 1.6rem;
@@ -2269,42 +1963,30 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         line-height: 1.6rem;
     }
 
-        // <<===========================SECTION #consultation===========================>>
+    // <<===========================SECTION #consultation===========================>>
+    section#consultation .consultation_item_wrap h4 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
 
-        section#consultation h2 {
-                // font-size: 1.4rem;
-        }
-    
-        section#consultation .consultation_item_wrap h4 {
-            font-size: 1.4rem;
-            margin-bottom: 10px;
-        }
-    
-        section#consultation .consultation_item_wrap p:last-of-type {
-            font-size: 1.2rem;
-        }
+    section#consultation .consultation_item_wrap p:last-of-type {
+        font-size: 1.2rem;
+    }
 
-        section#consultation .consultation_item_wrap p:first-of-type {
-            font-size: 4rem;
-        }
-        section#consultation .consultation_item_wrap {
-            height: 340px;
-        }
+    section#consultation .consultation_item_wrap p:first-of-type {
+        font-size: 4rem;
+    }
+    section#consultation .consultation_item_wrap {
+        height: 340px;
+    }
         
-        // <<===========================SECTION #we_offer_you===========================>>
-        section#we_offer_you h2 {
-            // font-size: 2.3rem;
-        }
-
     // <<===========================PageTitle_h2_style===========================>>
-
     .h2_main_page {
         font-size: 2.5rem;
         line-height: 3rem;
     }
 
  }
-
 
 @media screen and (max-width: 420px) {
    // <<===========================Mobile_menu_style===========================>>
@@ -2313,14 +1995,8 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 }
 
-
-    
-
 @media screen and (max-width: 410px) {
-
     // <<===========================HEADER===========================>>
-
-  
     .logo,
     .footer_logo {
         width: 185px;
@@ -2333,24 +2009,17 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         margin-bottom: 20px;
     }
  
-
-
-
-
     // <<===========================SECTION #contacts & map===========================>>
-    
     section#contacts {
         .contacts_map_wrap {
             max-width: 352px;
             width: 100%;
             height: 229px;
-            // border: 1px solid rgb(214, 117, 25);
             .wrap_map {
                 overflow: hidden;
                 max-width: 352px;
                 width: 100%;
                 height: 229px;
-                // border: 1px solid pink;
                 border-bottom-right-radius: 60% 100%;
             }
         
@@ -2361,13 +2030,8 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         margin-bottom: 90px;
     }
 
-
-
-
     // <<===========================SECTION #contact_form===========================>>
-
     section#contacts {
-        // h1 {
         .page_title {
             font-size: 1.5625rem;
             line-height: 1.875rem;
@@ -2382,22 +2046,15 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
             .contacts_icons {
                 display: flex;
                 align-items: center;
-                // flex-direction: column;
-                // align-items: flex-start;
                 svg {
                     width: 23px;
-                    // transform-origin: 0px 0px;
                     overflow: visible;
                     transform: scale(1.4);
-                    // top: 40%;
-                    // left: 33%;
                     top: 10%;
                     left: 15%;
                     margin-right: 15px;
-                    // margin-bottom: 10px;
                 }
             }
-            // padding-left: 29px;
             a {
                 font-size: 1rem;
                 line-height: 1.875rem;
@@ -2406,7 +2063,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
     // <<===========================SECTION #for_psychologists===========================>>
-  
     section#for_psychologists {
         padding-top: 160px;
         .wrap_content {
@@ -2418,10 +2074,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         }
     }
 
-
-
     // <<===========================Footer===========================>>
-
     footer#footer .footer_menu_first {
         margin-right: 19px;
     }
@@ -2442,7 +2095,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         width: 23px;
         transform: scale(0.8);
         overflow: visible;
-        // left: 37%;
         top: 10%;
         left: 15%;
         margin-right: 20px;
@@ -2507,12 +2159,10 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     #side_block .wrapper {
         padding-top: 5px;
     }
-        
 }
 
 @media screen and (max-width: 405px) {
     // <<===========================SECTION #for_psychologists===========================>>
-
     section#for_psychologists h2 {
         font-size: 1.8rem;
     }
@@ -2522,14 +2172,11 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
     // <<===========================SECTION #services===========================>>
-
     section#services h2::after {
         height: 820px;
     }
 
     // <<===========================SECTION #first_screen_main_page===========================>>
-
-
     section#first_screen_main_page .first_screen_content_wrap button {
         top: 570px;
     }
@@ -2557,9 +2204,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
     // <<===========================SECTION #we_offer_you===========================>>
-        section#we_offer_you h2 {
-        // font-size: 2.2rem;
-    }
     section#we_offer_you .offer_content_wrap p:nth-child(odd) {
         font-size: 1.4rem;
         line-height: 2rem;
@@ -2587,7 +2231,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     #modal_container {
         max-width: 300px;
     }
-
 }
 
 @media screen and (max-width: 400px) {
@@ -2596,7 +2239,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         width: 90%;
     }
     #side_block .wrap_mobile_menu .mobile_menu_top_wrap {
-        // flex-direction: column;
         margin-bottom: 0;
         padding-top: 0;
     }
@@ -2608,9 +2250,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
     #side_block .wrap_mobile_menu .mobile_menu_top_wrap .hamburger {
         padding-top: 25px;
-    }
-    #side_block .wrap_mobile_menu .mobile_menu_top_wrap {
-        // margin-bottom: -15px;
     }
     #side_block .wrap_mobile_menu .menu_bottom_wrap .mobile_menu li {
         margin-bottom: -4px;
@@ -2632,30 +2271,12 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     #side_block .wrap_mobile_menu .menu_bottom_wrap .mobile_menu li a {
         font-size: 1.125rem;
     }
-
-      
-    
-    // #mobile_logo {
-    //     width: 200px;
-    // }
-    // #side_block .wrap_mobile_menu .mobile_menu_top_wrap .hamburger {
-    //     padding-top: 35px;
-    // }
-    // #side_block .wrapper {
-    //     padding-top: 10px;
-    // }
 }
 
 
 
 @media screen and (max-width: 390px) {
-
     // <<===========================SECTION #consultation===========================>>
-
-    section#consultation h2 {
-            // line-height: 2.2rem;
-    }
-
     section#consultation .consultation_item_wrap h4 {
         font-size: 1.3rem;
         line-height: 2rem;
@@ -2681,9 +2302,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
 
 @media screen and (max-width: 380px) {
-
     // <<===========================SECTION #accordion_services===========================>>
-    
     section#accordion_services .accordion_services_item h5 {
         font-size: 1.06rem;
         line-height: 1.8rem;
@@ -2701,15 +2320,8 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         top: -14px;
     }
 
-    // <<===========================SECTION #we_offer_you===========================>>
-        section#we_offer_you h2 {
-        // font-size: 2.1rem;
-    }
-
     // <<===========================PageTitle_h2_style===========================>>
-
     .h2_main_page {
-        // font-size: 2rem;
         line-height: 2.2rem;
     }
 
@@ -2724,14 +2336,8 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
 }
 
-
-
-
-
 @media screen and (max-width: 375px) {
-
     // <<===========================SECTION #contacts & map===========================>>
-
         section#contacts {
             #map,
             .map {
@@ -2754,80 +2360,68 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
             }
         }
 
-   
-        // <<===========================SECTION #for_psychologists===========================>>
-    
-        section#for_psychologists .wrap_content::after {
-            content: '';
-                // top: -390px;
-                // left: -50px;
-                max-width: 300px;
-                // width: 100%;
-                // height: 300%;
-        }
+    // <<===========================SECTION #for_psychologists===========================>>
+    section#for_psychologists .wrap_content::after {
+        content: '';
+            max-width: 300px;
+    }
 
-         // <<===========================SECTION #services===========================>>
-
-            section#services h2 {
-            font-size: 1.5625rem;
-            line-height: 1.8925rem;
-            + p {
-                font-size: 1rem;
-                line-height: 1.375rem;
-            }
-        }
-
-        section#services .services_list .wrap_content .title_wrap p {
-            font-size: 4.375rem;
-        }
-        
-        section#services .services_list .wrap_content .title_wrap h3 {
-            font-size: 1.125rem;
-        }
-
-        section#services .services_list .wrap_content > p {
+    // <<===========================SECTION #services===========================>>
+    section#services h2 {
+    font-size: 1.5625rem;
+    line-height: 1.8925rem;
+        + p {
             font-size: 1rem;
             line-height: 1.375rem;
         }
+    }
 
-        section#services .services_list .wrap_content .services_price {
-            font-size: 1rem;
-            line-height: 1.25rem;
-        }
+    section#services .services_list .wrap_content .title_wrap p {
+        font-size: 4.375rem;
+    }
+    
+    section#services .services_list .wrap_content .title_wrap h3 {
+        font-size: 1.125rem;
+    }
 
-        section#services .services_list .wrap_content .services_price span {
-            font-size: 1.875rem;
-            line-height: 1.2rem;
-        }
-        section#services .services_list .wrap_content .services_price p {
-            margin-right: 5px;
-        }
+    section#services .services_list .wrap_content > p {
+        font-size: 1rem;
+        line-height: 1.375rem;
+    }
 
-        section#services .services_list .wrap_content > p.services_about::before {
-            top: 9px;
-        }
+    section#services .services_list .wrap_content .services_price {
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
 
-        section#services .services_list .wrap_content .title_wrap h3::after {
-            width: 95%;
-        }
+    section#services .services_list .wrap_content .services_price span {
+        font-size: 1.875rem;
+        line-height: 1.2rem;
+    }
+    section#services .services_list .wrap_content .services_price p {
+        margin-right: 5px;
+    }
 
-        section#services h2::after {
-            height: 680px;
-            width: 85%;
-        }
+    section#services .services_list .wrap_content > p.services_about::before {
+        top: 9px;
+    }
+
+    section#services .services_list .wrap_content .title_wrap h3::after {
+        width: 95%;
+    }
+
+    section#services h2::after {
+        height: 680px;
+        width: 85%;
+    }
 
     // <<===========================SECTION #prices===========================>>
-
     section#prices .our_prices_slider_item {
         padding: 15px;
     }
 
     section#prices .our_prices_slider_item .slider_prices_wrap .slider_prices_first_wrap p:nth-child(odd), section#prices .our_prices_slider_item .slider_prices_wrap .slider_prices_second_wrap p:nth-child(odd) {
         font-size: 2.5rem;
-    }
-
-    section#prices .our_prices_slider_item {
-        // height: 560px
     }
 
     // <<===========================SECTION #about-us===========================>>
@@ -2854,8 +2448,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
     // <<===========================SECTION #first_screen_main_page===========================>>
-
-
     section#first_screen_main_page .first_screen_content_wrap button {
         top: 560px;
     }
@@ -2864,24 +2456,21 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         top: -240px;
         height: 600px;
         width: 458px;
-        // width: 100%;
     }
 
     // <<===========================SECTION #turn_to_us===========================>>
-        section#turn_to_us .turn_to_us_bottom_info p {
-            font-size: 1.2rem;
-            line-height: 1.6rem;
-        }
-        section#turn_to_us .turn_to_us_bottom_info {
-            padding: 15px;
-        }
-        section#why_we h2 {
-            font-size: 2.2rem;
-        }
-
+    section#turn_to_us .turn_to_us_bottom_info p {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+    section#turn_to_us .turn_to_us_bottom_info {
+        padding: 15px;
+    }
+    section#why_we h2 {
+        font-size: 2.2rem;
+    }
         
     // <<===========================SECTION #prices===========================>>
-
     section#why_we .wrap_img {
         height: 350px;
     }
@@ -2910,11 +2499,8 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 }
 
-
-
 @media screen and (max-width: 360px) {
     // <<===========================SECTION #for_psychologists===========================>>
-
     section#for_psychologists h2 {
         font-size: 1.7rem;
     }
@@ -2935,16 +2521,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         font-size: 1.125rem;
     }
 
-    
-    // <<===========================SECTION #specialists===========================>>
-
-    section#specialists h2 {
-        // font-size: 1.7rem;
-    }
-
     // <<===========================SECTION #first_screen_main_page===========================>>
-
-
     section#first_screen_main_page .first_screen_content_wrap button {
         top: 550px;
     }
@@ -2954,16 +2531,9 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
     // <<===========================SECTION #accordion_services===========================>>
-
     section#accordion_services h3 {
         font-size: 2.2rem;
-    }
-
-    // <<===========================SECTION #we_offer_you===========================>>
-        section#we_offer_you h2 {
-        // font-size: 2rem;
-    }
-    
+    }    
 }
 
 @media screen and (max-width: 350px) {
@@ -2973,8 +2543,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
     // <<===========================SECTION #first_screen_main_page===========================>>
-
-
     section#first_screen_main_page .first_screen_content_wrap button {
         top: 540px;
     }
@@ -2982,13 +2550,7 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         width: 435px;
     }
 
-    // <<===========================SECTION #we_offer_you===========================>>
-        section#we_offer_you h2 {
-        // font-size: 1.9rem;
-    }
-
     // <<===========================SECTION #for_psychologists===========================>>
-
     section#for_psychologists_form #feedback_for_psychologists_form .wrap_error .error_text {
         left: -23px;
     }
@@ -2997,14 +2559,11 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     #side_block .wrap_mobile_menu .menu_bottom_wrap .btn_callback   {
         padding-left: 10px;
         padding-right: 10px;
-    }
-    
-    
+    } 
 }
 
 @media screen and (max-width: 340px) {
     // <<===========================SECTION #first_screen_main_page===========================>>
-    
     section#first_screen_main_page .first_screen_content_wrap button {
         top: 520px;
     }
@@ -3012,11 +2571,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
         width: 425px;
     }
     
-    // <<===========================SECTION #we_offer_you===========================>>
-        section#we_offer_you h2 {
-        // font-size: 1.85rem;
-    }
-
     // <<===========================404 page style===========================>>
     .not_found {
         p:last-of-type {
@@ -3036,7 +2590,6 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
     }
 
     // <<===========================SECTION #for_psychologists===========================>>
-
     section#for_psychologists_form #feedback_for_psychologists_form .wrap_error .error_text {
         left: -20px;
     }
@@ -3045,29 +2598,21 @@ section#consultation .consultation_item_wrap:nth-child(4)::after {
 
 @media screen and (max-width: 330px) {
     // <<===========================SECTION #for_psychologists===========================>>
-
     section#for_psychologists_form #feedback_for_psychologists_form .wrap_error .error_text {
         left: -15px;
     }
 }
 
 @media screen and (max-width: 325px) {
-
-    // <<===========================SECTION #successes===========================>>
-
-    // section#successes.pad_top h2,
-    // section#successes h2 {
-    //         font-size: 2rem;
-    // }
-     // <<===========================SECTION #specialists===========================>>
-     section#specialists .specialists_wrap > p {
-        font-size: 1rem;
-        line-height: 1.8rem;
+    // <<===========================SECTION #specialists===========================>>
+    section#specialists .specialists_wrap > p {
+       font-size: 1rem;
+       line-height: 1.8rem;
     }
-    // <<===========================SECTION #first_screen_main_page===========================>>
 
+    // <<===========================SECTION #first_screen_main_page===========================>>
     section#first_screen_main_page .first_screen_content_wrap::after {
-        width: 415px;
+        width: 400px;
     }
 
     section#for_psychologists_form #feedback_for_psychologists_form .wrap_error .error_text {

@@ -20,7 +20,7 @@
         </div>
                 
         <modal-window v-if="showModal" @close="showModal = false">
-        
+
             <template #header>
                 <button type="button" class="close_modal_btn" @click="showModal = false"></button>
             </template>

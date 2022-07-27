@@ -5,7 +5,6 @@
     </div>
 </template>
 
-
 <script>
 import PaymentList from '@/components/PaymentList.vue'
 import PageTitle from '@/components/Modules/PageTitle.vue'

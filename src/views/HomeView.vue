@@ -43,6 +43,6 @@ export default {
     OfferYouList,
     ConsultationList,
     OurSpecialistsList
-}
+  }
 }
 </script>
